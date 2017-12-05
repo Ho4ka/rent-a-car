@@ -29,11 +29,15 @@ nav {
     z-index: 1;
     display: block;
     position: relative;
+    background-color: #4e5254;
     ul {
         display: flex;
         justify-content: center;
         li {
             padding: 10px;
+            a {
+                color: cornsilk;
+            }
         }
     }
 }
