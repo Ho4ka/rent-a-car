@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    .logo-container {
+        position: relative;
+        bottom: 30px;
+        .logo {
+            width: 250px;
+        }
+    }
+}
+
+nav {
+    margin-top: 15px;
+    z-index: 1;
+    display: block;
+    position: relative;
+    ul {
+        display: flex;
+        justify-content: center;
+        li {
+            padding: 10px;
+        }
+    }
+}
