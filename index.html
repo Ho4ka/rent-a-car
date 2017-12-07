@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/main.css">
 
+
     <title>rent a car</title>
 </head>
 
@@ -17,9 +18,32 @@
             <img class="logo" src="images/logo.png">
         </div>
     </header>
-    <nav>
+    <div id="mobile-menu">
+        <input type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle" id="drawer-toggle-label"></label>
+        <nav id="drawer">
+            <img class="logo" src="images/logo.png">
+            <ul>
+                <li><a href="index.html">ПАРК АВТО</a></li>
+                <li><a href="about.html">ЦІНИ</a></li>
+                <li><a href="contact.html">БРОНЮВАННЯ</a></li>
+                <li><a href="contact.html">УМОВИ ПРОКАТУ</a></li>
+                <li><a href="contact.html">ТРАНСФЕРИ</a></li>
+                <li><a href="contact.html">FAQ</a></li>
+                <li><a href="contact.html">КОНТАКТИ</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <!-- <nav>
         <ul>
-            <li><a href="#">ПАРК АВТО</a></li>
+            <li><a href="#">ПАРК АВТО</a>
+                <ul>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Bio</a></li>
+                </ul>
+
+            </li>
             <li><a href="#">ЦІНИ</a></li>
             <li><a href="#">БРОНЮВАННЯ</a></li>
             <li><a href="#">УМОВИ ПРОКАТУ</a></li>
@@ -27,7 +51,78 @@
             <li><a href="#">FAQ</a></li>
             <li><a href="#">КОНТАКТИ</a></li>
         </ul>
+    </nav> -->
+    <nav class="main-nav" role="navigation">
+        <ul>
+            <li>
+                <a href="/blog">
+                    <div>
+                        ПАРК АВТО
+
+                    </div>
+                </a>
+                <div>
+                    <ul>
+                        <li><a href="#">Me</a></li>
+                        <li><a href="#">Gaming</a></li>
+                        <li><a href="#">Sport</a></li>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="/">
+                    <div>
+                        ЦІНИ
+
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="/contact">
+                    <div>
+                        БРОНЮВАННЯ
+
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/forum">
+                    <div>
+                        УМОВИ ПРОКАТУ
+
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/forum">
+                    <div>
+                        ТРАНСФЕРИ
+
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/forum">
+                    <div>
+                        FAQ
+
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/forum">
+                    <div>
+                        КОНТАКТИ
+
+                    </div>
+                </a>
+            </li>
+        </ul>
     </nav>
+
     <script src="./js/main.js"></script>
 </body>
 
