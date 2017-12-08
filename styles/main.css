@@ -49,7 +49,8 @@ nav > ul > li a + div {
   display: none;
   font-size: 1rem;
   position: absolute;
-  width: 195px; }
+  width: 195px;
+  z-index: 2111; }
 
 nav > ul > li:hover a + div {
   display: block; }
@@ -245,5 +246,35 @@ body {
 @media screen and (max-width: 992px) {
   .main-nav {
     display: none; } }
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0 !important; }
+
+.swiper-container img {
+  width: 100%; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+.swiper-wrapper {
+  z-index: 0 !important; }
 
 /*# sourceMappingURL=main.css.map */
