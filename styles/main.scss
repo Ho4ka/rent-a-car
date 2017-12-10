@@ -358,11 +358,12 @@ body {
 
 .conditions-wrapper {
     margin-top: 50px;
+    width: 100%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: rgb(97, 97, 97);
     background-color: #fff;
     position: relative;
     h2 {
@@ -375,6 +376,7 @@ body {
         margin-top: 50px;
         h3 {
             text-align: center;
+            margin-top: 20px;
         }
         .documents {
             width: 50%;
@@ -384,6 +386,9 @@ body {
                 margin: 0 auto;
                 display: block;
             }
+            ul {
+                margin-top: 8px;
+            }
         }
         .payment {
             width: 50%;
@@ -392,6 +397,9 @@ body {
                 width: 100px;
                 margin: 0 auto;
                 display: block;
+            }
+            p {
+                margin-top: 10px;
             }
         }
     }
@@ -408,20 +416,26 @@ footer {
         display: none;
     }
     .swiper-container {
-        height: auto;
         margin-top: 25px !important;
+        height: 100%;
+    }
+    .swiper-container img {
+        height: 100%;
     }
     .conditions {
         width: 100%;
         flex-direction: column;
         margin: 0 auto;
-        .documents {
-            width: 100%;
-            margin: 0 auto;
-        }
-        .payment {
-            width: 100%;
-            margin: 0 auto;
+    }
+    .documents {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+    .payment {
+        width: 100% !important;
+        margin: 0 auto;
+        img {
+            margin-top: 40px !important;
         }
     }
 }
