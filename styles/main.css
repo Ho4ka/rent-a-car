@@ -326,9 +326,6 @@ footer {
     margin-top: 25px !important;
     height: 100%; }
 
-  .swiper-container img {
-    height: 100%; }
-
   .conditions {
     width: 100%;
     flex-direction: column;
