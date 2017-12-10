@@ -331,7 +331,6 @@ body {
 
 .swiper-container img {
     width: 100%;
-    height: 100%;
 }
 
 .swiper-slide {
@@ -418,6 +417,8 @@ footer {
     }
     .swiper-container {
         margin-top: 25px !important;
+    }
+    .swiper-container img {
         height: 100%;
     }
     .conditions {
