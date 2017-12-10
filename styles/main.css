@@ -322,12 +322,6 @@ footer {
   .main-nav {
     display: none; }
 
-  .swiper-container {
-    margin-top: 25px !important; }
-
-  .swiper-container img {
-    height: 100%; }
-
   .conditions {
     width: 100%;
     flex-direction: column;
