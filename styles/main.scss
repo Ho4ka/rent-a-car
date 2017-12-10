@@ -412,6 +412,10 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
+    .swiper-container {
+        height: auto;
+        margin-top: 25px !important;
+    }
     .main-nav {
         display: none;
     }
