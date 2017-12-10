@@ -251,7 +251,8 @@ body {
   z-index: 0 !important; }
 
 .swiper-container img {
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 .swiper-slide {
   text-align: center;
