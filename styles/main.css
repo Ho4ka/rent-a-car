@@ -315,8 +315,9 @@ body {
         margin-top: 8px; }
 
 footer {
+  width: 100%;
   margin-top: 50px;
-  height: 200px;
+  padding-top: 50px;
   background-color: #53585a;
   display: flex; }
   footer .footer-copyright {
@@ -326,7 +327,12 @@ footer {
     font-weight: 400;
     line-height: 1.5;
     color: white;
-    position: relative; }
+    top: 70px;
+    text-align: center; }
+  footer .nav-list {
+    top: 70px;
+    text-align: center;
+    width: 33.3%; }
   footer .nav-list a {
     text-decoration: none;
     transition: color 0.3s ease-out;
@@ -401,6 +407,17 @@ footer {
     bottom: -13px;
     right: 5px;
     transform: rotate(30deg); }
+  footer .cards {
+    width: 33.3%;
+    margin: 0 auto;
+    bottom: 20px;
+    display: block;
+    position: relative; }
+    footer .cards img {
+      width: 100px;
+      top: 50px;
+      margin: 0 auto;
+      display: block; }
 
 @media screen and (max-width: 992px) {
   .swiper-container {
@@ -423,6 +440,22 @@ footer {
     width: 100% !important;
     margin: 0 auto; }
     .payment img {
-      margin-top: 40px !important; } }
+      margin-top: 40px !important; }
+
+  footer {
+    flex-direction: column; }
+
+  footer .footer-copyright {
+    width: 100%;
+    padding: 20px; }
+
+  footer .nav-list {
+    width: 100%;
+    padding: 20px; }
+
+  footer .cards {
+    width: 100%;
+    bottom: 0;
+    padding: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
