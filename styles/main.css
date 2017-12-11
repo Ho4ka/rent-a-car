@@ -522,6 +522,10 @@ footer {
   footer .cards {
     width: 100%;
     bottom: 0;
-    padding: 20px; } }
+    padding: 20px; }
+
+  button {
+    width: 200px;
+    font-size: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
