@@ -1,8 +1,12 @@
 var swiper = new Swiper('.swiper-container', {
-    autoplay: true,
-    delay: 3000,
+
+    autoplay: {
+        delay: 7000,
+    },
+    speed: 1800,
+    effect: "fade",
     slidesPerView: 1,
-    spaceBetween: 30,
+
     loop: true,
     pagination: {
         el: '.swiper-pagination',
