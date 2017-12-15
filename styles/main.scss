@@ -630,15 +630,18 @@ footer {
     p {
         padding-bottom: 20px;
     }
+    ul {
+        margin-bottom: 20px;
+    }
     li::before {
         content: '';
         display: block;
         position: relative;
         /* left: 70px; */
         right: 20px;
-        top: 16px;
-        width: 6px;
-        height: 6px;
+        top: 18px;
+        width: 10px;
+        height: 10px;
         background: green;
         border-radius: 50%;
         box-sizing: border-box;
