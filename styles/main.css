@@ -499,4 +499,29 @@ footer {
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
     padding-top: 180px; }
 
+.conditions-wrapper-block {
+  margin-top: 50px;
+  padding-left: 10%;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #616161;
+  background-color: #fff; }
+  .conditions-wrapper-block p {
+    padding-bottom: 20px; }
+  .conditions-wrapper-block li::before {
+    content: '';
+    display: block;
+    position: relative;
+    /* left: 70px; */
+    right: 20px;
+    top: 16px;
+    width: 6px;
+    height: 6px;
+    background: green;
+    border-radius: 50%;
+    box-sizing: border-box; }
+
 /*# sourceMappingURL=main.css.map */
