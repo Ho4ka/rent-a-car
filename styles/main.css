@@ -535,5 +535,25 @@ footer {
 
   .conditions-wrapper-block {
     margin-top: 50px; } }
+.faq-wrapper-img img {
+  width: 100%;
+  height: 500px; }
+
+.faq-answer-block {
+  margin-top: 150px;
+  padding-left: 10%;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #616161;
+  background-color: #fff; }
+  .faq-answer-block h1 {
+    text-align: center; }
+  .faq-answer-block h2 {
+    margin-top: 20px; }
+  .faq-answer-block p {
+    padding: 10px; }
 
 /*# sourceMappingURL=main.css.map */
