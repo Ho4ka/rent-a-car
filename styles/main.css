@@ -556,4 +556,11 @@ footer {
   .faq-answer-block p {
     padding: 11px; }
 
+@media screen and (max-width: 992px) {
+  .faq-wrapper-img {
+    padding-top: 57px; }
+
+  .faq-img {
+    height: 250px !important; } }
+
 /*# sourceMappingURL=main.css.map */

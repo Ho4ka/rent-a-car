@@ -694,3 +694,13 @@ footer {
         padding: 11px;
     }
 }
+
+// MEDIA QUERY STYLES FOR FAQ PAGE 
+@media screen and (max-width: 992px) {
+    .faq-wrapper-img {
+        padding-top: 57px;
+    }
+    .faq-img {
+        height: 250px !important;
+    }
+}
