@@ -167,6 +167,12 @@ body {
 
 /* drawer menu pane - note the 0px width */
 #drawer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #616161;
+  background-color: #fff;
   position: fixed;
   top: 0;
   left: -300px;
@@ -499,9 +505,9 @@ footer {
     width: 100%; }
 
 .conditions-wrapper-block {
+  width: 90%;
   margin-top: 150px;
   padding-left: 10%;
-  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
