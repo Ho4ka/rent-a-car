@@ -615,4 +615,10 @@ footer {
     display: block;
     margin: 0 auto; }
 
+@media screen and (max-width: 992px) {
+  .car-wrapper {
+    flex-direction: column; }
+    .car-wrapper .car {
+      width: 100%; } }
+
 /*# sourceMappingURL=main.css.map */

@@ -769,3 +769,13 @@ footer {
         margin: 0 auto;
     }
 }
+
+// MEDIA QUERY STYLES FOR PRICE PAGE 
+@media screen and (max-width: 992px) {
+    .car-wrapper {
+        flex-direction: column;
+        .car {
+            width: 100%;
+        }
+    }
+}
