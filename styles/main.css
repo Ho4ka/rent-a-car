@@ -570,7 +570,8 @@ footer {
     height: 250px !important; } }
 .price-wrapper-img img {
   width: 100%;
-  height: 500px; }
+  height: 500px;
+  margin-bottom: 50px; }
 .price-wrapper-img .price-h1 {
   color: white;
   text-align: center;
@@ -631,6 +632,6 @@ footer {
       height: 100%; }
     .car-wrapper .car {
       width: 90%;
-      margin: 10px auto; } }
+      margin: 20px auto; } }
 
 /*# sourceMappingURL=main.css.map */
