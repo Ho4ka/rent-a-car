@@ -616,6 +616,13 @@ footer {
     margin: 0 auto; }
 
 @media screen and (max-width: 992px) {
+  .price-wrapper-img {
+    padding-top: 57px; }
+    .price-wrapper-img .price-h1 {
+      padding-top: 120px; }
+    .price-wrapper-img img {
+      height: 300px; }
+
   .car-wrapper {
     flex-direction: column; }
     .car-wrapper .car {

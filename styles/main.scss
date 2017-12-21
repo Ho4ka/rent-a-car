@@ -772,6 +772,15 @@ footer {
 
 // MEDIA QUERY STYLES FOR PRICE PAGE 
 @media screen and (max-width: 992px) {
+    .price-wrapper-img {
+        padding-top: 57px;
+        .price-h1 {
+            padding-top: 120px;
+        }
+        img {
+            height: 300px;
+        }
+    }
     .car-wrapper {
         flex-direction: column;
         .car {
