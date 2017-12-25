@@ -605,6 +605,9 @@ footer {
         padding: 15px;
         background-color: #89c547;
         color: white; }
+        .car-wrapper .car table th .price-icon {
+          width: 25px;
+          height: 25px; }
       .car-wrapper .car table .silver {
         background-color: #535859;
         color: white; }
