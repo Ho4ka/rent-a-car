@@ -602,7 +602,7 @@ footer {
     .car-wrapper .car table {
       margin: 0 auto; }
       .car-wrapper .car table th {
-        padding: 15px;
+        padding: 9px;
         background-color: #89c547;
         color: white; }
         .car-wrapper .car table th .price-icon {
