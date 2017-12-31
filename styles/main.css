@@ -822,11 +822,13 @@ footer {
     width: 50%;
     padding-top: 30px; }
     .booking-and-preview-wrapper .booking-wrapper .form-group-title {
-      background-color: #f2f2f2;
+      background-color: #e7f70b;
       padding: 14px 0;
       border-radius: 10px;
       margin-bottom: 15px;
       text-align: center;
+      letter-spacing: 2px;
+      font-weight: 100;
       font-size: 20px; }
     .booking-and-preview-wrapper .booking-wrapper .form-control {
       margin-bottom: 20px;
@@ -879,5 +881,14 @@ footer {
       text-align: center; }
     .booking-and-preview-wrapper .booking-car-preview #car {
       width: 100%; }
+
+@media screen and (max-width: 992px) {
+  .booking-and-preview-wrapper {
+    width: 100%;
+    flex-direction: column; }
+    .booking-and-preview-wrapper .booking-wrapper {
+      width: 100%; }
+    .booking-and-preview-wrapper .booking-car-preview {
+      width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

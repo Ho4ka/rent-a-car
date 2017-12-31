@@ -1025,11 +1025,13 @@ footer {
         width: 50%;
         padding-top: 30px;
         .form-group-title {
-            background-color: #f2f2f2;
+            background-color: #e7f70b;
             padding: 14px 0;
             border-radius: 10px;
             margin-bottom: 15px;
             text-align: center;
+            letter-spacing: 2px;
+            font-weight: 100;
             font-size: 20px;
         }
         .form-control {
@@ -1087,6 +1089,19 @@ footer {
             text-align: center;
         }
         #car {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .booking-and-preview-wrapper {
+        width: 100%;
+        flex-direction: column;
+        .booking-wrapper {
+            width: 100%;
+        }
+        .booking-car-preview {
             width: 100%;
         }
     }
