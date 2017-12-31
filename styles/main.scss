@@ -1074,7 +1074,14 @@ footer {
             background-clip: padding-box;
             border: 1px solid rgba(0, 0, 0, .15);
             border-radius: .25rem;
-            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        }
+        .fa {
+            position: absolute;
+            left: 47%;
+            display: block;
+            top: 123.5%;
+            color: green;
         }
     }
     .booking-car-preview {
@@ -1095,11 +1102,30 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-    .booking-and-preview-wrapper {
+    .booking-h1 {
+        /* padding-top: 50px; */
+        color: #fffef6;
+        height: 100px;
+        letter-spacing: 0.6px;
+        line-height: 10px;
+        /* margin-top: 50px; */
+        text-align: center;
+        font-size: 30px;
+        margin: 60px auto;
+        font-weight: 100;
         width: 100%;
+        background: #53585a;
+    }
+    .booking-and-preview-wrapper {
+        width: 90%;
+        margin: 0 auto;
         flex-direction: column;
         .booking-wrapper {
             width: 100%;
+            .fa {
+                left: 86%;
+                top: 138.7%;
+            }
         }
         .booking-car-preview {
             width: 100%;

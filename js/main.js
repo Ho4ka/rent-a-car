@@ -69,6 +69,9 @@ $(document).ready(function() {
     $('select').on("change", function() {
         var val = $(this).val();
         var price = cars[val].price;
+        $('.car-price').remove();
+        var carPrice = $('<p>').appendTo('.booking-car-preview').addClass('car-price');
+
 
 
 
