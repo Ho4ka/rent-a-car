@@ -12,7 +12,7 @@
     <script src="./js/jquery.js"></script>
     <script src="./js/jquery-ui.js"></script>
 
-    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+
 
 
     <title>rent a car</title>
@@ -127,8 +127,8 @@
         <div class="booking-wrapper">
             <h5 class="form-group-title">Виберіть автомобіль</h5>
             <form action="POST">
-                <!-- <label class="select-car">
-              <select class="form-control" name="" id="">
+                <label class="select-car">
+              <!-- <select class="form-control" name="" id="">
                 <option selected = "selected" disabled = "disabled" value="">Оберіть авто</option>
                 <option value ="">SMART ForTwo</option>
                 <option value ="">SMART ForFour</option>
@@ -149,39 +149,34 @@
                 <option value ="">VOLKSWAGEN Up Electric  </option>
                 <option value ="">SMART Electric  </option>
                 <option value ="">NISSAN Leaf  </option>
-              </select>
-          </label> -->
+              </select> -->
+          </label>
 
                 <h5 class="form-group-title">Місце подачі авто</h5>
-
-                <!-- <label class="select-car">
-                        <select class="form-control" name="" id="">
-                          <option selected = "selected" disabled = "disabled" value="">Оберіть авто</option>
-                          <option value ="">SMART ForTwo</option>
-                          <option value ="">SMART ForFour</option>
-                          <option value ="">TOYOTA Aygo </option>
-                          <option value ="">PEUGEOT 107</option>
-                          <option value ="">NISSAN Micra </option>
-                          <option value ="">VOKSWAGEN Up </option>
-                          <option value ="">CITROEN C1 </option>
-                          <option value ="">PEUGEOT 206 </option>
-                          <option value ="">CITROEN C3 </option>
-                          <option value ="">OPEL Corsa </option>
-                          <option value ="">FORD FIesta </option>
-                          <option value ="">SEAT Ibiza </option>
-                          <option value ="">TOYOTA Yaris </option>
-                          <option value ="">SKODA Fabia </option>
-                          <option value ="">SKODA Fabia Universal  </option>
-                          <option value ="">SEAT Ibiza Universal  </option>
-                          <option value ="">VOLKSWAGEN Up Electric  </option>
-                          <option value ="">SMART Electric  </option>
-                          <option value ="">NISSAN Leaf  </option>
-                        </select>
-                    </label> -->
+                <label class="select-place" for="">
+                    <select class="form-control" name="" id="">
+                            <option selected = "selected" disabled = "disabled" value="">Оберіть місце</option>
+                        <option value="">Львів по місту</option>
+                        <option value="">Львів по місту</option>
+                        <option value="">Львів по місту</option>
+                    </select>
+                </label>
                 <label class="booking-label" for="from">Дата та час отримання авто.</label>
                 <input type="text" value="Виберіть дату" id="from" name="from">
+                <select class="form-control" name="" id="">
+                        <option selected = "selected" disabled = "disabled" value="">Оберіть час</option>
+                        <option value="">9:00</option>
+                        <option value="">9:30</option>
+                        <option value="">10:00</option>
+                    </select>
                 <label class="booking-label" for="to">Дата та час повернення авто.</label>
                 <input type="text" value="Виберіть дату" id="to" name="to">
+                <select class="form-control" name="" id="">
+                        <option selected = "selected" disabled = "disabled" value="">Оберіть час</option>
+                        <option value="">9:00</option>
+                        <option value="">9:30</option>
+                        <option value="">10:00</option>
+                    </select>
             </form>
         </div>
         <div class="booking-car-preview">
@@ -216,10 +211,7 @@
 
 
 
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <script>
-        window.mdc.autoInit();
-    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.esm.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.esm.bundle.js"></script>
