@@ -568,19 +568,98 @@ footer {
 
   .faq-img {
     height: 250px !important; } }
-.price-wrapper-img img {
-  width: 100%;
-  height: 500px;
-  margin-bottom: 50px; }
-.price-wrapper-img .price-h1 {
-  color: white;
-  text-align: center;
-  font-size: 50px;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
-  padding-top: 220px;
-  position: absolute;
-  margin: 0 auto;
-  width: 100%; }
+.price-wrapper-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center; }
+  .price-wrapper-img .nav-list {
+    top: 70px;
+    text-align: center;
+    width: 33.3%; }
+  .price-wrapper-img .nav-list a {
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+    color: inherit; }
+  .price-wrapper-img .nav-list li {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #585656;
+    position: relative;
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    letter-spacing: -1px; }
+  .price-wrapper-img .download:after,
+  .price-wrapper-img .download:before,
+  .price-wrapper-img .download a:after,
+  .price-wrapper-img .download a:before {
+    background-color: #CEDD3E; }
+  .price-wrapper-img .download:hover {
+    color: #CEDD3E; }
+  .price-wrapper-img .features:after,
+  .price-wrapper-img .features:before,
+  .price-wrapper-img .features a:after,
+  .price-wrapper-img .features a:before {
+    background-color: #F27132; }
+  .price-wrapper-img .features:hover {
+    color: #F27132; }
+  .price-wrapper-img .method:after,
+  .price-wrapper-img .method:before,
+  .price-wrapper-img .method a:after,
+  .price-wrapper-img .method a:before {
+    background-color: #85C3E9; }
+  .price-wrapper-img .method:hover {
+    color: #85C3E9; }
+  .price-wrapper-img .purchase:after,
+  .price-wrapper-img .purchase:before,
+  .price-wrapper-img .purchase a:after,
+  .price-wrapper-img .purchase a:before {
+    background-color: #FDBE2A; }
+  .price-wrapper-img .purchase:hover {
+    color: #FDBE2A; }
+  .price-wrapper-img .nav-list li:after,
+  .price-wrapper-img .nav-list li:before,
+  .price-wrapper-img .nav-list a:before,
+  .price-wrapper-img .nav-list a:after {
+    position: absolute;
+    content: '';
+    border-radius: 4px; }
+  .price-wrapper-img .nav-list li:after,
+  .price-wrapper-img .nav-list li:before {
+    bottom: -4px;
+    height: 4px; }
+  .price-wrapper-img .nav-list li:not(.selected):before {
+    left: 0;
+    right: -2px; }
+  .price-wrapper-img .nav-list li.selected:after {
+    left: 0;
+    right: 39px; }
+  .price-wrapper-img .nav-list li.selected:before {
+    right: -2px;
+    width: 13px; }
+  .price-wrapper-img .nav-list .selected a:before {
+    height: 22px;
+    width: 4px;
+    bottom: -22px;
+    right: 7px; }
+  .price-wrapper-img .nav-list .selected a:after {
+    height: 4px;
+    width: 40px;
+    bottom: -13px;
+    right: 5px;
+    transform: rotate(30deg); }
+  .price-wrapper-img .price-h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+    padding-top: 220px;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%; }
 
 .car-wrapper {
   display: flex;
@@ -627,7 +706,7 @@ footer {
   border-radius: 15px;
   padding: 10px;
   width: 300px;
-  margin: 0 auto;
+  margin: 30px auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5; }
@@ -940,11 +1019,12 @@ footer {
     height: 800px;
     background-size: cover; }
     .contact-img-wrapper .contact-img .adress {
-      width: 400px;
-      height: 400px;
-      background: white;
+      width: 200px;
       position: relative;
-      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
       left: 20%; }
+      .contact-img-wrapper .contact-img .adress h3 {
+        position: relative;
+        top: 200px;
+        left: 150px; }
 
 /*# sourceMappingURL=main.css.map */

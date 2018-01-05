@@ -713,11 +713,121 @@ footer {
 
 // STYLES FOR PRICE PAGE 
 .price-wrapper-img {
-    img {
-        width: 100%;
-        height: 500px;
-        margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+    .nav-list {
+        // position: relative;
+        top: 70px;
+        text-align: center;
+        width: 33.3%;
     }
+    .nav-list a {
+        text-decoration: none;
+        transition: color 0.3s ease-out;
+        color: inherit;
+    }
+    .nav-list li {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: rgb(88, 86, 86);
+        position: relative;
+        position: relative;
+        display: inline-block;
+        margin: 5px;
+        letter-spacing: -1px;
+    }
+    .download:after,
+    .download:before,
+    .download a:after,
+    .download a:before {
+        background-color: #CEDD3E;
+    }
+    .download:hover {
+        color: #CEDD3E
+    }
+    .features:after,
+    .features:before,
+    .features a:after,
+    .features a:before {
+        background-color: #F27132;
+    }
+    .features:hover {
+        color: #F27132;
+    }
+    .method:after,
+    .method:before,
+    .method a:after,
+    .method a:before {
+        background-color: #85C3E9;
+    }
+    .method:hover {
+        color: #85C3E9;
+    }
+    .purchase:after,
+    .purchase:before,
+    .purchase a:after,
+    .purchase a:before {
+        background-color: #FDBE2A;
+    }
+    .purchase:hover {
+        color: #FDBE2A;
+    }
+    .nav-list li:after,
+    .nav-list li:before,
+    .nav-list a:before,
+    .nav-list a:after {
+        position: absolute;
+        content: '';
+        border-radius: 4px;
+    }
+    .nav-list li:after,
+    .nav-list li:before {
+        bottom: -4px;
+        height: 4px;
+    }
+    .nav-list li:not(.selected):before {
+        left: 0;
+        right: -2px;
+    }
+    .nav-list li.selected:after {
+        left: 0;
+        right: 39px;
+    }
+    .nav-list li.selected:before {
+        right: -2px;
+        width: 13px;
+    }
+    .nav-list .selected a:before {
+        height: 22px;
+        width: 4px;
+        bottom: -22px;
+        right: 7px;
+    }
+    .nav-list .selected a:after {
+        height: 4px;
+        width: 40px;
+        bottom: -13px;
+        right: 5px;
+        transform: rotate(30deg);
+    }
+    // .view {
+    //     display: flex;
+    //     flex-direction: column;
+    //     height: 200px;
+    // }
+    // .example {
+    //     width: 150px;
+    // }
+    // .micra {
+    //     width: 200px;
+    // }
+    // .ibiza {
+    //     width: 180px;
+    // }
     .price-h1 {
         color: white;
         text-align: center;
@@ -785,7 +895,7 @@ footer {
     border-radius: 15px;
     padding: 10px;
     width: 300px;
-    margin: 0 auto;
+    margin: 30px auto;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 400;
     line-height: 1.5;
@@ -1161,12 +1271,14 @@ footer {
         height: 800px;
         background-size: cover;
         .adress {
-            width: 400px;
-            height: 400px;
-            background: white;
+            width: 200px;
             position: relative;
-            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
             left: 20%;
+            h3 {
+                position: relative;
+                top: 200px;
+                left: 150px;
+            }
         }
     }
 }
