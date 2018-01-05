@@ -1027,7 +1027,9 @@ footer {
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.5;
-      color: #616161; }
+      color: #616161;
+      background: #53585a;
+      opacity: 0.7; }
       .contact-img-wrapper .contact-img .adress img {
         width: 500px;
         position: relative;
