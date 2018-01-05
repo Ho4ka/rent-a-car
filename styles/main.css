@@ -1019,11 +1019,9 @@ footer {
     height: 800px;
     background-size: cover; }
     .contact-img-wrapper .contact-img .adress {
-      width: 540px;
+      width: 100%;
       height: 200px;
       top: 100px;
-      background-image: url("../images/paper.png");
-      background-size: cover;
       position: relative;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       font-size: 1rem;
@@ -1036,34 +1034,12 @@ footer {
         top: 100px;
         left: 10%; }
       .contact-img-wrapper .contact-img .adress h3 {
-        position: relative;
         font-size: 40px;
         color: white;
-        left: 150px;
-        bottom: 20px; }
+        text-align: center; }
       .contact-img-wrapper .contact-img .adress p {
-        position: relative;
-        left: 170px;
-        top: 10px; }
-
-@media screen and (max-width: 992px) {
-  footer {
-    margin-top: 0 !important; }
-
-  .contact-img {
-    margin-top: 57px; }
-
-  .contact-img-wrapper .contact-img .adress {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    background-position: center; }
-    .contact-img-wrapper .contact-img .adress h3 {
-      text-align: center;
-      left: 0;
-      color: #ababab; }
-    .contact-img-wrapper .contact-img .adress p {
-      position: static;
-      text-align: center; } }
+        text-align: center;
+        font-size: 30px;
+        color: white; }
 
 /*# sourceMappingURL=main.css.map */

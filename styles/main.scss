@@ -1271,11 +1271,9 @@ footer {
         height: 800px;
         background-size: cover;
         .adress {
-            width: 540px;
+            width: 100%;
             height: 200px;
             top: 100px;
-            background-image: url('../images/paper.png');
-            background-size: cover;
             position: relative;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             font-size: 1rem;
@@ -1289,42 +1287,39 @@ footer {
                 left: 10%;
             }
             h3 {
-                position: relative;
                 font-size: 40px;
                 color: white;
-                left: 150px;
-                bottom: 20px;
+                text-align: center;
             }
             p {
-                position: relative;
-                left: 170px;
-                top: 10px;
+                text-align: center;
+                font-size: 30px;
+                color: white;
             }
         }
     }
 }
 
 @media screen and (max-width: 992px) {
-    footer {
-        margin-top: 0 !important;
-    }
-    .contact-img {
-        margin-top: 57px;
-    }
-    .contact-img-wrapper .contact-img .adress {
-        display: flex;
-        flex-direction: column;
-        width: 400px;
-        background-position: center;
-        ;
-        h3 {
-            text-align: center;
-            left: 0;
-            color: rgb(171, 171, 171);
-        }
-        p {
-            position: static;
-            text-align: center;
-        }
-    }
+    // footer {
+    //     margin-top: 0 !important;
+    // }
+    // .contact-img {
+    //     margin-top: 57px;
+    // }
+    // .contact-img-wrapper .contact-img .adress {
+    //     display: flex;
+    //     flex-direction: column;
+    //     width: 400px;
+    //     background-position: center;
+    //     ;
+    //     h3 {
+    //         text-align: center;
+    //         left: 0;
+    //         color: rgb(171, 171, 171);
+    //     }
+    //     p {
+    //         text-align: center;
+    //     }
+    // }
 }
