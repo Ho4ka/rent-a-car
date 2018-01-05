@@ -821,8 +821,26 @@ footer {
   .booking-and-preview-wrapper .booking-wrapper {
     width: 50%;
     padding-top: 30px; }
+    .booking-and-preview-wrapper .booking-wrapper .select {
+      width: 100%;
+      margin-bottom: 15px;
+      display: block;
+      padding: .5rem .75rem;
+      font-size: 1rem;
+      line-height: 1.25;
+      color: #495057;
+      background-color: #fff;
+      background-image: none;
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: .25rem;
+      transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+    .booking-and-preview-wrapper .booking-wrapper .receiving {
+      width: 100%;
+      display: flex; }
     .booking-and-preview-wrapper .booking-wrapper .form-group-title {
-      background-color: #e7f70b;
+      background-color: #7db442;
+      color: white;
       padding: 14px 0;
       border-radius: 10px;
       margin-bottom: 15px;
@@ -831,9 +849,10 @@ footer {
       font-weight: 100;
       font-size: 20px; }
     .booking-and-preview-wrapper .booking-wrapper .form-control {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+      margin-left: 20px;
       display: block;
-      width: 100%;
+      width: 50%;
       padding: .5rem .75rem;
       font-size: 1rem;
       line-height: 1.25;
@@ -847,7 +866,8 @@ footer {
     .booking-and-preview-wrapper .booking-wrapper .booking-label {
       width: 100%;
       display: block;
-      background-color: #f2f2f2;
+      background-color: #7db442;
+      color: white;
       padding: 14px 0;
       border-radius: 10px;
       margin-bottom: 15px;
@@ -858,7 +878,7 @@ footer {
       display: block;
       margin-bottom: 15px;
       text-align: center;
-      width: 100%;
+      width: 50%;
       padding: .5rem .75rem;
       font-size: 1rem;
       line-height: 1.25;
@@ -870,11 +890,11 @@ footer {
       border-radius: .25rem;
       transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
     .booking-and-preview-wrapper .booking-wrapper .fa {
-      position: absolute;
-      left: 47%;
+      position: relative;
+      right: 3px;
       display: block;
-      top: 123.5%;
-      color: green; }
+      top: 3px;
+      color: #7db442; }
   .booking-and-preview-wrapper .booking-car-preview {
     width: 350px;
     margin: 30px auto; }
@@ -909,10 +929,22 @@ footer {
     flex-direction: column; }
     .booking-and-preview-wrapper .booking-wrapper {
       width: 100%; }
-      .booking-and-preview-wrapper .booking-wrapper .fa {
-        left: 86%;
-        top: 138.7%; }
     .booking-and-preview-wrapper .booking-car-preview {
       width: 100%; } }
+.contact-img-wrapper {
+  width: 100%; }
+  .contact-img-wrapper .contact-img {
+    background-image: url("../images/contact_img.jpg");
+    background-position: right, right;
+    width: 100%;
+    height: 800px;
+    background-size: cover; }
+    .contact-img-wrapper .contact-img .adress {
+      width: 400px;
+      height: 400px;
+      background: white;
+      position: relative;
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+      left: 20%; }
 
 /*# sourceMappingURL=main.css.map */

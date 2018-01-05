@@ -60,7 +60,7 @@ $(document).ready(function() {
     ];
 
     const sel = $('<select>').appendTo('.select-car');
-    $(sel).addClass('form-control');
+    $(sel).addClass('select');
     $(sel).append($('<option>').attr('value', 'Оберіть авто').text('Оберіть авто').attr('selected', 'selected').attr('disabled', 'disabled'));
     $(cars).each(function() {
         sel.append($("<option>").attr('value', this.val).text(this.text));
