@@ -1019,12 +1019,50 @@ footer {
     height: 800px;
     background-size: cover; }
     .contact-img-wrapper .contact-img .adress {
-      width: 200px;
+      width: 540px;
+      height: 200px;
+      top: 100px;
+      background-image: url("../images/paper.png");
+      background-size: cover;
       position: relative;
-      left: 20%; }
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #616161; }
+      .contact-img-wrapper .contact-img .adress img {
+        width: 500px;
+        position: relative;
+        top: 100px;
+        left: 10%; }
       .contact-img-wrapper .contact-img .adress h3 {
         position: relative;
-        top: 200px;
-        left: 150px; }
+        font-size: 40px;
+        color: white;
+        left: 150px;
+        bottom: 20px; }
+      .contact-img-wrapper .contact-img .adress p {
+        position: relative;
+        left: 170px;
+        top: 10px; }
+
+@media screen and (max-width: 992px) {
+  footer {
+    margin-top: 0 !important; }
+
+  .contact-img {
+    margin-top: 57px; }
+
+  .contact-img-wrapper .contact-img .adress {
+    display: flex;
+    flex-direction: column;
+    width: 500px; }
+    .contact-img-wrapper .contact-img .adress h3 {
+      text-align: center;
+      left: 0;
+      color: #ababab; }
+    .contact-img-wrapper .contact-img .adress p {
+      position: static;
+      text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */
