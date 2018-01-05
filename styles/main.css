@@ -1056,7 +1056,8 @@ footer {
   .contact-img-wrapper .contact-img .adress {
     display: flex;
     flex-direction: column;
-    width: 400px; }
+    width: 400px;
+    background-position: center; }
     .contact-img-wrapper .contact-img .adress h3 {
       text-align: center;
       left: 0;
