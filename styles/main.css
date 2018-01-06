@@ -1056,7 +1056,8 @@ footer {
       background: #53585a;
       opacity: 0.9; }
       .contact-img-wrapper .contact-img .adress .operators {
-        display: flex; }
+        display: flex;
+        width: 100%; }
         .contact-img-wrapper .contact-img .adress .operators img {
           width: 50px;
           height: 50px;
