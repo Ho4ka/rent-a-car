@@ -814,20 +814,20 @@ footer {
         right: 5px;
         transform: rotate(30deg);
     }
-    // .view {
-    //     display: flex;
-    //     flex-direction: column;
-    //     height: 200px;
-    // }
-    // .example {
-    //     width: 150px;
-    // }
-    // .micra {
-    //     width: 200px;
-    // }
-    // .ibiza {
-    //     width: 180px;
-    // }
+    .view {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+    }
+    .example {
+        width: 150px;
+    }
+    .micra {
+        width: 200px;
+    }
+    .ibiza {
+        width: 180px;
+    }
     .price-h1 {
         color: white;
         text-align: center;
@@ -1183,8 +1183,8 @@ footer {
         .booking-label {
             width: 100%;
             display: block;
-            background-color: #7db442;
-            color: white;
+            // background-color: #7db442;
+            // color: white;
             padding: 14px 0;
             border-radius: 10px;
             margin-bottom: 15px;
@@ -1214,6 +1214,22 @@ footer {
             display: block;
             top: 3px;
             color: #7db442;
+        }
+        .comment {
+            height: 100px !important;
+            padding: 10px !important;
+            resize: none;
+            width: 100%;
+            padding: .5rem .75rem;
+            font-size: 1rem;
+            line-height: 1.25;
+            color: #495057;
+            background-color: #fff;
+            background-image: none;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: .25rem;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
         }
     }
     .booking-car-preview {

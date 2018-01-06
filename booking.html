@@ -163,7 +163,8 @@
                         <option value="">Львів по місту</option>
                     </select>
                 </label>
-                <label class="booking-label" for="from">Дата та час отримання авто.</label>
+                <h5 class="form-group-title">Дата та час отримання авто.</h5>
+                <!-- <label class="booking-label" for="from">Дата та час отримання авто.</label> -->
                 <div class="receiving">
                     <i class="fa  fa-2x fa-calendar" aria-hidden="true"></i>
                     <input type="text" value="Виберіть дату" id="from" name="from">
@@ -175,7 +176,8 @@
                         <option value="">10:00</option>
                     </select>
                 </div>
-                <label class="booking-label" for="to">Дата та час повернення авто.</label>
+                <h5 class="form-group-title">Дата та час повернення авто.</h5>
+                <!-- <label class="booking-label" for="to">Дата та час повернення авто.</label> -->
                 <div class="receiving">
                     <i class="fa  fa-2x fa-calendar" aria-hidden="true"></i>
                     <input type="text" value="Виберіть дату" id="to" name="to">
@@ -186,11 +188,27 @@
                         <option value="">10:00</option>
                     </select>
                 </div>
+                <h5 class="form-group-title">Особисті дані</h5>
+                <input type="text" class="booking-label" placeholder="Прізвище ім'я по батькові">
+                <div class="receiving">
+                    <input type="text" class="hasDatepicker" placeholder="Email">
+                    <input type="text" class="hasDatepicker" placeholder="Телефон">
+                </div>
+                <textarea type="text" class="comment" placeholder="Коментар"></textarea>
             </form>
+            <div class="big-clickme">
+                <div class="btn">
+                    <a href="#" class="callTo ">
+                              Забронювати
+                              </a>
+                </div>
+            </div>
         </div>
         <div class="booking-car-preview">
             <!-- <p class="car-price"></p> -->
+
         </div>
+
 
     </div>
 
