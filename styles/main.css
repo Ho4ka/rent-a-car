@@ -1082,8 +1082,10 @@ footer {
 
   .contact-img-wrapper .contact-img .adress {
     left: 0%;
-    width: 300px;
+    width: 350px;
     margin: 0 auto;
-    color: white; } }
+    color: white; }
+    .contact-img-wrapper .contact-img .adress p {
+      color: white; } }
 
 /*# sourceMappingURL=main.css.map */
