@@ -1298,10 +1298,12 @@
                         position: relative;
                         left: 50px;
                     }
-                    p {
+                    span {
+                        display: inline-block;
                         position: relative;
-                        top: 12px;
-                        width: 100%;
+                        left: 70px;
+                        top: 15px;
+                        color: white;
                     }
                 }
                 h3 {
@@ -1345,8 +1347,5 @@
             width: 350px;
             margin: 0 auto;
             color: white;
-            p {
-                color: white;
-            }
         }
     }
