@@ -909,6 +909,7 @@ footer {
   display: flex; }
   .booking-and-preview-wrapper .booking-wrapper {
     width: 50%;
+    margin: 0 auto;
     padding-top: 30px; }
     .booking-and-preview-wrapper .booking-wrapper .select {
       width: 100%;
