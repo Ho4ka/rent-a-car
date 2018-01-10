@@ -904,15 +904,14 @@ footer {
   width: 100%; }
 
 .booking-and-preview-wrapper {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
   display: flex; }
   .booking-and-preview-wrapper .booking-wrapper {
-    width: 50%;
-    margin: 0 auto;
-    padding-top: 30px; }
+    width: 60%;
+    padding-top: 30px;
+    margin: 0 110px; }
     .booking-and-preview-wrapper .booking-wrapper .select {
-      width: 100%;
+      width: 95%;
       margin-bottom: 15px;
       display: block;
       padding: .5rem .75rem;
@@ -999,8 +998,10 @@ footer {
       border-radius: .25rem;
       transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
   .booking-and-preview-wrapper .booking-car-preview {
-    width: 350px;
-    margin: 30px auto; }
+    width: 40%;
+    margin-top: 220px;
+    margin-right: 50px;
+    position: relative; }
     .booking-and-preview-wrapper .booking-car-preview .car-price {
       background-color: #f2f2f2;
       font-size: 25px;
@@ -1031,9 +1032,11 @@ footer {
     margin: 0 auto;
     flex-direction: column; }
     .booking-and-preview-wrapper .booking-wrapper {
-      width: 100%; }
+      width: 100%;
+      margin: 0 auto; }
     .booking-and-preview-wrapper .booking-car-preview {
-      width: 100%; } }
+      width: 100%;
+      margin: 0 auto; } }
 .contact-img-wrapper {
   width: 100%; }
   .contact-img-wrapper .contact-img {
@@ -1095,6 +1098,7 @@ footer {
   .contact-img-wrapper .contact-img .adress {
     left: 0%;
     width: 350px;
+    height: 390px;
     margin: 0 auto;
     color: white; } }
 

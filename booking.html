@@ -153,23 +153,36 @@
                 <option value ="">NISSAN Leaf  </option>
               </select> -->
           </label>
-
-                <h5 class="form-group-title">Місце подачі авто</h5>
+                <h5 style="width:90%" class="form-group-title">Місто подачі авто</h5>
                 <label class="select-place" for="">
-                    <select class=" select" name="" id="">
+                    <select style="width:85%" class=" select" name="" id="">
+                            <option selected = "selected" disabled = "disabled" value="">Оберіть місце</option>
+                        <option value="">Львів</option>
+                        <option value="">Тернопіль</option>
+                        <option value="">Ужгород</option>
+                        <option value="">Івано-Франківськ</option>
+                        <option value="">Рівне</option>
+                        <option value="">Луцьк</option>
+                        <option value="">Хмельницький</option>
+                    </select>
+                </label>
+
+                <h5 style="width:80%" class="form-group-title ">Місце подачі авто</h5>
+                <label class="select-place" for="">
+                    <select style="width:75%" class=" select" name="" id="">
                             <option selected = "selected" disabled = "disabled" value="">Оберіть місце</option>
                         <option value="">Львів по місту</option>
                         <option value="">Львів по місту</option>
                         <option value="">Львів по місту</option>
                     </select>
                 </label>
-                <h5 class="form-group-title">Дата та час отримання авто.</h5>
+                <h5 style="width:75%" class="form-group-title">Дата та час отримання авто.</h5>
                 <!-- <label class="booking-label" for="from">Дата та час отримання авто.</label> -->
-                <div class="receiving">
+                <div style="width:75%" class="receiving">
                     <i class="fa  fa-2x fa-calendar" aria-hidden="true"></i>
                     <input type="text" value="Виберіть дату" id="from" name="from">
 
-                    <select class="form-control " name="" id="">
+                    <select style="width:80%" class="form-control " name="" id="">
                         <option selected = "selected" disabled = "disabled" value="">Оберіть час</option>
                         <option value="">9:00</option>
                         <option value="">9:30</option>
@@ -195,9 +208,9 @@
                         <option value="">20:00</option>
                     </select>
                 </div>
-                <h5 class="form-group-title">Дата та час повернення авто.</h5>
+                <h5 style="width:85%" class="form-group-title">Дата та час повернення авто.</h5>
                 <!-- <label class="booking-label" for="to">Дата та час повернення авто.</label> -->
-                <div class="receiving">
+                <div style="width:90%" class="receiving">
                     <i class="fa  fa-2x fa-calendar" aria-hidden="true"></i>
                     <input type="text" value="Виберіть дату" id="to" name="to">
                     <select class="form-control " name="" id="">
@@ -227,7 +240,7 @@
                         <option value="">20:00</option>
                     </select>
                 </div>
-                <h5 class="form-group-title">Особисті дані</h5>
+                <h5 style="width:95%" class="form-group-title">Особисті дані</h5>
                 <input type="text" class="booking-label" placeholder="Прізвище ім'я по батькові">
                 <div class="receiving">
                     <input type="text" class="hasDatepicker" placeholder="Email">
@@ -236,19 +249,13 @@
                 <textarea type="text" class="comment" placeholder="Коментар"></textarea>
             </form>
 
-            <div class="booking-car-preview">
-                <!-- <p class="car-price"></p> -->
 
-            </div>
-            <div class="big-clickme">
-                <div class="btn">
-                    <a href="#" class="callTo ">
-                              Забронювати
-                              </a>
-                </div>
-            </div>
         </div>
 
+        <div class="booking-car-preview">
+            <!-- <p class="car-price"></p> -->
+
+        </div>
 
 
     </div>
