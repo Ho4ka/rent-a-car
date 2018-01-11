@@ -1043,8 +1043,10 @@ footer {
       margin: 0 auto; }
       .booking-and-preview-wrapper .booking-wrapper .receiving {
         width: 100% !important; }
-      .booking-and-preview-wrapper .booking-wrapper select {
+      .booking-and-preview-wrapper .booking-wrapper .select {
         width: 100% !important; }
+      .booking-and-preview-wrapper .booking-wrapper .form-control {
+        width: 50% !important; }
       .booking-and-preview-wrapper .booking-wrapper .form-group-title {
         width: 100% !important; }
     .booking-and-preview-wrapper .booking-car-preview {
