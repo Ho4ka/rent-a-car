@@ -760,6 +760,15 @@
         .purchase:hover {
             color: #FDBE2A;
         }
+        .coupe:after,
+        .coupe:before,
+        .coupe a:after,
+        .coupe a:before {
+            background-color: rgb(45, 202, 92);
+        }
+        .coupe:hover {
+            color: #3ac478;
+        }
         .nav-list li:after,
         .nav-list li:before,
         .nav-list a:before,
@@ -1255,6 +1264,15 @@
             .booking-wrapper {
                 width: 100%;
                 margin: 0 auto;
+                .receiving {
+                    width: 100% !important;
+                }
+                select {
+                    width: 100%!important;
+                }
+                .form-group-title {
+                    width: 100% !important;
+                }
             }
             .booking-car-preview {
                 width: 100%;

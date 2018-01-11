@@ -620,6 +620,13 @@ footer {
     background-color: #FDBE2A; }
   .price-wrapper-img .purchase:hover {
     color: #FDBE2A; }
+  .price-wrapper-img .coupe:after,
+  .price-wrapper-img .coupe:before,
+  .price-wrapper-img .coupe a:after,
+  .price-wrapper-img .coupe a:before {
+    background-color: #2dca5c; }
+  .price-wrapper-img .coupe:hover {
+    color: #3ac478; }
   .price-wrapper-img .nav-list li:after,
   .price-wrapper-img .nav-list li:before,
   .price-wrapper-img .nav-list a:before,
@@ -1034,6 +1041,12 @@ footer {
     .booking-and-preview-wrapper .booking-wrapper {
       width: 100%;
       margin: 0 auto; }
+      .booking-and-preview-wrapper .booking-wrapper .receiving {
+        width: 100% !important; }
+      .booking-and-preview-wrapper .booking-wrapper select {
+        width: 100% !important; }
+      .booking-and-preview-wrapper .booking-wrapper .form-group-title {
+        width: 100% !important; }
     .booking-and-preview-wrapper .booking-car-preview {
       width: 100%;
       margin: 0 auto; } }
