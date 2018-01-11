@@ -52,25 +52,25 @@ $(document).ready(function() {
     });
 
     const cars = [
-        { val: 0, text: 'Smart ForTwo', img: '<img id="car" src="./images/for-two.jpg" />', price: "20$" },
-        { val: 1, text: 'Smart ForFour', img: '<img id="car" src="./images/for-four.png" />', price: "30$" },
-        { val: 2, text: 'Toyota Aygo', img: '<img id="car" src="./images/aygo.jpg" />', price: "40" },
-        { val: 3, text: 'Peugeot 107', img: '<img id="car" src="./images/107.jpg" />' },
-        { val: 4, text: 'Nissan Micra', img: '<img id="car" src="./images/micra.jpg" />' },
-        { val: 5, text: 'Volkswagen Up', img: '<img id="car" src="./images/up.jpg" />' },
-        { val: 6, text: 'Citroen C1', img: '<img id="car" src="./images/citroen.png" />' },
-        { val: 7, text: 'Peugeot 207', img: '<img id="car" src="./images/207.jpg" />' },
-        { val: 8, text: 'Citroen C3', img: '<img id="car" src="./images/c3.png" />' },
-        { val: 9, text: 'Peugeot 207', img: '<img id="car" src="./images/207.jpg" />' },
-        { val: 10, text: 'Opel Corsa', img: '<img id="car" src="./images/corsa.png" />' },
-        { val: 11, text: 'Ford Fiesta', img: '<img id="car" src="./images/fiesta.png" />' },
-        { val: 12, text: 'Seat Ibiza', img: '<img id="car" src="./images/ibiza.png" />' },
-        { val: 13, text: 'Toyota Yaris 207', img: '<img id="car" src="./images/yaris.png" />' },
-        { val: 14, text: 'Skoda Fabia', img: '<img id="car" src="./images/fabia.jpg" />' },
-        { val: 15, text: 'Skoda Fabia Universal', img: '<img id="car" src="./images/fabia2.jpg" />' },
-        { val: 16, text: 'Seat Ibiza Universal', img: '<img id="car" src="./images/ibiza2.jpg" />' },
-        { val: 17, text: 'Smart Electric', img: '<img id="car" src="./images/smart_electric.png" />' },
-        { val: 18, text: 'Volkswagen Up Elecric', img: '<img id="car" src="./images/electric-up.png" />' }
+        { val: 0, text: 'Smart ForTwo', img: '<img id="car" src="./images/for-two.jpg" />', marka: "Smart ForTwo" },
+        { val: 1, text: 'Smart ForFour', img: '<img id="car" src="./images/for-four.png" />', marka: "Smart ForFour" },
+        { val: 2, text: 'Toyota Aygo', img: '<img id="car" src="./images/aygo.jpg" />', marka: "Toyota Aygo" },
+        { val: 3, text: 'Peugeot 107', img: '<img id="car" src="./images/107.jpg" />', marka: 'Peugeot 107' },
+        { val: 4, text: 'Nissan Micra', img: '<img id="car" src="./images/micra.jpg" />', marka: 'Nissan Micra' },
+        { val: 5, text: 'Volkswagen Up', img: '<img id="car" src="./images/up.jpg" />', marka: 'Volkswagen Up' },
+        { val: 6, text: 'Citroen C1', img: '<img id="car" src="./images/citroen.png" />', marka: 'Citroen C1' },
+        { val: 7, text: 'Peugeot 207', img: '<img id="car" src="./images/207.jpg" />', marka: 'Peugeot 207' },
+        { val: 8, text: 'Citroen C3', img: '<img id="car" src="./images/c3.png" />', marka: 'Citroen C3' },
+        { val: 9, text: 'Nissan Leaf', img: '<img id="car" src="./images/leaf.jpg" />', marka: 'Nissan Leaf' },
+        { val: 10, text: 'Opel Corsa', img: '<img id="car" src="./images/corsa.png" />', marka: 'Opel Corsa' },
+        { val: 11, text: 'Ford Fiesta', img: '<img id="car" src="./images/fiesta.png" />', marka: 'Ford Fiesta' },
+        { val: 12, text: 'Seat Ibiza', img: '<img id="car" src="./images/ibiza.png" />', marka: 'Seat Ibiza' },
+        { val: 13, text: 'Toyota Yaris 207', img: '<img id="car" src="./images/yaris.png" />', marka: 'Toyota Yaris 207' },
+        { val: 14, text: 'Skoda Fabia', img: '<img id="car" src="./images/fabia.jpg" />', marka: 'Skoda Fabia' },
+        { val: 15, text: 'Skoda Fabia Universal', img: '<img id="car" src="./images/fabia2.jpg" />', marka: 'Skoda Fabia Universal' },
+        { val: 16, text: 'Seat Ibiza Universal', img: '<img id="car" src="./images/ibiza2.jpg" />', marka: 'Seat Ibiza Universal' },
+        { val: 17, text: 'Smart Electric', img: '<img id="car" src="./images/smart_electric.png" />', marka: 'Smart Electric' },
+        { val: 18, text: 'Volkswagen Up Elecric', img: '<img id="car" src="./images/electric-up.png" />', marka: 'Volkswagen Up Elecric' }
     ];
 
     const sel = $('<select>').appendTo('.select-car');
@@ -82,7 +82,7 @@ $(document).ready(function() {
 
     $('select').on("change", function() {
         var val = $(this).val();
-        var price = cars[val].price;
+        var marka = cars[val].marka;
         $('.car-price').remove();
         var carPrice = $('<p>').appendTo('.booking-car-preview').addClass('car-price');
 
@@ -92,7 +92,7 @@ $(document).ready(function() {
         $('.booking-car-preview > img').remove();
         // $('.car-price').val().price.remove();
         $('.booking-car-preview').prepend(cars[val].img);
-        $('.car-price').text(cars[val].price);
+        $('.car-price').text(cars[val].marka);
 
     });
 
