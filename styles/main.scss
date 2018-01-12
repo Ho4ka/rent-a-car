@@ -1422,6 +1422,7 @@
         }
     }
     
+    // MEDIA QUERY STYLES FOR PAGE CONTACT
     @media screen and (max-width: 992px) {
         // footer {
         //     margin-top: 0 !important;
@@ -1429,21 +1430,6 @@
         .contact-img {
             margin-top: 57px;
         }
-        // .contact-img-wrapper .contact-img .adress {
-        //     display: flex;
-        //     flex-direction: column;
-        //     width: 400px;
-        //     background-position: center;
-        //     ;
-        //     h3 {
-        //         text-align: center;
-        //         left: 0;
-        //         color: rgb(171, 171, 171);
-        //     }
-        //     p {
-        //         text-align: center;
-        //     }
-        // }
         .contact-img-wrapper .contact-img .adress {
             left: 0%;
             width: 350px;
@@ -1456,14 +1442,14 @@
     //Price styles 
     section {
         background: -webkit-linear-gradient(left, #84c3e9, #84c3e9);
-        background: linear-gradient(to right, #95c264, #f8be45);
+        background: linear-gradient(to right, #535859, #7db442);
         font-family: 'Roboto', sans-serif;
         margin: 60px;
         h1 {
             font-size: 30px;
             color: #fff;
             text-transform: uppercase;
-            font-weight: 300;
+            font-weight: 900;
             text-align: center;
             margin-bottom: 15px;
         }
@@ -1509,5 +1495,15 @@
         }
          ::-webkit-scrollbar-thumb {
             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+    }
+    
+    @media screen and (max-width: 992px) {
+        section {
+            margin: 0;
+            margin-top: 60px;
+            th {
+                font-size: 14px;
+            }
         }
     }
