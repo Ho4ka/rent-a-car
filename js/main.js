@@ -97,4 +97,25 @@ $(document).ready(function() {
     });
 
 
+
+    $('.btn-send').on('click', toggleBtn);
+
+
+    function toggleBtn() {
+        btn = this;
+        btn.classList.add('is-active');
+
+        setTimeout(function() {
+            btn.classList.remove('is-active');
+        }, 2500)
+    }
+
+
+
+    // '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
+    $(window).on("load resize ", function() {
+        var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+        $('.tbl-header').css({ 'padding-right': scrollWidth });
+    }).resize();
+
 });
