@@ -16,12 +16,31 @@
     header {
         height: 100px;
         display: flex;
-        justify-content: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        // justify-content: center;
+        .lozung {
+            width: 33.3%;
+        }
         .logo-container {
             position: relative;
             bottom: 30px;
+            width: 33.3%;
+            margin: 0 auto;
             .logo {
                 width: 250px;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+        .phone-container {
+            display: flex;
+            flex-direction: column;
+            width: 33.3%;
+            text-align: center;
+            color: #53585a;
+            img {
+                width: 50px;
+                margin: 0 auto;
             }
         }
     }
@@ -149,6 +168,16 @@
         padding: 0;
         -webkit-text-size-adjust: none;
         z-index: 102;
+        .phone-container {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            img {
+                width: 50px;
+                margin: 0 auto;
+            }
+        }
     }
     /* Makes sure that everything is 100% height */
     
@@ -247,7 +276,7 @@
     #drawer ul a {
         display: block;
         padding: 10px;
-        color: #5c5c5c;
+        color: #252424;
         text-decoration: none;
     }
     
@@ -549,6 +578,17 @@
     
     // MEDIA QUERY STYLES FOR MAIN PAGE 
     @media screen and (max-width: 992px) {
+        header {
+            .phone-container {
+                display: none;
+            }
+            .logo-container {
+                width: 100%;
+            }
+            .lozung {
+                display: none;
+            }
+        }
         .swiper-container {
             height: auto;
             margin-top: 25px !important;
