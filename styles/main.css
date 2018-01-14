@@ -11,8 +11,7 @@ a {
 
 header {
   height: 100px;
-  display: flex;
-  font-family: Georgia, "Times New Roman", Times, serif; }
+  display: flex; }
   header .lozung {
     width: 33.3%; }
   header .logo-container {
@@ -29,7 +28,13 @@ header {
     flex-direction: column;
     width: 33.3%;
     text-align: center;
-    color: #53585a; }
+    color: #53585a;
+    margin-top: 10px;
+    font-size: 20px; }
+    header .phone-container a {
+      color: #53585a; }
+      header .phone-container a i {
+        color: #32a867; }
     header .phone-container img {
       width: 50px;
       margin: 0 auto; }
@@ -1040,11 +1045,12 @@ footer {
       .booking-and-preview-wrapper .booking-wrapper .button-send .btn-send {
         margin: 0 auto;
         position: relative;
-        background-color: #e4fa65;
+        background-color: #f8be45;
         color: #fff;
         border: 1px solid #ccc;
         border-radius: 50px;
         min-width: 200px;
+        margin-top: 40px;
         padding: 10px 0;
         font-size: 16px;
         font-weight: 700;
@@ -1073,7 +1079,7 @@ footer {
           opacity: 0;
           height: 100%;
           overflow: hidden;
-          background-color: #e4fa65;
+          background-color: #f8be45;
           border-radius: 50px;
           transition: width 10ms 600ms ease-in-out, background-color 300ms ease-in, opacity 250ms 300ms ease-in; }
       .booking-and-preview-wrapper .booking-wrapper .button-send .is-active {
@@ -1172,15 +1178,15 @@ footer {
         display: flex;
         width: 100%; }
         .contact-img-wrapper .contact-img .adress .operators img {
-          width: 50px;
-          height: 50px;
+          width: 30px;
+          height: 30px;
           position: relative;
           left: 50px; }
         .contact-img-wrapper .contact-img .adress .operators span {
           display: inline-block;
           position: relative;
           left: 70px;
-          top: 15px;
+          top: 5px;
           color: white; }
       .contact-img-wrapper .contact-img .adress h3 {
         font-size: 30px;
@@ -1254,9 +1260,6 @@ section {
     margin: 0;
     margin-top: 60px; }
     section th {
-      font-size: 14px; }
-
-  footer {
-    margin-top: 0; } }
+      font-size: 14px; } }
 
 /*# sourceMappingURL=main.css.map */
