@@ -492,12 +492,17 @@ footer {
       margin: 0 auto; }
 
 @media screen and (max-width: 992px) {
-  header .phone-container {
-    display: none; }
-  header .logo-container {
-    width: 100%; }
-  header .lozung {
-    display: none; }
+  header {
+    margin-bottom: 110px;
+    flex-direction: column; }
+    header .phone-container {
+      display: none; }
+    header .logo-container {
+      width: 100%;
+      position: static; }
+    header .lozung {
+      width: 100%;
+      position: static; }
 
   .swiper-container {
     height: auto;

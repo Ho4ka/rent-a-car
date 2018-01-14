@@ -595,14 +595,18 @@
     // MEDIA QUERY STYLES FOR MAIN PAGE 
     @media screen and (max-width: 992px) {
         header {
+            margin-bottom: 110px;
+            flex-direction: column;
             .phone-container {
                 display: none;
             }
             .logo-container {
                 width: 100%;
+                position: static;
             }
             .lozung {
-                display: none;
+                width: 100%;
+                position: static;
             }
         }
         .swiper-container {
