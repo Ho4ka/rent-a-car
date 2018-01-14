@@ -1205,7 +1205,8 @@
                 display: flex;
             }
             .form-group-title {
-                background-color: #7db442;
+                background: -webkit-linear-gradient(left, #84c3e9, #84c3e9);
+                background: linear-gradient(to right, #535859, #7db442);
                 color: white;
                 padding: 14px 0;
                 border-radius: 10px;
