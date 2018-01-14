@@ -576,6 +576,7 @@
             width: 33.3%;
             margin: 0 auto;
             img {
+                width: 150px;
                 margin: 0 auto;
                 display: block;
                 margin-top: 10px;
@@ -1456,7 +1457,7 @@
                         position: relative;
                         left: 50px;
                     }
-                    span {
+                    a {
                         display: inline-block;
                         position: relative;
                         left: 70px;

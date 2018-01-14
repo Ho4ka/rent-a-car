@@ -480,6 +480,7 @@ footer {
     width: 33.3%;
     margin: 0 auto; }
     .footer-bottom .footer-logo img {
+      width: 150px;
       margin: 0 auto;
       display: block;
       margin-top: 10px; }
@@ -1190,7 +1191,7 @@ footer {
           height: 30px;
           position: relative;
           left: 50px; }
-        .contact-img-wrapper .contact-img .adress .operators span {
+        .contact-img-wrapper .contact-img .adress .operators a {
           display: inline-block;
           position: relative;
           left: 70px;
