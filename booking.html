@@ -164,134 +164,115 @@
 
         <div class="booking-wrapper">
             <h5 class="form-group-title">Виберіть автомобіль</h5>
-            <form action="POST">
+
+
+            <form method="POST" id="man-form">
                 <label class="select-car">
-              <!-- <select class="form-control" name="" id="">
-                <option selected = "selected" disabled = "disabled" value="">Оберіть авто</option>
-                <option value ="">SMART ForTwo</option>
-                <option value ="">SMART ForFour</option>
-                <option value ="">TOYOTA Aygo </option>
-                <option value ="">PEUGEOT 107</option>
-                <option value ="">NISSAN Micra </option>
-                <option value ="">VOKSWAGEN Up </option>
-                <option value ="">CITROEN C1 </option>
-                <option value ="">PEUGEOT 206 </option>
-                <option value ="">CITROEN C3 </option>
-                <option value ="">OPEL Corsa </option>
-                <option value ="">FORD FIesta </option>
-                <option value ="">SEAT Ibiza </option>
-                <option value ="">TOYOTA Yaris </option>
-                <option value ="">SKODA Fabia </option>
-                <option value ="">SKODA Fabia Universal  </option>
-                <option value ="">SEAT Ibiza Universal  </option>
-                <option value ="">VOLKSWAGEN Up Electric  </option>
-                <option value ="">SMART Electric  </option>
-                <option value ="">NISSAN Leaf  </option>
-              </select> -->
-          </label>
+              </label>
                 <h5 style="width:90%" class="form-group-title">Місто подачі авто</h5>
                 <label class="select-place" for="">
-                    <select style="width:85%" class=" select" name="" id="">
-                            <option selected = "selected" disabled = "disabled" value="">Оберіть місто</option>
-                        <option value="">Львів</option>
-                        <option value="">Тернопіль</option>
-                        <option value="">Ужгород</option>
-                        <option value="">Івано-Франківськ</option>
-                        <option value="">Рівне</option>
-                        <option value="">Луцьк</option>
-                        <option value="">Хмельницький</option>
-                        <option value="">Мукачево</option>
-                        <option value="">Чернівці</option>
-                    </select>
-                </label>
+                        <select style="width:85%" class=" select" name="selectCity" id="selectCity">
+                                <option selected = "selected" disabled = "disabled" value="">Оберіть місто</option>
+                            <option value="">Львів</option>
+                            <option value="">Тернопіль</option>
+                            <option value="">Ужгород</option>
+                            <option value="">Івано-Франківськ</option>
+                            <option value="">Рівне</option>
+                            <option value="">Луцьк</option>
+                            <option value="">Хмельницький</option>
+                            <option value="">Мукачево</option>
+                            <option value="">Чернівці</option>
+                        </select>
+                    </label>
 
                 <h5 style="width:80%" class="form-group-title ">Місце подачі авто</h5>
                 <label class="select-place" for="">
-                    <select style="width:75%" class=" select" name="" id="">
-                            <option selected = "selected" disabled = "disabled" value="">Оберіть місце</option>
-                        <option value="">Аеропорт</option>
-                        <option value="">ЖД вокзал</option>
-                        <option value="">Автовокзал</option>
-                        <option value=""> По місту</option>
-                        <option value="">За межами міста</option>
-                    </select>
-                </label>
+                        <select style="width:75%" class=" select" name="place" id="place">
+                                <option selected = "selected" disabled = "disabled" value="">Оберіть місце</option>
+                            <option value="">Аеропорт</option>
+                            <option value="">ЖД вокзал</option>
+                            <option value="">Автовокзал</option>
+                            <option value=""> По місту</option>
+                            <option value="">За межами міста</option>
+                        </select>
+                    </label>
                 <h5 style="width:75%" class="form-group-title">Дата та час отримання авто.</h5>
                 <!-- <label class="booking-label" for="from">Дата та час отримання авто.</label> -->
                 <div style="width:75%" class="receiving">
                     <i class="fa  fa-2x fa-calendar" aria-hidden="true"></i>
                     <input type="text" value="Виберіть дату" id="from" name="from">
 
-                    <select style="width:80%" class="form-control " name="" id="">
-                        <option selected = "selected" disabled = "disabled" value="">Оберіть час</option>
-                        <option value="">9:00</option>
-                        <option value="">9:30</option>
-                        <option value="">10:00</option>
-                        <option value="">10:30</option>
-                        <option value="">11:00</option>
-                        <option value="">11:30</option>
-                        <option value="">12:30</option>
-                        <option value="">13:00</option>
-                        <option value="">13:30</option>
-                        <option value="">14:00</option>
-                        <option value="">14:30</option>
-                        <option value="">15:00</option>
-                        <option value="">15:00</option>
-                        <option value="">15:30</option>
-                        <option value="">16:00</option>
-                        <option value="">16:30</option>
-                        <option value="">17:00</option>
-                        <option value="">17:30</option>
-                        <option value="">18:00</option>
-                        <option value="">18:30</option>
-                        <option value="">19:30</option>
-                        <option value="">20:00</option>
-                    </select>
+                    <select style="width:80%" class="form-control " name="timeOfRecive" id="timeOfRecive">
+                            <option selected = "selected" disabled = "disabled" value="">Оберіть час</option>
+                            <option value="">9:00</option>
+                            <option value="">9:30</option>
+                            <option value="">10:00</option>
+                            <option value="">10:30</option>
+                            <option value="">11:00</option>
+                            <option value="">11:30</option>
+                            <option value="">12:30</option>
+                            <option value="">13:00</option>
+                            <option value="">13:30</option>
+                            <option value="">14:00</option>
+                            <option value="">14:30</option>
+                            <option value="">15:00</option>
+                            <option value="">15:00</option>
+                            <option value="">15:30</option>
+                            <option value="">16:00</option>
+                            <option value="">16:30</option>
+                            <option value="">17:00</option>
+                            <option value="">17:30</option>
+                            <option value="">18:00</option>
+                            <option value="">18:30</option>
+                            <option value="">19:30</option>
+                            <option value="">20:00</option>
+                        </select>
                 </div>
                 <h5 style="width:85%" class="form-group-title">Дата та час повернення авто.</h5>
                 <!-- <label class="booking-label" for="to">Дата та час повернення авто.</label> -->
                 <div style="width:90%" class="receiving">
                     <i class="fa  fa-2x fa-calendar" aria-hidden="true"></i>
                     <input type="text" value="Виберіть дату" id="to" name="to">
-                    <select class="form-control " name="" id="">
-                        <option selected = "selected" disabled = "disabled" value="">Оберіть час</option>
-                        
-                        <option value="">9:00</option>
-                        <option value="">9:30</option>
-                        <option value="">10:00</option>
-                        <option value="">10:30</option>
-                        <option value="">11:00</option>
-                        <option value="">11:30</option>
-                        <option value="">12:30</option>
-                        <option value="">13:00</option>
-                        <option value="">13:30</option>
-                        <option value="">14:00</option>
-                        <option value="">14:30</option>
-                        <option value="">15:00</option>
-                        <option value="">15:00</option>
-                        <option value="">15:30</option>
-                        <option value="">16:00</option>
-                        <option value="">16:30</option>
-                        <option value="">17:00</option>
-                        <option value="">17:30</option>
-                        <option value="">18:00</option>
-                        <option value="">18:30</option>
-                        <option value="">19:30</option>
-                        <option value="">20:00</option>
-                    </select>
+                    <select class="form-control " name="timeOfReturn" id="timeOfReturn">
+                            <option selected = "selected" disabled = "disabled" value="">Оберіть час</option>
+                            
+                            <option value="">9:00</option>
+                            <option value="">9:30</option>
+                            <option value="">10:00</option>
+                            <option value="">10:30</option>
+                            <option value="">11:00</option>
+                            <option value="">11:30</option>
+                            <option value="">12:30</option>
+                            <option value="">13:00</option>
+                            <option value="">13:30</option>
+                            <option value="">14:00</option>
+                            <option value="">14:30</option>
+                            <option value="">15:00</option>
+                            <option value="">15:00</option>
+                            <option value="">15:30</option>
+                            <option value="">16:00</option>
+                            <option value="">16:30</option>
+                            <option value="">17:00</option>
+                            <option value="">17:30</option>
+                            <option value="">18:00</option>
+                            <option value="">18:30</option>
+                            <option value="">19:30</option>
+                            <option value="">20:00</option>
+                        </select>
                 </div>
                 <h5 style="width:95%" class="form-group-title">Особисті дані</h5>
-                <input type="text" class="booking-label" placeholder="Прізвище ім'я по батькові">
+                <input type="text" class="booking-label" name="name" id="name" placeholder="Прізвище ім'я по батькові">
                 <div class="receiving">
-                    <input type="text" class="hasDatepicker" placeholder="Email">
-                    <input type="text" class="hasDatepicker" placeholder="Телефон">
+                    <input type="text" class="hasDatepicker" id="dateFrom" name="dateFrom" placeholder="Email">
+                    <input type="text" class="hasDatepicker" id="dateTo" name="dateTo" placeholder="Телефон">
                 </div>
-                <textarea type="text" class="comment" placeholder="Коментар"></textarea>
+                <textarea type="text" class="comment" name="commentar" id="commentar" placeholder="Коментар"></textarea>
+                <div class="button-send">
+                    <button type="submit" id="submit" class="btn-send">ЗАМОВИТИ</button>
+                </div>
             </form>
 
-            <div class="button-send">
-                <button class="btn-send">ЗАМОВИТИ</button>
-            </div>
+
         </div>
 
         <div class="booking-car-preview">

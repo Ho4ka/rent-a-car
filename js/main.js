@@ -75,6 +75,7 @@ $(document).ready(function() {
 
     const sel = $('<select>').appendTo('.select-car');
     $(sel).addClass('select');
+    $(sel).attr('id', 'selectCar');
     $(sel).append($('<option>').attr('value', 'Оберіть авто').text('Оберіть авто').attr('selected', 'selected').attr('disabled', 'disabled'));
     $(cars).each(function() {
         sel.append($("<option>").attr('value', this.val).text(this.text));
@@ -107,10 +108,23 @@ $(document).ready(function() {
 
         setTimeout(function() {
             btn.classList.remove('is-active');
-        }, 2500)
+        }, 2500);
     }
 
+    // SENT MESSAGE
 
+    $("#man-form").submit(function() { //устанавливаем событие отправки для формы с id=form
+        var form_data = $(this).serialize(); //собераем все данные из формы
+        $.ajax({
+            type: "POST", //Метод отправки
+            url: "send-call-order.php", //путь до php фаила отправителя
+            data: form_data,
+            success: function() {
+                //код в этом блоке выполняется при успешной отправке сообщения
+                alert("Ваше повідомлення надіслано!");
+            }
+        });
+    });
 
 
 });
