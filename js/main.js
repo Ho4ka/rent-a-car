@@ -51,56 +51,51 @@ $(document).ready(function() {
         }
     });
 
-    const cars = [
-        { val: 0, text: 'Smart ForTwo', img: '<img id="car" src="./images/for-two.jpg" />', marka: "Smart ForTwo" },
-        { val: 1, text: 'Smart ForFour', img: '<img id="car" src="./images/for-four.png" />', marka: "Smart ForFour" },
-        { val: 2, text: 'Toyota Aygo', img: '<img id="car" src="./images/aygo.jpg" />', marka: "Toyota Aygo" },
-        { val: 3, text: 'Peugeot 107', img: '<img id="car" src="./images/107.jpg" />', marka: 'Peugeot 107' },
-        { val: 4, text: 'Nissan Micra', img: '<img id="car" src="./images/micra.jpg" />', marka: 'Nissan Micra' },
-        { val: 5, text: 'Volkswagen Up', img: '<img id="car" src="./images/up.jpg" />', marka: 'Volkswagen Up' },
-        { val: 6, text: 'Citroen C1', img: '<img id="car" src="./images/citroen.png" />', marka: 'Citroen C1' },
-        { val: 7, text: 'Peugeot 207', img: '<img id="car" src="./images/207.jpg" />', marka: 'Peugeot 207' },
-        { val: 8, text: 'Citroen C3', img: '<img id="car" src="./images/c3.png" />', marka: 'Citroen C3' },
-        { val: 9, text: 'Nissan Leaf', img: '<img id="car" src="./images/leaf.jpg" />', marka: 'Nissan Leaf' },
-        { val: 10, text: 'Opel Corsa', img: '<img id="car" src="./images/corsa.png" />', marka: 'Opel Corsa' },
-        { val: 11, text: 'Ford Fiesta', img: '<img id="car" src="./images/fiesta.png" />', marka: 'Ford Fiesta' },
-        { val: 12, text: 'Seat Ibiza', img: '<img id="car" src="./images/ibiza.png" />', marka: 'Seat Ibiza' },
-        { val: 13, text: 'Toyota Yaris 207', img: '<img id="car" src="./images/yaris.png" />', marka: 'Toyota Yaris 207' },
-        { val: 14, text: 'Skoda Fabia', img: '<img id="car" src="./images/fabia.jpg" />', marka: 'Skoda Fabia' },
-        { val: 15, text: 'Skoda Fabia Universal', img: '<img id="car" src="./images/fabia2.jpg" />', marka: 'Skoda Fabia Universal' },
-        { val: 16, text: 'Seat Ibiza Universal', img: '<img id="car" src="./images/ibiza2.jpg" />', marka: 'Seat Ibiza Universal' },
-        { val: 17, text: 'Smart Electric', img: '<img id="car" src="./images/smart_electric.png" />', marka: 'Smart Electric' },
-        { val: 18, text: 'Volkswagen Up Elecric', img: '<img id="car" src="./images/electric-up.png" />', marka: 'Volkswagen Up Elecric' }
+    var cars = [
+        { val: 'Smart ForTwo', text: 'Smart ForTwo', img: '<img id="car" src="./images/for-two.jpg" />', marka: "0" },
+        { val: 'Smart ForFour', text: 'Smart ForFour', img: '<img id="car" src="./images/for-four.png" />', marka: "1" },
+        { val: 'Toyota Aygo', text: 'Toyota Aygo', img: '<img id="car" src="./images/aygo.jpg" />', marka: "2" },
+        { val: 'Peugeot 107', text: 'Peugeot 107', img: '<img id="car" src="./images/107.jpg" />', marka: '3' },
+        { val: 'Nissan Micra', text: 'Nissan Micra', img: '<img id="car" src="./images/micra.jpg" />', marka: '4' },
+        { val: 'Volkswagen Up', text: 'Volkswagen Up', img: '<img id="car" src="./images/up.jpg" />', marka: '5' },
+        { val: 'Citroen C1', text: 'Citroen C1', img: '<img id="car" src="./images/citroen.png" />', marka: '6' },
+        { val: 'Peugeot 207', text: 'Peugeot 207', img: '<img id="car" src="./images/207.jpg" />', marka: '7' },
+        { val: 'Citroen C3', text: 'Citroen C3', img: '<img id="car" src="./images/c3.png" />', marka: '8' },
+        { val: 'Nissan Leaf', text: 'Nissan Leaf', img: '<img id="car" src="./images/leaf.jpg" />', marka: '9' },
+        { val: 'Opel Corsa', text: 'Opel Corsa', img: '<img id="car" src="./images/corsa.png" />', marka: '10' },
+        { val: 'Ford Fiesta', text: 'Ford Fiesta', img: '<img id="car" src="./images/fiesta.png" />', marka: '11' },
+        { val: 'Seat Ibiza', text: 'Seat Ibiza', img: '<img id="car" src="./images/ibiza.png" />', marka: '12' },
+        { val: 'Toyota Yaris 207', text: 'Toyota Yaris 207', img: '<img id="car" src="./images/yaris.png" />', marka: '13' },
+        { val: 'Skoda Fabia', text: 'Skoda Fabia', img: '<img id="car" src="./images/fabia.jpg" />', marka: '14' },
+        { val: 'Skoda Fabia Universal', text: 'Skoda Fabia Universal', img: '<img id="car" src="./images/fabia2.jpg" />', marka: '15' },
+        { val: 'Seat Ibiza Universal', text: 'Seat Ibiza Universal', img: '<img id="car" src="./images/ibiza2.jpg" />', marka: '16' },
+        { val: 'Smart Electric', text: 'Smart Electric', img: '<img id="car" src="./images/smart_electric.png" />', marka: '17' },
+        { val: 'Volkswagen Up Elecric', text: 'Volkswagen Up Elecric', img: '<img id="car" src="./images/electric-up.png" />', marka: '18' }
     ];
 
-    const sel = $('<select>').appendTo('.select-car');
-    $(sel).addClass('select');
-    $(sel).attr('id', 'selectCar');
+    var sel = $('<select>').appendTo('.select-car');
+    $(sel).addClass('select').addClass('option');
+    $(sel).attr('name', 'select-car').attr('id', 'selectCar');
     $(sel).append($('<option>').attr('value', 'Оберіть авто').text('Оберіть авто').attr('selected', 'selected').attr('disabled', 'disabled'));
     $(cars).each(function() {
-        sel.append($("<option>").attr('value', this.val).text(this.text));
+        sel.append($("<option>").attr('value', this.val).text(this.text).attr('data-value', this.marka));
+
+
     });
 
-    $('select').on("change", function() {
-        var val = $(this).val();
-        var marka = cars[val].marka;
+    $('#selectCar').on("change", function() {
+        var val = $(this).find(":selected").data('value'); //val();
+        var marka = cars[val].text;
         $('.car-price').remove();
         var carPrice = $('<p>').appendTo('.booking-car-preview').addClass('car-price');
-
-
-
-
+        $('.car-price').text(marka);
         $('.booking-car-preview > img').remove();
-        // $('.car-price').val().price.remove();
         $('.booking-car-preview').prepend(cars[val].img);
-        $('.car-price').text(cars[val].marka);
-
     });
 
 
 
     $('.btn-send').on('click', toggleBtn);
-
 
     function toggleBtn() {
         btn = this;
@@ -119,10 +114,14 @@ $(document).ready(function() {
             type: "POST", //Метод отправки
             url: "send-call-order.php", //путь до php фаила отправителя
             data: form_data,
+            // error: function() {
+            //     alert('Не надіслано!!!!!!!')
+            // },
             success: function() {
                 //код в этом блоке выполняется при успешной отправке сообщения
                 alert("Ваше повідомлення надіслано!");
             }
+
         });
     });
 
