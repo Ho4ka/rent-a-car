@@ -37,8 +37,14 @@ header {
     width: 33.3%;
     text-align: center;
     color: #53585a;
-    margin-top: 10px;
     font-size: 20px; }
+    header .phone-container .vodafone {
+      position: relative;
+      right: 55px; }
+      header .phone-container .vodafone img {
+        width: 30px;
+        position: relative;
+        top: 10px; }
     header .phone-container a {
       color: #53585a; }
       header .phone-container a i {
@@ -414,6 +420,9 @@ we're going to style the label instead */
       position: relative;
       top: 10px; }
 
+@media screen and (max-width: 992px) {
+  .partners-wrapper form {
+    width: 100%; } }
 footer {
   width: 100%;
   margin-top: 50px;

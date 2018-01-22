@@ -45,8 +45,16 @@
             width: 33.3%;
             text-align: center;
             color: #53585a;
-            margin-top: 10px;
             font-size: 20px;
+            .vodafone {
+                position: relative;
+                right: 55px;
+                img {
+                    width: 30px;
+                    position: relative;
+                    top: 10px;
+                }
+            }
             a {
                 color: #53585a;
                 i {
@@ -429,7 +437,7 @@
     
     // SYLES FOR PARTNERS PAGE 
     .partners-wrapper {
-        background-image: url('../images/drive.jpg');
+        background-image: url("../images/drive.jpg");
         background-size: cover;
         background-position: center;
         width: 100% !important;
@@ -489,6 +497,15 @@
                 box-shadow: 0px 3px 0px #33CC33, 0px 3px 6px rgba(0, 0, 0, .9);
                 position: relative;
                 top: 10px;
+            }
+        }
+    }
+    
+    // Media query for partners page 
+    @media screen and (max-width: 992px) {
+        .partners-wrapper {
+            form {
+                width: 100%;
             }
         }
     }
