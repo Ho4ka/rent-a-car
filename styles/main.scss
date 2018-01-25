@@ -509,6 +509,7 @@ body {
     }
     .form-and-text {
         margin-top: 50px;
+        margin-bottom: 50px;
         form {
             background-image: url("../images/partner.jpg");
             background-size: cover;
@@ -518,6 +519,7 @@ body {
             padding: 20px;
             .sub-main {
                 display: flex;
+                margin-top: 20px;
                 justify-content: center;
                 /*Button Three*/
                 .button-three {
@@ -526,6 +528,8 @@ body {
                     border: none;
                     padding: 20px;
                     width: 200px;
+                    color: #53585a;
+                    font-size: 20px;
                     text-align: center;
                     -webkit-transition-duration: 0.4s;
                     /* Safari */
@@ -581,9 +585,23 @@ body {
 
 // Media query for partners page 
 @media screen and (max-width: 992px) {
+    .partners-img {
+        h1 {
+            top: 120px;
+        }
+    }
     .partners-wrapper {
-        form {
+        width: 100%;
+        padding-left: 0;
+        .partners-description {
+            margin: 0px 10px 10px 40px;
+        }
+        .form-and-text {
             width: 100%;
+            margin-bottom: 0;
+            form {
+                width: 100%;
+            }
         }
     }
 }

@@ -410,7 +410,8 @@ body {
     border-radius: 50%;
     box-sizing: border-box; }
   .partners-wrapper .form-and-text {
-    margin-top: 50px; }
+    margin-top: 50px;
+    margin-bottom: 50px; }
     .partners-wrapper .form-and-text form {
       background-image: url("../images/partner.jpg");
       background-size: cover;
@@ -420,6 +421,7 @@ body {
       padding: 20px; }
       .partners-wrapper .form-and-text form .sub-main {
         display: flex;
+        margin-top: 20px;
         justify-content: center;
         /*Button Three*/ }
         .partners-wrapper .form-and-text form .sub-main .button-three {
@@ -428,6 +430,8 @@ body {
           border: none;
           padding: 20px;
           width: 200px;
+          color: #53585a;
+          font-size: 20px;
           text-align: center;
           -webkit-transition-duration: 0.4s;
           /* Safari */
@@ -471,8 +475,19 @@ body {
   margin-top: 0; }
 
 @media screen and (max-width: 992px) {
-  .partners-wrapper form {
-    width: 100%; } }
+  .partners-img h1 {
+    top: 120px; }
+
+  .partners-wrapper {
+    width: 100%;
+    padding-left: 0; }
+    .partners-wrapper .partners-description {
+      margin: 0px 10px 10px 40px; }
+    .partners-wrapper .form-and-text {
+      width: 100%;
+      margin-bottom: 0; }
+      .partners-wrapper .form-and-text form {
+        width: 100%; } }
 footer {
   width: 100%;
   margin-top: 50px;
