@@ -37,14 +37,8 @@ header {
     width: 33.3%;
     text-align: center;
     color: #53585a;
-    font-size: 20px; }
-    header .phone-container .vodafone {
-      position: relative;
-      right: 55px; }
-      header .phone-container .vodafone img {
-        width: 30px;
-        position: relative;
-        top: 10px; }
+    font-size: 20px;
+    margin-top: 10px; }
     header .phone-container a {
       color: #53585a; }
       header .phone-container a i {
@@ -84,7 +78,7 @@ nav > ul > li a + div {
   display: none;
   font-size: 1rem;
   position: absolute;
-  width: 195px;
+  width: 148px !important;
   z-index: 2111; }
 
 nav > ul > li:hover a + div {
@@ -364,22 +358,21 @@ we're going to style the label instead */
         margin-top: 8px; }
 
 .partners-wrapper {
-  background-image: url("../images/drive.jpg");
-  background-size: cover;
-  background-position: center;
   width: 100% !important;
   padding-left: 0 !important;
-  text-align: center;
-  color: white !important;
-  margin-top: 0 !important; }
-  .partners-wrapper h1 {
-    color: white !important; }
+  text-align: center; }
   .partners-wrapper h2 {
     text-align: center; }
+  .partners-wrapper .partners-description {
+    background-color: #53585a;
+    width: 50%;
+    color: white !important; }
   .partners-wrapper form {
+    background-image: url("../images/drive.jpg");
+    background-size: cover;
+    background-position: center;
     width: 40%;
-    padding: 20px;
-    margin: 0 auto; }
+    padding: 20px; }
     .partners-wrapper form input {
       width: 100%;
       display: block;
@@ -419,6 +412,9 @@ we're going to style the label instead */
       box-shadow: 0px 3px 0px #33CC33, 0px 3px 6px rgba(0, 0, 0, 0.9);
       position: relative;
       top: 10px; }
+
+.partners-footer {
+  margin-top: 0; }
 
 @media screen and (max-width: 992px) {
   .partners-wrapper form {
@@ -1268,7 +1264,8 @@ footer {
         align-items: center;
         margin-top: 10px; }
         .contact-img-wrapper .contact-img .adress .social img {
-          padding: 5px; }
+          padding: 5px;
+          width: 50px; }
       .contact-img-wrapper .contact-img .adress hr {
         border: 0;
         height: 1px;

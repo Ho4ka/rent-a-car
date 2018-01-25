@@ -49,15 +49,9 @@
         </div>
         <div class="phone-container">
             <!-- <img src="images/phone.jpg" alt="phone"> -->
-            <div class="vodafone">
-                <img src="images/viber.png" alt="">
-                <img src="images/telegram.png" alt="">
-                <img src="images/whatsup.png" alt="">
-                <a href="tel:+38-095-003-8664">+38-095-003-8664</a>
-            </div>
+
+            <a href="tel:+38-095-003-8664">+38-095-003-8664</a>
             <a href="tel:+38-096-003-8665">+38-096-003-8665</a>
-
-
             <a href="tel:+38-07-007-9300">+38-073-007-9300</a>
             <a href="mailto: egc.rental@gmail.com"> <i class="fa fa-envelope" aria-hidden="true"></i> egc.rental@gmail.com</a>
             <!-- <span>+38 096 003 8665 </span>
@@ -165,48 +159,64 @@
         </ul>
     </nav>
 
+
+
     <div class="wrapper partners-wrapper">
         <h1 class="h1">ЗДАТИ АВТО В ПРОКАТ</h1>
         <h2>У нас ви можете здати машину на вигідних умовах </h2>
         <div class="patners-text">
             <p>Якщо у вас виникло бажання здавати ваш автомобіль в оренду, заповніть форму нижче. Після отримання інформації ми обовя'зково з вами зв'яжемось.</p>
         </div>
-        <form id="partners-form" method="POST">
+        <div class="partners-description">
+            <p>
 
-            <input type="text" placeholder="Марка вашого автомобіля" name="Виберіть марку" id="">
+                Укладіть договір з компанією EGCars – і отримуйте хороший прибуток за оренду свого авто. Переваги здачі авто в оренду • Стабільний дохід від 300$ до 600$ (за авто економ, компакт класу) від 500$ до 800$ (за авто класу вище) • Всі умови співпраці детально
+                описані в угоді стосовно виплат, звітності, страхування. • Систематичний контроль технічного стану вашого автомобіля. • Авто експлуатується виключно в помірних режимах навантаження але при цьому ви отримуєте максимум вигоди: (прибуток,
+                системний технічний огляд, раціональне використання транспорту) • Можливість постійного стеження місця знаходження вашого авто, пройденого кілометражу, та інше… • Авто може бути у вашому розпорядженні а також є можливість залишати в нашому
+                Автопарку Вимоги до автомобілів: • транспорт не старше 7 років, з пробігом до 70тис.км; • наявність страхівки (якщо немає, допоможемо застрахувати); • повний комплект документів на транспортний засіб; • відсутність юридичних претензій
+                (не в розшуку, не реквізують за кредитом і т.п.); • абсолютна справність усіх систем і вузлів, відсутність серйозних пошкоджень (глибоких подряпин, тріщин, значних сколів). • Наші спеціалісти перед укладанням договору оглядають автомобіль.
+                (У випадку дифектів, які не дають змоги нам прийняти ваше авто для роботи, ми надаємо рекомендації що саме необхідно усунути за для проходження повторного огляду авто!) Обслуговування та контроль технічного стану авто Ми системно проводимо
+                технічне обслуговування всього автопарку. Здавши автомобіль в оренду компанії EGCars, ви забудете про: • клопоти з проходженням техогляду; • страхування і подовження страхових полісів; • регламентні роботи і заміни витратних матеріалів
+                (мастила, омивача, охолоджуючих рідин); • миття та чистку салону; • сезонну зміну покришок. EGCars піклується про безпеку і комфорт своїх клієнтів, тому ваша машина завжди буде в ідеальному стані. При цьому ви залишаєтеся повноправним
+                власником транспортного засобу. Дізнайтеся більше про здачу авто в оренду! Зателефонуйте +38 (095) 003-8664, +38 (096)003-8665, +38 (073)007-9300 або напишіть на e-mail egc.rental@gmail.com щоб дізнатися подробиці та отримати додаткову
+                інформацію. Ваш автомобіль приноситиме гроші – просто влаштуйте його на роботу в Narscars!
 
-            <input type="text" placeholder="Модель" name="marka" id="">
+            </p>
+        </div>
+        <div class="form-and-text">
+            <form id="partners-form" method="POST">
 
-            <input type="text" placeholder="Рік випуску" name="year" id="">
+                <input type="text" required placeholder="Марка вашого автомобіля" name="Виберіть марку" id="">
 
-            <input type="text" placeholder="Пробіг" name="run" id="">
+                <input type="text" required placeholder="Модель" name="marka" id="">
 
-            <input type="text" placeholder="Обєм двигуна" name="engine" id="">
+                <input type="text" required placeholder="Рік випуску" name="year" id="">
 
-            <input type="text" placeholder="Коробка передач" name="transmission" id="">
+                <input type="text" required placeholder="Пробіг" name="run" id="">
 
-            <input type="text" placeholder="Стан автомобіля" name="carCondition" id="">
+                <input type="text" required placeholder="Обєм двигуна" name="engine" id="">
 
-            <input type="text" placeholder="Комплектація" name="completeSet" id="">
+                <input type="text" required placeholder="Коробка передач" name="transmission" id="">
 
-            <input type="text" required placeholder="ФІО" name="fio" id="">
-            <input type="text" required placeholder="Номер телефона" name="phone" id="">
-            <input type="text" required placeholder="E-mail" name="email" id="">
+                <input type="text" required placeholder="Стан автомобіля" name="carCondition" id="">
 
-            <button type="submit" id="submit" class="big-button">Відправити</button>
+                <input type="text" required placeholder="Комплектація" name="completeSet" id="">
 
+                <input type="text" required required placeholder="ФІО" name="fio" id="">
+                <input type="text" required placeholder="Номер телефона" name="phone" id="">
+                <input type="text" required placeholder="E-mail" name="email" id="">
 
+                <button type="submit" id="submit" class="big-button">Відправити</button>
 
+            </form>
 
-
-
-        </form>
+        </div>
 
     </div>
 
 
 
-    <footer>
+    <footer class="partners-footer">
         <div class="footer-copyright">
             <p>© 2017 «Economical Green Cars»</p>
             <p>оренда автомобілів у західному регіоні</p>

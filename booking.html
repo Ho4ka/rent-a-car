@@ -49,12 +49,10 @@
         </div>
         <div class="phone-container">
             <!-- <img src="images/phone.jpg" alt="phone"> -->
-            <div class="vodafone">
-                <img src="images/viber.png" alt="">
-                <img src="images/telegram.png" alt="">
-                <img src="images/whatsup.png" alt="">
-                <a href="tel:+38-095-003-8664">+38-095-003-8664</a>
-            </div>
+
+
+            <a href="tel:+38-095-003-8664">+38-095-003-8664</a>
+
             <a href="tel:+38-096-003-8665">+38-096-003-8665</a>
 
 
@@ -178,7 +176,7 @@
               </label>
                 <h5 style="width:90%" class="form-group-title">Місто подачі авто</h5>
                 <label class="select-place" for="">
-                        <select style="width:85%" class="option" name="selectCity" id="selectCity">
+                        <select style="width:85%" required class="option" name="selectCity" id="selectCity">
                                 <option selected = "selected" disabled = "disabled" value="">Оберіть місто</option>
                             <option value="Львів">Львів</option>
                             <option value="Тернопіль">Тернопіль</option>
@@ -194,7 +192,7 @@
 
                 <h5 style="width:80%" class="form-group-title ">Місце подачі авто</h5>
                 <label class="select-place" for="">
-                        <select style="width:75%" class="option" name="place" id="place">
+                        <select style="width:75%" required class="option" name="place" id="place">
                                 <option selected = "selected" disabled = "disabled" value="">Оберіть місце</option>
                             <option value="Аеропорт">Аеропорт</option>
                             <option value="ЖД Вокзал">ЖД вокзал</option>
@@ -207,9 +205,9 @@
                 <!-- <label class="booking-label" for="from">Дата та час отримання авто.</label> -->
                 <div style="width:75%" class="receiving">
                     <i class="fa  fa-2x fa-calendar" aria-hidden="true"></i>
-                    <input type="text" value="Виберіть дату" id="from" name="from">
+                    <input type="text" required value="Виберіть дату" id="from" name="from">
 
-                    <select style="width:80%" class="form-control " name="timeOfRecive" id="timeOfRecive">
+                    <select style="width:80%" required class="form-control " name="timeOfRecive" id="timeOfRecive">
                             <option selected = "selected" disabled = "disabled" value="">Оберіть час</option>
                             <option value="9:00">9:00</option>
                             <option value="9:30">9:30</option>
@@ -244,7 +242,7 @@
                 <div style="width:90%" class="receiving">
                     <i class="fa  fa-2x fa-calendar" aria-hidden="true"></i>
                     <input type="text" value="Виберіть дату" id="to" name="to">
-                    <select class="form-control " name="timeOfReturn" id="timeOfReturn">
+                    <select class="form-control " required name="timeOfReturn" id="timeOfReturn">
                             <option selected = "selected" disabled = "disabled" value="">Оберіть час</option>
                             
                             <option value="9:00">9:00</option>

@@ -61,21 +61,21 @@ $(document).ready(function() {
         { val: 'Citroen C1', text: 'Citroen C1', img: '<img id="car" src="./images/citroen.png" />', marka: '6' },
         { val: 'Peugeot 207', text: 'Peugeot 207', img: '<img id="car" src="./images/207.jpg" />', marka: '7' },
         { val: 'Citroen C3', text: 'Citroen C3', img: '<img id="car" src="./images/c3.png" />', marka: '8' },
-        { val: 'Nissan Leaf', text: 'Nissan Leaf', img: '<img id="car" src="./images/leaf.jpg" />', marka: '9' },
-        { val: 'Opel Corsa', text: 'Opel Corsa', img: '<img id="car" src="./images/corsa.png" />', marka: '10' },
-        { val: 'Ford Fiesta', text: 'Ford Fiesta', img: '<img id="car" src="./images/fiesta.png" />', marka: '11' },
-        { val: 'Seat Ibiza', text: 'Seat Ibiza', img: '<img id="car" src="./images/ibiza.png" />', marka: '12' },
-        { val: 'Toyota Yaris 207', text: 'Toyota Yaris 207', img: '<img id="car" src="./images/yaris.png" />', marka: '13' },
-        { val: 'Skoda Fabia', text: 'Skoda Fabia', img: '<img id="car" src="./images/fabia.jpg" />', marka: '14' },
-        { val: 'Skoda Fabia Universal', text: 'Skoda Fabia Universal', img: '<img id="car" src="./images/fabia2.jpg" />', marka: '15' },
-        { val: 'Seat Ibiza Universal', text: 'Seat Ibiza Universal', img: '<img id="car" src="./images/ibiza2.jpg" />', marka: '16' },
-        { val: 'Smart Electric', text: 'Smart Electric', img: '<img id="car" src="./images/smart_electric.png" />', marka: '17' },
-        { val: 'Volkswagen Up Elecric', text: 'Volkswagen Up Elecric', img: '<img id="car" src="./images/electric-up.png" />', marka: '18' }
+        { val: 'Opel Corsa', text: 'Opel Corsa', img: '<img id="car" src="./images/corsa.png" />', marka: '9' },
+        { val: 'Ford Fiesta', text: 'Ford Fiesta', img: '<img id="car" src="./images/fiesta.png" />', marka: '10' },
+        { val: 'Seat Ibiza', text: 'Seat Ibiza', img: '<img id="car" src="./images/ibiza.png" />', marka: '11' },
+        { val: 'Toyota Yaris 207', text: 'Toyota Yaris 207', img: '<img id="car" src="./images/yaris.png" />', marka: '12' },
+        { val: 'Skoda Fabia', text: 'Skoda Fabia', img: '<img id="car" src="./images/fabia.jpg" />', marka: '13' },
+        { val: 'Skoda Fabia Universal', text: 'Skoda Fabia Universal', img: '<img id="car" src="./images/fabia2.jpg" />', marka: '14' },
+        { val: 'Seat Ibiza Universal', text: 'Seat Ibiza Universal', img: '<img id="car" src="./images/ibiza2.jpg" />', marka: '15' },
+        { val: 'Smart Electric', text: 'Smart Electric', img: '<img id="car" src="./images/smart_electric.png" />', marka: '16' },
+        { val: 'Volkswagen Up Elecric', text: 'Volkswagen Up Elecric', img: '<img id="car" src="./images/electric-up.png" />', marka: '17' },
+        { val: 'Nissan Leaf', text: 'Nissan Leaf', img: '<img id="car" src="./images/leaf.jpg" />', marka: '18' }
     ];
 
     var sel = $('<select>').appendTo('.select-car');
     $(sel).addClass('select').addClass('option');
-    $(sel).attr('name', 'select-car').attr('id', 'selectCar');
+    $(sel).attr('name', 'select-car').attr('id', 'selectCar').attr('required', true);
     $(sel).append($('<option>').attr('value', 'Оберіть авто').text('Оберіть авто').attr('selected', 'selected').attr('disabled', 'disabled'));
     $(cars).each(function() {
         sel.append($("<option>").attr('value', this.val).text(this.text).attr('data-value', this.marka));
@@ -108,6 +108,22 @@ $(document).ready(function() {
 
     // SENT MESSAGE
 
+    // $("#man-form").submit(function() { //устанавливаем событие отправки для формы с id=form
+    //     var form_data = $(this).serialize(); //собераем все данные из формы
+    //     $.ajax({
+    //         type: "POST", //Метод отправки
+    //         url: "send-call-order.php", //путь до php фаила отправителя
+    //         data: form_data,
+    //         // error: function() {
+    //         //     alert('Не надіслано!!!!!!!')
+    //         // },
+    //         success: function() {
+    //             //код в этом блоке выполняется при успешной отправке сообщения
+    //             alert("Ваше повідомлення надіслано!");
+    //         }
+
+    //     });
+    // });
     $("#man-form").submit(function() { //устанавливаем событие отправки для формы с id=form
         var form_data = $(this).serialize(); //собераем все данные из формы
         $.ajax({
@@ -120,9 +136,11 @@ $(document).ready(function() {
             success: function() {
                 //код в этом блоке выполняется при успешной отправке сообщения
                 alert("Ваше повідомлення надіслано!");
+                location.reload();
             }
 
         });
+        return false;
     });
 
 
