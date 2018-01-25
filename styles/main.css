@@ -418,6 +418,42 @@ body {
       width: 90%;
       margin: 0 auto;
       padding: 20px; }
+      .partners-wrapper .form-and-text form .sub-main {
+        display: flex;
+        justify-content: center;
+        /*Button Three*/ }
+        .partners-wrapper .form-and-text form .sub-main .button-three {
+          position: relative;
+          background-color: #f39c12;
+          border: none;
+          padding: 20px;
+          width: 200px;
+          text-align: center;
+          -webkit-transition-duration: 0.4s;
+          /* Safari */
+          transition-duration: 0.4s;
+          text-decoration: none;
+          overflow: hidden; }
+        .partners-wrapper .form-and-text form .sub-main .button-three:hover {
+          background: #fff;
+          box-shadow: 0px 2px 10px 5px #97B1BF;
+          color: #000; }
+        .partners-wrapper .form-and-text form .sub-main .button-three:after {
+          content: "";
+          background: #f1c40f;
+          display: block;
+          position: absolute;
+          padding-top: 300%;
+          padding-left: 350%;
+          margin-left: -20px !important;
+          margin-top: -120%;
+          opacity: 0;
+          transition: all 0.8s; }
+        .partners-wrapper .form-and-text form .sub-main .button-three:active:after {
+          padding: 0;
+          margin: 0;
+          opacity: 1;
+          transition: 0s; }
       .partners-wrapper .form-and-text form .row {
         display: flex; }
       .partners-wrapper .form-and-text form input {
@@ -430,36 +466,6 @@ body {
         font-size: 15px;
         color: black;
         transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
-      .partners-wrapper .form-and-text form .big-button {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        position: relative;
-        background-color: #ccffcc;
-        color: #000000;
-        font-family: 'Sansita One', cursive;
-        font-size: 26px;
-        font-weight: 500;
-        padding: 20px;
-        height: 150px;
-        width: 270px;
-        text-decoration: none;
-        text-transform: capitalize;
-        -webkit-border-radius: 12px;
-        -moz-border-radius: 12px;
-        border-radius: 12px;
-        -webkit-box-shadow: 0px 15px 0px #009933, 0px 10px 25px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: 0px 15px 0px #009933, 0px 10px 25px rgba(0, 0, 0, 0.5);
-        box-shadow: 0px 15px 0px #009933, 0px 10px 25px rgba(0, 0, 0, 0.5);
-        margin: 50px auto;
-        border-color: #66ff66;
-        border-width: 10px;
-        border-radius: 40px 100px 100px 100px;
-        padding: 20px; }
-      .partners-wrapper .form-and-text form .big-button:active {
-        box-shadow: 0px 3px 0px #33CC33, 0px 3px 6px rgba(0, 0, 0, 0.9);
-        position: relative;
-        top: 10px; }
 
 .partners-footer {
   margin-top: 0; }
