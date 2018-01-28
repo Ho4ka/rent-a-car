@@ -207,7 +207,7 @@
                     <i class="fa  fa-2x fa-calendar" aria-hidden="true"></i>
                     <input type="text" required value="Виберіть дату" id="from" name="from">
 
-                    <select style="width:80%" required class="form-control " name="timeOfRecive" id="timeOfRecive">
+                    <select style="width:80%" required class="form-control option" name="timeOfRecive" id="timeOfRecive">
                             <option selected = "selected" disabled = "disabled" value="">Оберіть час</option>
                             <option value="9:00">9:00</option>
                             <option value="9:30">9:30</option>
@@ -241,8 +241,8 @@
                 <!-- <label class="booking-label" for="to">Дата та час повернення авто.</label> -->
                 <div style="width:90%" class="receiving">
                     <i class="fa  fa-2x fa-calendar" aria-hidden="true"></i>
-                    <input type="text" value="Виберіть дату" id="to" name="to">
-                    <select class="form-control " required name="timeOfReturn" id="timeOfReturn">
+                    <input type="text" value="Виберіть дату" class="option" id="to" name="to">
+                    <select class="form-control  option" required name="timeOfReturn" id="timeOfReturn">
                             <option selected = "selected" disabled = "disabled" value="">Оберіть час</option>
                             
                             <option value="9:00">9:00</option>
@@ -274,15 +274,16 @@
                         </select>
                 </div>
                 <h5 style="width:95%" class="form-group-title">Особисті дані</h5>
-                <input type="text" class="booking-label" required name="name" id="name" placeholder="Прізвище ім'я по батькові">
+                <input type="text" class="booking-label option" required name="name" id="name" placeholder="Прізвище ім'я по батькові">
                 <div class="receiving">
-                    <input type="text" class="hasDatepicker" required id="dateFrom" name="dateFrom" placeholder="Email">
-                    <input type="text" class="hasDatepicker" required id="dateTo" name="dateTo" placeholder="Телефон">
+                    <input type="text" class="hasDatepicker option" required id="dateFrom" name="dateFrom" placeholder="Email">
+                    <input type="text" class="hasDatepicker option" required id="dateTo" name="dateTo" placeholder="Телефон">
                 </div>
-                <textarea type="text" class="comment" name="commentar" id="commentar" placeholder="Коментар"></textarea>
-                <div class="button-send">
+                <textarea type="text" class="comment " name="commentar" id="commentar" placeholder="Коментар"></textarea>
+                <button type="submit" id="submit" class="button-two btn-send"><span>Забронювати</span></button>
+                <!-- <div class="button-send">
                     <button type="submit" id="submit" class="btn-send">ЗАМОВИТИ</button>
-                </div>
+                </div> -->
             </form>
 
 
@@ -322,7 +323,152 @@
     </div>
 
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
 
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+
+            </div>
+            <div class="modal-body">
+                <h2>Заявка успішно відправлена, очікуйте звінка оператора!</h2>
+
+            </div>
+
+            <img class="logo" src="images/logo.png" width="150px">
+        </div>
+
+    </div>
+    <style>
+        /* The Modal (background) */
+        
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+        /* Modal Content */
+        
+        .modal-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 25%;
+            height: 220px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+        /* Add Animation */
+        
+        @-webkit-keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+        
+        @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+        /* The Close Button */
+        
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .modal-header {
+            padding: 2px 16px;
+            background: #535859;
+            color: white;
+            display: flex;
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+        
+        .modal-body {
+            padding: 2px 16px;
+            margin-top: 45px;
+            background: -webkit-linear-gradient(left, #84c3e9, #84c3e9);
+            background: linear-gradient(to right, #535859, #7db442);
+            color: white;
+        }
+    </style>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("submit");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.esm.js"></script>

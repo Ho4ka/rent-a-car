@@ -106,24 +106,7 @@ $(document).ready(function() {
         }, 2500);
     }
 
-    // SENT MESSAGE
 
-    // $("#man-form").submit(function() { //устанавливаем событие отправки для формы с id=form
-    //     var form_data = $(this).serialize(); //собераем все данные из формы
-    //     $.ajax({
-    //         type: "POST", //Метод отправки
-    //         url: "send-call-order.php", //путь до php фаила отправителя
-    //         data: form_data,
-    //         // error: function() {
-    //         //     alert('Не надіслано!!!!!!!')
-    //         // },
-    //         success: function() {
-    //             //код в этом блоке выполняется при успешной отправке сообщения
-    //             alert("Ваше повідомлення надіслано!");
-    //         }
-
-    //     });
-    // });
     $("#man-form").submit(function() { //устанавливаем событие отправки для формы с id=form
         var form_data = $(this).serialize(); //собераем все данные из формы
         $.ajax({
@@ -152,3 +135,29 @@ $(window).on("load resize ", function() {
     var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
     $('.tbl-header').css({ 'padding-right': scrollWidth });
 }).resize();
+
+var sas = $('#submit').on('click', checkInput);
+// var sas = document.getElementById('submit').addEventListener('click', checkInput);
+
+
+function checkInput() {
+    var check = $('.option');
+
+    console.log(check);
+
+    $(check).each(function(val, i) {
+        var bla = $(i).val();
+        console.log(bla);
+
+
+        if (bla == '') {
+            $('submit').attr('disabled', true);
+
+        }
+
+
+
+    });
+
+
+}

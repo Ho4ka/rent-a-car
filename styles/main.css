@@ -1107,7 +1107,8 @@ footer {
   .booking-and-preview-wrapper .booking-wrapper {
     width: 60%;
     padding-top: 30px;
-    margin: 0 110px; }
+    margin: 0 110px;
+    /*Button Two*/ }
     .booking-and-preview-wrapper .booking-wrapper .option {
       width: 95%;
       margin-bottom: 15px;
@@ -1196,61 +1197,39 @@ footer {
       border: 1px solid rgba(0, 0, 0, 0.15);
       border-radius: .25rem;
       transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
-    .booking-and-preview-wrapper .booking-wrapper .button-send {
-      display: flex; }
-      .booking-and-preview-wrapper .booking-wrapper .button-send .btn-send {
-        margin: 0 auto;
-        position: relative;
-        background-color: #f8be45;
-        color: #fff;
-        border: 1px solid #ccc;
-        border-radius: 50px;
-        min-width: 200px;
-        margin-top: 40px;
-        padding: 10px 0;
-        font-size: 16px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        outline: none;
-        box-shadow: 1px 1px 4px 1px transparent;
-        transition: box-shadow 300ms ease-in-out; }
-        .booking-and-preview-wrapper .booking-wrapper .button-send .btn-send:hover {
-          box-shadow: 1px 1px 6px 1px #ccc; }
-        .booking-and-preview-wrapper .booking-wrapper .button-send .btn-send:before {
-          content: 'Відіслано';
-          position: absolute;
-          z-index: 500;
-          transform: rotateX(180deg);
-          color: #fff;
-          letter-spacing: 1px;
-          opacity: 0;
-          transition: none; }
-        .booking-and-preview-wrapper .booking-wrapper .button-send .btn-send:after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 20%;
-          opacity: 0;
-          height: 100%;
-          overflow: hidden;
-          background-color: #f8be45;
-          border-radius: 50px;
-          transition: width 10ms 600ms ease-in-out, background-color 300ms ease-in, opacity 250ms 300ms ease-in; }
-      .booking-and-preview-wrapper .booking-wrapper .button-send .is-active {
-        transform: rotateX(180deg);
-        background-color: #fff;
-        box-shadow: 1px 1px 4px 1px transparent !important;
-        transition: transform 300ms ease-in-out, background-color 300ms ease-in; }
-        .booking-and-preview-wrapper .booking-wrapper .button-send .is-active:after {
-          opacity: 1;
-          background-color: green;
-          width: 100%;
-          transition: width 1s 0.5s ease-in-out, background-color 300ms 300ms ease-in, opacity 250ms 300ms ease-in; }
-        .booking-and-preview-wrapper .booking-wrapper .button-send .is-active:before {
-          opacity: 1;
-          transition: opacity 250ms 1.5s ease-in; }
+    .booking-and-preview-wrapper .booking-wrapper .button-two {
+      background-color: #FDBE2A;
+      font-weight: 400;
+      border: none;
+      width: 200px;
+      transition: all 0.5s;
+      margin: 0 auto;
+      display: block;
+      margin-top: 30px;
+      padding: 14px 0;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      text-align: center;
+      letter-spacing: 2px;
+      font-size: 20px;
+      color: white; }
+    .booking-and-preview-wrapper .booking-wrapper .button-two span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s; }
+    .booking-and-preview-wrapper .booking-wrapper .button-two span:after {
+      content: '»';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s; }
+    .booking-and-preview-wrapper .booking-wrapper .button-two:hover span {
+      padding-right: 25px; }
+    .booking-and-preview-wrapper .booking-wrapper .button-two:hover span:after {
+      opacity: 1;
+      right: 0; }
   .booking-and-preview-wrapper .booking-car-preview {
     width: 40%;
     margin-top: 220px;
@@ -1271,6 +1250,10 @@ footer {
       width: 100%; }
 
 @media screen and (max-width: 992px) {
+  .modal .modal-content {
+    width: 80%;
+    height: 270px; }
+
   .booking-h1 {
     /* padding-top: 50px; */
     color: #fffef6;
