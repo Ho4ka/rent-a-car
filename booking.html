@@ -192,7 +192,7 @@
 
                 <h5 style="width:80%" class="form-group-title ">Місце подачі авто</h5>
                 <label class="select-place" for="">
-                        <select style="width:75%" required class="option" name="place" id="place">
+                        <select  required class="option" name="place" id="place">
                                 <option selected = "selected" disabled = "disabled" value="">Оберіть місце</option>
                             <option value="Аеропорт">Аеропорт</option>
                             <option value="ЖД Вокзал">ЖД вокзал</option>
@@ -241,8 +241,8 @@
                 <!-- <label class="booking-label" for="to">Дата та час повернення авто.</label> -->
                 <div style="width:90%" class="receiving">
                     <i class="fa  fa-2x fa-calendar" aria-hidden="true"></i>
-                    <input type="text" value="Виберіть дату" class="option" id="to" name="to">
-                    <select class="form-control  option" required name="timeOfReturn" id="timeOfReturn">
+                    <input type="text" required value="Виберіть дату" class="option" id="to" name="to">
+                    <select class="form-control option" required name="timeOfReturn" id="timeOfReturn">
                             <option selected = "selected" disabled = "disabled" value="">Оберіть час</option>
                             
                             <option value="9:00">9:00</option>
@@ -333,7 +333,7 @@
 
             </div>
             <div class="modal-body">
-                <h2>Заявка успішно відправлена, очікуйте звінка оператора!</h2>
+                <h2>Заявка успішно відправлена, очікуйте дзвінка оператора!</h2>
 
             </div>
 
@@ -372,13 +372,16 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
             position: relative;
             background-color: #fefefe;
             margin: auto;
             padding: 0;
             border: 1px solid #888;
             width: 25%;
-            height: 220px;
+            height: 250px;
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+            border-radius: 15px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             -webkit-animation-name: animatetop;
             -webkit-animation-duration: 0.4s;
@@ -453,9 +456,7 @@
         var span = document.getElementsByClassName("close")[0];
 
         // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
+
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
@@ -471,9 +472,10 @@
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.esm.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.esm.bundle.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.esm.bundle.js"></script> -->
     <script src="./js/main.js"></script>
+    <script src="./js/test-localStorage.js"></script>
 
 
 </body>

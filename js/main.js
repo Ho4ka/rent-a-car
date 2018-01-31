@@ -84,7 +84,7 @@ $(document).ready(function() {
     });
 
     $('#selectCar').on("change", function() {
-        var val = $(this).find(":selected").data('value'); //val();
+        var val = $(this).find(":selected").data('value');
         var marka = cars[val].text;
         $('.car-price').remove();
         var carPrice = $('<p>').appendTo('.booking-car-preview').addClass('car-price');
@@ -95,16 +95,6 @@ $(document).ready(function() {
 
 
 
-    $('.btn-send').on('click', toggleBtn);
-
-    function toggleBtn() {
-        btn = this;
-        btn.classList.add('is-active');
-
-        setTimeout(function() {
-            btn.classList.remove('is-active');
-        }, 2500);
-    }
 
 
     $("#man-form").submit(function() { //устанавливаем событие отправки для формы с id=form
@@ -118,8 +108,9 @@ $(document).ready(function() {
             // },
             success: function() {
                 //код в этом блоке выполняется при успешной отправке сообщения
-                alert("Ваше повідомлення надіслано!");
-                location.reload();
+                var vall = $('.option').val();
+                vall = '';
+                console.log(vall);
             }
 
         });
@@ -136,28 +127,16 @@ $(window).on("load resize ", function() {
     $('.tbl-header').css({ 'padding-right': scrollWidth });
 }).resize();
 
-var sas = $('#submit').on('click', checkInput);
-// var sas = document.getElementById('submit').addEventListener('click', checkInput);
 
 
-function checkInput() {
-    var check = $('.option');
-
-    console.log(check);
-
-    $(check).each(function(val, i) {
-        var bla = $(i).val();
-        console.log(bla);
-
-
-        if (bla == '') {
-            $('submit').attr('disabled', true);
-
-        }
-
-
-
+$("#submit").click(function() {
+    var empty = $(this).parent().find("input").filter(function() {
+        return this.value === "";
     });
+    if (empty.length) {
+        btn.onclick = function() {
+            modal.style.display = "block";
+        };
 
-
-}
+    }
+});
