@@ -1377,8 +1377,22 @@ footer {
         width: 60%;
         padding-top: 30px;
         margin: 0 110px;
-        .option {
+        #selectCar {
             width: 95%;
+        }
+        .style90 {
+            width: 90%;
+        }
+        .style85 {
+            width: 85%;
+        }
+        .style80 {
+            width: 80%;
+        }
+        .style75 {
+            width: 75%;
+        }
+        .option {
             margin-bottom: 15px;
             display: block;
             padding: .5rem .75rem;
@@ -1393,7 +1407,7 @@ footer {
             transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
         }
         .receiving {
-            width: 100%;
+            // width: 100%;
             display: flex;
         }
         .form-group-title {

@@ -1,21 +1,37 @@
 $(document).ready(function() {
-    console.log("ready!");
+
+
+
     $("#test").click(function() {
 
         window.sessionStorage.setItem('car', 'Smart ForFour');
         var b = window.sessionStorage.getItem('car');
 
-        sessionStorage.removeItem('car');
 
+        document.getElementById('name').innerHTML = b;
 
-        $('#name').text(b);
-
-        alert(b);
-        console.log(b);
     });
+
+
 });
+// $(document).ready(function() {
+//     if (localStorage) {
 
-// window.localStorage.setItem("value1", true);
+//         $("#test").click(function() {
+//             // Get input name
+//             var lastName = $("#test").val();
 
-// var yourvar = window.localStorage.getItem("value1");
-// console.log(yourvar);
+//             // Store data
+//             sessionStorage.setItem("last_name", lastName);
+//             alert("Your last name is saved.");
+
+//             $("#name").click(function() {
+//                 // Retrieve data
+//                 alert("Hi, " + localStorage.getItem("first_name") + " " + sessionStorage.getItem("last_name"));
+//             });
+//         });
+//     } else {
+//         alert("Sorry, your browser do not support local storage.");
+//     }
+
+// });

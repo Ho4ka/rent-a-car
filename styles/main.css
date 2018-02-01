@@ -1109,8 +1109,17 @@ footer {
     padding-top: 30px;
     margin: 0 110px;
     /*Button Two*/ }
+    .booking-and-preview-wrapper .booking-wrapper #selectCar {
+      width: 95%; }
+    .booking-and-preview-wrapper .booking-wrapper .style90 {
+      width: 90%; }
+    .booking-and-preview-wrapper .booking-wrapper .style85 {
+      width: 85%; }
+    .booking-and-preview-wrapper .booking-wrapper .style80 {
+      width: 80%; }
+    .booking-and-preview-wrapper .booking-wrapper .style75 {
+      width: 75%; }
     .booking-and-preview-wrapper .booking-wrapper .option {
-      width: 95%;
       margin-bottom: 15px;
       display: block;
       padding: .5rem .75rem;
@@ -1124,7 +1133,6 @@ footer {
       border-radius: .25rem;
       transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
     .booking-and-preview-wrapper .booking-wrapper .receiving {
-      width: 100%;
       display: flex; }
     .booking-and-preview-wrapper .booking-wrapper .form-group-title {
       background: -webkit-linear-gradient(left, #84c3e9, #84c3e9);
