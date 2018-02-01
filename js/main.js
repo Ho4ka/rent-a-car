@@ -108,9 +108,7 @@ $(document).ready(function() {
             // },
             success: function() {
                 //код в этом блоке выполняется при успешной отправке сообщения
-                var vall = $('.option').val();
-                vall = '';
-                console.log(vall);
+
             }
 
         });
@@ -126,8 +124,6 @@ $(window).on("load resize ", function() {
     var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
     $('.tbl-header').css({ 'padding-right': scrollWidth });
 }).resize();
-
-
 
 $("#submit").click(function() {
     var empty = $(this).parent().find("input").filter(function() {

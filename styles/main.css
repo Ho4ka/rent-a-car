@@ -1280,6 +1280,12 @@ footer {
     width: 90%;
     margin: 0 auto;
     flex-direction: column; }
+    .booking-and-preview-wrapper .style75,
+    .booking-and-preview-wrapper .style90,
+    .booking-and-preview-wrapper .style80,
+    .booking-and-preview-wrapper .style85,
+    .booking-and-preview-wrapper .style95 {
+      width: 100% !important; }
     .booking-and-preview-wrapper .booking-wrapper {
       width: 100%;
       margin: 0 auto; }

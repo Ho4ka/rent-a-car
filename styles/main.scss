@@ -1577,6 +1577,14 @@ footer {
         width: 90%;
         margin: 0 auto;
         flex-direction: column;
+        .style75,
+        .style90,
+        .style80,
+        .style85,
+        .style95,
+        {
+            width: 100%!important;
+        }
         .booking-wrapper {
             width: 100%;
             margin: 0 auto;
