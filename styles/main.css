@@ -30,7 +30,9 @@ header {
     header .logo-container .logo {
       width: 250px;
       margin: 0 auto;
-      display: block; }
+      display: block;
+      top: 10px;
+      position: relative; }
   header .phone-container {
     display: flex;
     flex-direction: column;
@@ -38,7 +40,7 @@ header {
     text-align: center;
     color: #53585a;
     font-size: 20px;
-    margin-top: 10px; }
+    margin-top: 20px; }
     header .phone-container a {
       color: #53585a; }
       header .phone-container a i {
@@ -57,7 +59,13 @@ header {
   background-color: #53585a;
   z-index: 1;
   position: relative;
-  top: 15px; }
+  top: 35px; }
+
+.main-nav .flag {
+  width: 50px; }
+
+.main-nav a {
+  align-self: center; }
 
 nav > ul > li {
   flex: 0 1 auto;
@@ -108,7 +116,6 @@ nav > ul > li > a {
   color: #fff;
   display: flex;
   font-size: 1rem;
-  line-height: 20px;
   font-weight: 200;
   letter-spacing: 1px;
   padding: 1rem 1.5rem;
@@ -624,7 +631,7 @@ footer {
 
 @media screen and (max-width: 992px) {
   header {
-    margin-bottom: 110px;
+    margin-bottom: 120px;
     flex-direction: column; }
     header .phone-container {
       display: none; }

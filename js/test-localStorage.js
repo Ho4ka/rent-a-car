@@ -1,34 +1,34 @@
-$(document).ready(function() {
+// $(document).ready(function() {
 
 
 
-    $("#test").click(function() {
+//     $("#test").click(function() {
 
-        window.sessionStorage.setItem('car', 'Smart ForFour');
-        var b = window.sessionStorage.getItem('car');
+//         window.sessionStorage.setItem('car', 'Smart ForFour');
+//         var b = window.sessionStorage.getItem('car');
+//         console.log(b);
+
+//         alert(b);
+
+//     });
 
 
-        document.getElementById('name').innerHTML = b;
-
-    });
-
-
-});
+// });
 // $(document).ready(function() {
 //     if (localStorage) {
 
 //         $("#test").click(function() {
 //             // Get input name
-//             var lastName = $("#test").val();
+//             var lastName = 'Smart ForFour';
 
 //             // Store data
 //             sessionStorage.setItem("last_name", lastName);
 //             alert("Your last name is saved.");
 
-//             $("#name").click(function() {
-//                 // Retrieve data
-//                 alert("Hi, " + localStorage.getItem("first_name") + " " + sessionStorage.getItem("last_name"));
-//             });
+
+//             // Retrieve data
+//             alert("Hi, " + localStorage.getItem("first_name") + " " + sessionStorage.getItem("last_name"));
+
 //         });
 //     } else {
 //         alert("Sorry, your browser do not support local storage.");
