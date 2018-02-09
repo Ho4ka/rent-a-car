@@ -108,6 +108,8 @@ $(document).ready(function() {
             // },
             success: function() {
                 //код в этом блоке выполняется при успешной отправке сообщения
+                modal.style.display = "block";
+                var a = $('.option').val('');
 
             }
 
@@ -125,14 +127,14 @@ $(window).on("load resize ", function() {
     $('.tbl-header').css({ 'padding-right': scrollWidth });
 }).resize();
 
-$("#submit").click(function() {
-    var empty = $(this).parent().find("input").filter(function() {
-        return this.value === "";
-    });
-    if (empty.length) {
-        btn.onclick = function() {
-            modal.style.display = "block";
-        };
+// $("#submit").click(function() {
+//     var empty = $(this).parent().find("input").filter(function() {
+//         return this.value === "";
+//     });
+//     if (empty.length) {
+//         btn.onclick = function() {
 
-    }
-});
+//         };
+
+//     }
+// });

@@ -35,3 +35,14 @@
 //     }
 
 // });
+
+// $(document).ready(function() {
+//     $('#submit').click(function() {
+//         $('.option').val('');
+//         $('.booking-car-preview').css('display', 'hidden');
+//         $('option').prop('selected', function() {
+//             return this.defaultSelected;
+//         });
+//     });
+
+// });
