@@ -9,6 +9,11 @@ ul li {
 a {
   text-decoration: none; }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
+
 header {
   height: 100px;
   display: flex; }
@@ -49,7 +54,12 @@ header {
       width: 50px;
       margin: 0 auto; }
 
+.main-nav {
+  width: 100%;
+  display: flex; }
+
 .main-nav > ul {
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -61,8 +71,21 @@ header {
   position: relative;
   top: 35px; }
 
+.main-nav .flag-container {
+  width: 10%;
+  /* display: flex; */
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #53585a;
+  z-index: 1;
+  position: relative;
+  top: 35px; }
 .main-nav .flag {
-  width: 50px; }
+  width: 40px;
+  margin-right: 5px; }
 
 .main-nav a {
   align-self: center; }
@@ -115,10 +138,10 @@ nav > ul > li > a {
   align-items: center;
   color: #fff;
   display: flex;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 200;
   letter-spacing: 1px;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.4rem;
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   transition: all linear 0.1s; }
@@ -134,8 +157,7 @@ nav > ul > li > a > div > span {
 
 @media (min-width: 990px) {
   nav > ul > li > a {
-    max-width: 500px;
-    line-height: 2rem; }
+    max-width: 500px; }
 
   nav > ul > li > a > div > span {
     margin: 4px 0 0; } }
@@ -227,6 +249,10 @@ body {
   overflow-y: scroll;
   padding: 20px;
   -webkit-overflow-scrolling: touch; }
+  #drawer .flag-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
 
 /* checked styles (menu open state) */
 #drawer-toggle:checked ~ #drawer-toggle-label {
@@ -256,7 +282,8 @@ body {
   display: block;
   padding: 10px;
   color: #252424;
-  text-decoration: none; }
+  text-decoration: none;
+  text-align: center; }
 
 #drawer ul a:hover {
   color: white; }
