@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112402879-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112402879-1');
+    </script>
+    <meta name="yandex-verification" content="f122f1298ac87095" />
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Бронювання автомобілів компанії Eg-cars. Eg-cars. Economical Green Cars. Бронювання в західному регіоні України. Забронювати авто.">
-    <meta name="keywords" content=" eg-cars, egcars, парк авто, прокат авто, ореда автомобілей у Львові, бронювання ">
+    <meta name="keywords" content=" eg-cars, egcars, парк авто, прокат авто, ореда автомобілів у Львові, бронювання ">
 
     <link rel="stylesheet" href="styles/main.css">
     <style>
@@ -35,13 +49,16 @@
         </div>
         <div class="phone-container">
             <!-- <img src="images/phone.jpg" alt="phone"> -->
-            <a href="tel:+38-096-003-8665">+38-096-003-8665</a>
+
+
             <a href="tel:+38-095-003-8664">+38-095-003-8664</a>
+
+            <a href="tel:+38-096-003-8665">+38-096-003-8665</a>
+
+
             <a href="tel:+38-07-007-9300">+38-073-007-9300</a>
             <a href="mailto: egc.rental@gmail.com"> <i class="fa fa-envelope" aria-hidden="true"></i> egc.rental@gmail.com</a>
-            <!-- <span>+38 096 003 8665 </span>
-            <span>+38 095 003 8664 </span>
-            <span> +38 073 007 9300 </span> -->
+
         </div>
 
     </header>
@@ -50,18 +67,28 @@
         <label for="drawer-toggle" id="drawer-toggle-label"></label>
         <nav id="drawer">
             <img class="logo" src="images/logo.png">
-            <ul>
+              <div class="flag-container">
+                <a href="http://en.egcars.com.ua/booking.html"> <img class="flag" width="50px" src="images/britain.png"></a>
+                <a href="http://egcars.com.ua/booking.html"> <img class="flag" width="50px" src="images/ua.png"></a>
+            </div>
+           <ul>
                 <li><a href="park.html">ПАРК АВТО</a></li>
+                <hr>
                 <li><a href="price.html">ЦІНИ</a></li>
+                <hr>
                 <li><a href="booking.html">БРОНЮВАННЯ</a></li>
+                <hr>
                 <li><a href="conditions.html">УМОВИ ПРОКАТУ</a></li>
-                <li><a href="contact.html">ТРАНСФЕРИ</a></li>
+                <hr>
+                <li><a href="partners.html">ПАРТНЕРАМ</a></li>
+                <hr>
                 <li><a href="faq.html">FAQ</a></li>
+                <hr>
                 <li><a href="contact.html">КОНТАКТИ</a></li>
 
             </ul>
             <div class="phone-container">
-                <img src="images/phone.jpg" alt="">
+               
                 <span>+38 096 003 8665 </span>
                 <span>+38 095 003 8664 </span>
                 <span> +38 073 007 9300 </span>
@@ -118,9 +145,9 @@
                 </a>
             </li>
             <li>
-                <a href="/forum">
+                <a href="partners.html">
                     <div>
-                        ТРАНСФЕРИ
+                        ПАРТНЕРАМ
 
                     </div>
                 </a>
@@ -141,143 +168,137 @@
                     </div>
                 </a>
             </li>
-        </ul>
+           </ul>
+            <div class="flag-container">
+            <a href="http://en.egcars.com.ua/booking.html"> <img class="flag" src="images/britain.png"></a>
+            <a href="http://egcars.com.ua/booking.html"> <img class="flag" src="images/ua.png"></a>
+        </div>
     </nav>
 
-    <h1 class="booking-h1">БРОНЮВАННЯ АВТОМОБІЛЯ</h1>
+    <h1 class="h1">БРОНЮВАННЯ АВТОМОБІЛЯ</h1>
     <div class="booking-and-preview-wrapper">
 
 
         <div class="booking-wrapper">
             <h5 class="form-group-title">Виберіть автомобіль</h5>
-            <form action="POST">
+
+
+            <form method="POST" id="man-form">
                 <label class="select-car">
-              <!-- <select class="form-control" name="" id="">
-                <option selected = "selected" disabled = "disabled" value="">Оберіть авто</option>
-                <option value ="">SMART ForTwo</option>
-                <option value ="">SMART ForFour</option>
-                <option value ="">TOYOTA Aygo </option>
-                <option value ="">PEUGEOT 107</option>
-                <option value ="">NISSAN Micra </option>
-                <option value ="">VOKSWAGEN Up </option>
-                <option value ="">CITROEN C1 </option>
-                <option value ="">PEUGEOT 206 </option>
-                <option value ="">CITROEN C3 </option>
-                <option value ="">OPEL Corsa </option>
-                <option value ="">FORD FIesta </option>
-                <option value ="">SEAT Ibiza </option>
-                <option value ="">TOYOTA Yaris </option>
-                <option value ="">SKODA Fabia </option>
-                <option value ="">SKODA Fabia Universal  </option>
-                <option value ="">SEAT Ibiza Universal  </option>
-                <option value ="">VOLKSWAGEN Up Electric  </option>
-                <option value ="">SMART Electric  </option>
-                <option value ="">NISSAN Leaf  </option>
-              </select> -->
-          </label>
-                <h5 style="width:90%" class="form-group-title">Місто подачі авто</h5>
+              </label>
+                <h5 class="form-group-title style90">Місто подачі авто</h5>
                 <label class="select-place" for="">
-                    <select style="width:85%" class=" select" name="" id="">
-                            <option selected = "selected" disabled = "disabled" value="">Оберіть місто</option>
-                        <option value="">Львів</option>
-                        <option value="">Тернопіль</option>
-                        <option value="">Ужгород</option>
-                        <option value="">Івано-Франківськ</option>
-                        <option value="">Рівне</option>
-                        <option value="">Луцьк</option>
-                        <option value="">Хмельницький</option>
-                        <option value="">Мукачево</option>
-                        <option value="">Чернівці</option>
-                    </select>
-                </label>
+                        <select required class="option style85" name="selectCity" id="selectCity">
+                                <option selected = "selected " disabled = "disabled" value="">Оберіть місто</option>
+                            <option value="Львів">Львів</option>
+                            <option value="Тернопіль">Тернопіль</option>
+                            <option value="Ужгород">Ужгород</option>
+                            <option value="Івано-Франківськ">Івано-Франківськ</option>
+                            <option value="Рівне">Рівне</option>
+                            <option value="Луцьк">Луцьк</option>
+                            <option value="Хмельницький">Хмельницький</option>
+                            <option value="Мукачево">Мукачево</option>
+                            <option value="Чернівці">Чернівці</option>
+                        </select>
+                    </label>
 
-                <h5 style="width:80%" class="form-group-title ">Місце подачі авто</h5>
+                <h5 class="form-group-title style80 ">Місце подачі авто</h5>
                 <label class="select-place" for="">
-                    <select style="width:75%" class=" select" name="" id="">
-                            <option selected = "selected" disabled = "disabled" value="">Оберіть місце</option>
-                        <option value="">Аеропорт</option>
-                        <option value="">ЖД вокзал</option>
-                        <option value="">Автовокзал</option>
-                        <option value=""> По місту</option>
-                        <option value="">За межами міста</option>
-                    </select>
-                </label>
-                <h5 style="width:75%" class="form-group-title">Дата та час отримання авто.</h5>
+                        <select  required class="option style75" name="place" id="place">
+                                <option selected = "selected" disabled = "disabled" value="">Оберіть місце</option>
+                            <option value="Аеропорт">Аеропорт</option>
+                            <option value="ЖД Вокзал">ЖД вокзал</option>
+                            <option value="Автовокзал">Автовокзал</option>
+                            <option value="По місту"> По місту</option>
+                            <option value=" За межами міста">За межами міста</option>
+                        </select>
+                    </label>
+                <h5 class="form-group-title style75">Дата та час отримання авто.</h5>
                 <!-- <label class="booking-label" for="from">Дата та час отримання авто.</label> -->
-                <div style="width:75%" class="receiving">
+                <div class="receiving style80">
                     <i class="fa  fa-2x fa-calendar" aria-hidden="true"></i>
-                    <input type="text" value="Виберіть дату" id="from" name="from">
+                    <input type="text" class="option" required placeholder="Виберіть дату" id="from" name="from">
 
-                    <select style="width:80%" class="form-control " name="" id="">
-                        <option selected = "selected" disabled = "disabled" value="">Оберіть час</option>
-                        <option value="">9:00</option>
-                        <option value="">9:30</option>
-                        <option value="">10:00</option>
-                        <option value="">10:30</option>
-                        <option value="">11:00</option>
-                        <option value="">11:30</option>
-                        <option value="">12:30</option>
-                        <option value="">13:00</option>
-                        <option value="">13:30</option>
-                        <option value="">14:00</option>
-                        <option value="">14:30</option>
-                        <option value="">15:00</option>
-                        <option value="">15:00</option>
-                        <option value="">15:30</option>
-                        <option value="">16:00</option>
-                        <option value="">16:30</option>
-                        <option value="">17:00</option>
-                        <option value="">17:30</option>
-                        <option value="">18:00</option>
-                        <option value="">18:30</option>
-                        <option value="">19:30</option>
-                        <option value="">20:00</option>
-                    </select>
+                    <select required class="form-control option" name="timeOfRecive" id="timeOfRecive">
+                            <option selected = "selected" disabled = "disabled" value="">Оберіть час</option>
+                            <option value="9:00">9:00</option>
+                            <option value="9:30">9:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                        </select>
                 </div>
-                <h5 style="width:85%" class="form-group-title">Дата та час повернення авто.</h5>
+                <h5 class="form-group-title style85">Дата та час повернення авто.</h5>
                 <!-- <label class="booking-label" for="to">Дата та час повернення авто.</label> -->
-                <div style="width:90%" class="receiving">
+                <div class="receiving style90">
                     <i class="fa  fa-2x fa-calendar" aria-hidden="true"></i>
-                    <input type="text" value="Виберіть дату" id="to" name="to">
-                    <select class="form-control " name="" id="">
-                        <option selected = "selected" disabled = "disabled" value="">Оберіть час</option>
-                        
-                        <option value="">9:00</option>
-                        <option value="">9:30</option>
-                        <option value="">10:00</option>
-                        <option value="">10:30</option>
-                        <option value="">11:00</option>
-                        <option value="">11:30</option>
-                        <option value="">12:30</option>
-                        <option value="">13:00</option>
-                        <option value="">13:30</option>
-                        <option value="">14:00</option>
-                        <option value="">14:30</option>
-                        <option value="">15:00</option>
-                        <option value="">15:00</option>
-                        <option value="">15:30</option>
-                        <option value="">16:00</option>
-                        <option value="">16:30</option>
-                        <option value="">17:00</option>
-                        <option value="">17:30</option>
-                        <option value="">18:00</option>
-                        <option value="">18:30</option>
-                        <option value="">19:30</option>
-                        <option value="">20:00</option>
-                    </select>
+                    <input type="text" placeholder="Виберіть дату" required class="option" id="to" name="to">
+                    <select class="form-control option" required name="timeOfReturn" id="timeOfReturn">
+                            <option selected = "selected" disabled = "disabled" value="">Оберіть час</option>
+                            
+                            <option value="9:00">9:00</option>
+                            <option value="9:30">9:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                        </select>
                 </div>
-                <h5 style="width:95%" class="form-group-title">Особисті дані</h5>
-                <input type="text" class="booking-label" placeholder="Прізвище ім'я по батькові">
+                <h5 class="form-group-title">Особисті дані</h5>
+                <input type="text" class="booking-label option" required name="name" id="name" placeholder="Прізвище ім'я по батькові">
                 <div class="receiving">
-                    <input type="text" class="hasDatepicker" placeholder="Email">
-                    <input type="text" class="hasDatepicker" placeholder="Телефон">
+                    <input type="text" class="hasDatepicker option" required id="dateFrom" name="dateFrom" placeholder="Email">
+                    <input type="text" class="hasDatepicker option" required id="dateTo" name="dateTo" placeholder="Телефон">
                 </div>
-                <textarea type="text" class="comment" placeholder="Коментар"></textarea>
+                <textarea type="text" class="comment option" name="commentar" id="commentar" placeholder="Коментар"></textarea>
+                <button type="submit" id="submit" class="button-two btn-send "><span>Забронювати</span></button>
+                <!-- <div class="button-send">
+                    <button type="submit" id="submit" class="btn-send">ЗАМОВИТИ</button>
+                </div> -->
             </form>
 
-            <div class="button-send">
-                <button class="btn-send">ЗАМОВИТИ</button>
-            </div>
+
         </div>
 
         <div class="booking-car-preview">
@@ -314,12 +335,159 @@
     </div>
 
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
 
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+
+            </div>
+            <div class="modal-body">
+                <h2>Заявка успішно відправлена, очікуйте дзвінка оператора!</h2>
+
+            </div>
+
+            <img class="logo" src="images/logo.png" width="150px">
+        </div>
+
+    </div>
+    <style>
+        /* The Modal (background) */
+        
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+        /* Modal Content */
+        
+        .modal-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 25%;
+            height: 250px;
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+        /* Add Animation */
+        
+        @-webkit-keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+        
+        @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+        /* The Close Button */
+        
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .modal-header {
+            padding: 2px 16px;
+            background: #535859;
+            color: white;
+            display: flex;
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+        
+        .modal-body {
+            padding: 2px 16px;
+            margin-top: 45px;
+            background: -webkit-linear-gradient(left, #84c3e9, #84c3e9);
+            background: linear-gradient(to right, #535859, #7db442);
+            color: white;
+        }
+    </style>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("submit");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.esm.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.esm.bundle.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.esm.bundle.js"></script> -->
     <script src="./js/main.js"></script>
+    <script src="./js/test-localStorage.js"></script>
 
 
 </body>
