@@ -20,13 +20,13 @@ header {
   header .lozung {
     width: 33.3%;
     text-align: center;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Dancing Script", cursive;
     font-size: 25px;
     color: green;
     letter-spacing: 1px;
     display: block;
     position: relative;
-    top: 35px; }
+    top: 45px; }
   header .logo-container {
     position: relative;
     bottom: 30px;
@@ -125,9 +125,9 @@ nav > ul > li a + div > ul > li {
 nav > ul > li a + div > ul > li > a {
   color: rgba(255, 255, 255, 0.9);
   display: block;
-  font-size: .75rem;
+  font-size: 0.75rem;
   letter-spacing: 1.5px;
-  padding: .25rem 1.5rem;
+  padding: 0.25rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase; }
 
@@ -150,7 +150,7 @@ nav > ul > li > a > div > span {
   color: rgba(255, 255, 255, 0.75);
   display: block;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-style: italic;
   line-height: 1rem;
   max-width: 260px; }
@@ -432,7 +432,7 @@ body {
   .partners-wrapper .partners-description ul {
     margin-bottom: 20px; }
   .partners-wrapper .partners-description li::before {
-    content: '';
+    content: "";
     display: block;
     position: relative;
     /* left: 70px; */
@@ -474,7 +474,7 @@ body {
           overflow: hidden; }
         .partners-wrapper .form-and-text form .sub-main .button-three:hover {
           background: #fff;
-          box-shadow: 0px 2px 10px 5px #97B1BF;
+          box-shadow: 0px 2px 10px 5px #97b1bf;
           color: #000; }
         .partners-wrapper .form-and-text form .sub-main .button-three:after {
           content: "";
@@ -503,7 +503,7 @@ body {
         text-align: center;
         font-size: 15px;
         color: black;
-        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
 
 .partners-footer {
   margin-top: 0; }
@@ -560,36 +560,36 @@ footer {
   footer .download:before,
   footer .download a:after,
   footer .download a:before {
-    background-color: #CEDD3E; }
+    background-color: #cedd3e; }
   footer .download:hover {
-    color: #CEDD3E; }
+    color: #cedd3e; }
   footer .features:after,
   footer .features:before,
   footer .features a:after,
   footer .features a:before {
-    background-color: #F27132; }
+    background-color: #f27132; }
   footer .features:hover {
-    color: #F27132; }
+    color: #f27132; }
   footer .method:after,
   footer .method:before,
   footer .method a:after,
   footer .method a:before {
-    background-color: #85C3E9; }
+    background-color: #85c3e9; }
   footer .method:hover {
-    color: #85C3E9; }
+    color: #85c3e9; }
   footer .purchase:after,
   footer .purchase:before,
   footer .purchase a:after,
   footer .purchase a:before {
-    background-color: #FDBE2A; }
+    background-color: #fdbe2a; }
   footer .purchase:hover {
-    color: #FDBE2A; }
+    color: #fdbe2a; }
   footer .nav-list li:after,
   footer .nav-list li:before,
   footer .nav-list a:before,
   footer .nav-list a:after {
     position: absolute;
-    content: '';
+    content: "";
     border-radius: 4px; }
   footer .nav-list li:after,
   footer .nav-list li:before {
@@ -734,7 +734,7 @@ footer {
   .conditions-wrapper-block ul {
     margin-bottom: 20px; }
   .conditions-wrapper-block li::before {
-    content: '';
+    content: "";
     display: block;
     position: relative;
     /* left: 70px; */
@@ -783,6 +783,11 @@ footer {
 
   .faq-img {
     height: 250px !important; } }
+.price-section .h1-box {
+  margin: 40px 0px;
+  width: 100%;
+  display: inline-block; }
+
 .price-wrapper-img {
   display: flex;
   justify-content: center;
@@ -811,30 +816,30 @@ footer {
   .price-wrapper-img .download:before,
   .price-wrapper-img .download a:after,
   .price-wrapper-img .download a:before {
-    background-color: #CEDD3E; }
+    background-color: #cedd3e; }
   .price-wrapper-img .download:hover {
-    color: #CEDD3E; }
+    color: #cedd3e; }
   .price-wrapper-img .features:after,
   .price-wrapper-img .features:before,
   .price-wrapper-img .features a:after,
   .price-wrapper-img .features a:before {
-    background-color: #F27132; }
+    background-color: #f27132; }
   .price-wrapper-img .features:hover {
-    color: #F27132; }
+    color: #f27132; }
   .price-wrapper-img .method:after,
   .price-wrapper-img .method:before,
   .price-wrapper-img .method a:after,
   .price-wrapper-img .method a:before {
-    background-color: #85C3E9; }
+    background-color: #85c3e9; }
   .price-wrapper-img .method:hover {
-    color: #85C3E9; }
+    color: #85c3e9; }
   .price-wrapper-img .purchase:after,
   .price-wrapper-img .purchase:before,
   .price-wrapper-img .purchase a:after,
   .price-wrapper-img .purchase a:before {
-    background-color: #FDBE2A; }
+    background-color: #fdbe2a; }
   .price-wrapper-img .purchase:hover {
-    color: #FDBE2A; }
+    color: #fdbe2a; }
   .price-wrapper-img .coupe:after,
   .price-wrapper-img .coupe:before,
   .price-wrapper-img .coupe a:after,
@@ -847,7 +852,7 @@ footer {
   .price-wrapper-img .nav-list a:before,
   .price-wrapper-img .nav-list a:after {
     position: absolute;
-    content: '';
+    content: "";
     border-radius: 4px; }
   .price-wrapper-img .nav-list li:after,
   .price-wrapper-img .nav-list li:before {
@@ -1016,7 +1021,7 @@ footer {
   pointer-events: none;
   position: absolute;
   z-index: -1;
-  content: '';
+  content: "";
   top: 120%;
   left: 5%;
   height: 20px;
@@ -1028,7 +1033,7 @@ footer {
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
-  opacity: .4;
+  opacity: 0.4;
   -webkit-transform: translateY(6px);
   -ms-transform: translateY(6px);
   transform: translateY(6px);
@@ -1036,8 +1041,8 @@ footer {
   animation-name: hover-shadow;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
-  -webkit-animation-delay: .3s;
-  animation-delay: .3s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -1058,7 +1063,7 @@ footer {
   0% {
     -webkit-transform: translateY(6px);
     transform: translateY(6px);
-    opacity: .4; }
+    opacity: 0.4; }
   50% {
     -webkit-transform: translateY(3px);
     transform: translateY(3px);
@@ -1066,13 +1071,13 @@ footer {
   100% {
     -webkit-transform: translateY(6px);
     transform: translateY(6px);
-    opacity: .4; } }
+    opacity: 0.4; } }
 @keyframes hover-shadow {
   0% {
     -webkit-transform: translateY(6px);
     -ms-transform: translateY(6px);
     transform: translateY(6px);
-    opacity: .4; }
+    opacity: 0.4; }
   50% {
     -webkit-transform: translateY(3px);
     -ms-transform: translateY(3px);
@@ -1082,7 +1087,7 @@ footer {
     -webkit-transform: translateY(6px);
     -ms-transform: translateY(6px);
     transform: translateY(6px);
-    opacity: .4; } }
+    opacity: 0.4; } }
 @-webkit-keyframes hover {
   50% {
     -webkit-transform: translateY(-3px);
@@ -1100,12 +1105,10 @@ footer {
     -ms-transform: translateY(-6px);
     transform: translateY(-6px); } }
 @media screen and (max-width: 992px) {
-  .price-wrapper-img {
-    padding-top: 57px; }
-    .price-wrapper-img .price-h1 {
-      padding-top: 120px; }
-    .price-wrapper-img img {
-      height: 300px; }
+  .price-wrapper-img .price-h1 {
+    padding-top: 120px; }
+  .price-wrapper-img img {
+    height: 300px; }
 
   .car-wrapper {
     flex-direction: column;
@@ -1116,7 +1119,10 @@ footer {
       height: 100%; }
     .car-wrapper .car {
       width: 90%;
-      margin: 20px auto; } }
+      margin: 20px auto; }
+
+  .price-footer {
+    margin-top: 0; } }
 .h1 {
   padding-top: 50px;
   color: #53585a;
@@ -1156,7 +1162,7 @@ footer {
     .booking-and-preview-wrapper .booking-wrapper .option {
       margin-bottom: 15px;
       display: block;
-      padding: .5rem .75rem;
+      padding: 0.5rem 0.75rem;
       font-size: 1rem;
       line-height: 1.25;
       color: #495057;
@@ -1164,8 +1170,8 @@ footer {
       background-image: none;
       background-clip: padding-box;
       border: 1px solid rgba(0, 0, 0, 0.15);
-      border-radius: .25rem;
-      transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+      border-radius: 0.25rem;
+      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
     .booking-and-preview-wrapper .booking-wrapper .receiving {
       display: flex; }
     .booking-and-preview-wrapper .booking-wrapper .form-group-title {
@@ -1184,7 +1190,7 @@ footer {
       margin-left: 20px;
       display: block;
       width: 50%;
-      padding: .5rem .75rem;
+      padding: 0.5rem 0.75rem;
       font-size: 1rem;
       line-height: 1.25;
       color: #495057;
@@ -1192,8 +1198,8 @@ footer {
       background-image: none;
       background-clip: padding-box;
       border: 1px solid rgba(0, 0, 0, 0.15);
-      border-radius: .25rem;
-      transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+      border-radius: 0.25rem;
+      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
     .booking-and-preview-wrapper .booking-wrapper .booking-label {
       width: 100%;
       display: block;
@@ -1202,13 +1208,13 @@ footer {
       margin-bottom: 15px;
       text-align: center;
       font-size: 20px;
-      transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
     .booking-and-preview-wrapper .booking-wrapper .hasDatepicker {
       display: block;
       margin-bottom: 15px;
       text-align: center;
       width: 50%;
-      padding: .5rem .75rem;
+      padding: 0.5rem 0.75rem;
       font-size: 1rem;
       line-height: 1.25;
       color: #495057;
@@ -1216,8 +1222,8 @@ footer {
       background-image: none;
       background-clip: padding-box;
       border: 1px solid rgba(0, 0, 0, 0.15);
-      border-radius: .25rem;
-      transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+      border-radius: 0.25rem;
+      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
     .booking-and-preview-wrapper .booking-wrapper .fa {
       position: relative;
       right: 3px;
@@ -1229,7 +1235,7 @@ footer {
       padding: 10px !important;
       resize: none;
       width: 100%;
-      padding: .5rem .75rem;
+      padding: 0.5rem 0.75rem;
       font-size: 1rem;
       line-height: 1.25;
       color: #495057;
@@ -1237,10 +1243,10 @@ footer {
       background-image: none;
       background-clip: padding-box;
       border: 1px solid rgba(0, 0, 0, 0.15);
-      border-radius: .25rem;
-      transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+      border-radius: 0.25rem;
+      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
     .booking-and-preview-wrapper .booking-wrapper .button-two {
-      background-color: #FDBE2A;
+      background-color: #fdbe2a;
       font-weight: 400;
       border: none;
       width: 200px;
@@ -1261,7 +1267,7 @@ footer {
       position: relative;
       transition: 0.5s; }
     .booking-and-preview-wrapper .booking-wrapper .button-two span:after {
-      content: '»';
+      content: "»";
       position: absolute;
       opacity: 0;
       top: 0;
@@ -1411,7 +1417,7 @@ footer {
 section {
   background: -webkit-linear-gradient(left, #84c3e9, #84c3e9);
   background: linear-gradient(to right, #535859, #7db442);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 60px;
   /* demo styles */
   @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
@@ -1422,8 +1428,7 @@ section {
     color: #fff;
     text-transform: uppercase;
     font-weight: 900;
-    text-align: center;
-    margin-bottom: 15px; }
+    text-align: center; }
   section table {
     width: 100%;
     table-layout: fixed; }
@@ -1460,6 +1465,8 @@ section {
   section {
     margin: 0;
     margin-top: 60px; }
+    section .h1-box h1 {
+      font-size: 20px; }
     section th {
       font-size: 14px; } }
 

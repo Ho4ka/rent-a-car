@@ -110,11 +110,7 @@ $(document).ready(function() {
                 //код в этом блоке выполняется при успешной отправке сообщения
                 modal.style.display = "block";
                 var a = $('.option').val('');
-<<<<<<< HEAD
-                console.log(a);
-=======
-
->>>>>>> 9019d0414a4c039a25388d827192ac2c56ae7764
+                
             }
 
         });
