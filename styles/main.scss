@@ -2209,9 +2209,13 @@ animation-duration: 0.4s;
 /* The Close Button */
 .close {
   background-image: linear-gradient(to right, #7ed56f, #28b485);
--webkit-background-clip: text;
+
 color: transparent;
-  float: right;
+color: white;
+padding: 10px;
+line-height: 25px;
+height: 50px;
+width: 50px;
   font-size: 50px;
   margin-right: 15px;
   font-weight: bold;
