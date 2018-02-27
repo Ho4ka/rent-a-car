@@ -2229,7 +2229,7 @@ right: 10px;
 
 }
 
-.modal-header {
+.modal-phone-header {
 height: 50px;
 line-height: 45px;
 text-align: center;
@@ -2247,7 +2247,7 @@ font-size: 30px;
 letter-spacing: 7px;
 }
 
-.modal-body {
+.modal-phone-body {
   padding: 2px 16px;
   text-align: center;
     &__numbers {
@@ -2270,7 +2270,7 @@ color: transparent;
 
 }
 
-.modal-footer {
+.modal-phone-footer {
   padding: 2px 16px;
   color: white;
 }

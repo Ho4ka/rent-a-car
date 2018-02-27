@@ -1766,7 +1766,7 @@ section {
   text-decoration: none;
   cursor: pointer; }
 
-.modal-header {
+.modal-phone-header {
   height: 50px;
   line-height: 45px;
   text-align: center;
@@ -1782,10 +1782,10 @@ section {
   font-size: 30px;
   letter-spacing: 7px; }
 
-.modal-body {
+.modal-phone-body {
   padding: 2px 16px;
   text-align: center; }
-  .modal-body__numbers {
+  .modal-phone-body__numbers {
     font-size: 1.8rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -1800,7 +1800,7 @@ section {
   display: block;
   margin: 0 auto; }
 
-.modal-footer {
+.modal-phone-footer {
   padding: 2px 16px;
   color: white; }
 
