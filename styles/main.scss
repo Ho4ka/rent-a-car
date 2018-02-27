@@ -435,6 +435,54 @@ body {
   z-index: 0 !important;
 }
 
+.swiper-container {
+  position: relative;
+}
+
+.book {
+  background: -webkit-linear-gradient(left, #84c3e9, #84c3e9);
+  background: linear-gradient(to right, #535859, #7db442);
+  color: white;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  width: 450px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.22);
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  z-index: 11111;
+
+  &-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 25px;
+
+    font-weight: 200;
+    letter-spacing: 1.5px;
+  
+  }
+
+  &-city {
+    font-family: inherit;
+    color: inherit;
+    font-size: 20px;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rgba(43, 43, 43, 1);
+    margin: 0 auto;
+    /* width: 90%; */
+    display: block;
+    /* border: none; */
+    transition: all 0.3s;
+  }
+}
+
 //     STYLES FOR CONDITIONS-WRAPPER BLOCK
 .conditions-wrapper {
   margin-top: 50px;
