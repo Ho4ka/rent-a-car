@@ -915,7 +915,7 @@ footer {
     border-radius: 15px;
     padding: 10px;
     margin: 10px;
-    transition: transform .3s; }
+    transition: transform 0.3s; }
     .car-wrapper .car:hover {
       transform: translateY(-1.5rem) scale(1.03); }
     .car-wrapper .car table {
@@ -1497,7 +1497,7 @@ section {
   z-index: 200000 !important;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0);
-  transition: visibility .5s; }
+  transition: visibility 0.5s; }
 
 .quick-alo-phone .quick-alo-green .quick-alo-ph-circle {
   border-color: rgba(106, 194, 65, 0.86);
@@ -1512,14 +1512,14 @@ section {
   border: 5px solid rgba(106, 194, 65, 0.86);
   background-color: transparent;
   border-radius: 100%;
-  opacity: .1;
+  opacity: 0.1;
   animation: quick-alo-circle-anim 1.2s infinite ease-in-out;
-  transition: all .5s;
+  transition: all 0.5s;
   transform-origin: 50% 50%; }
 
 .quick-alo-phone .quick-alo-green .quick-alo-ph-circle-fill {
   background-color: #f6ca62;
-  opacity: .75 !important; }
+  opacity: 0.75 !important; }
 
 .quick-alo-ph-circle-fill {
   position: absolute;
@@ -1530,9 +1530,9 @@ section {
   background-color: rgba(106, 194, 65, 0.86);
   border-radius: 100%;
   border: 2px solid transparent;
-  opacity: .1;
+  opacity: 0.1;
   animation: quick-alo-circle-fill-anim 2.3s infinite ease-in-out;
-  transition: all .5s;
+  transition: all 0.5s;
   transform-origin: 50% 50%; }
 
 .quick-alo-phone.quick-alo-green .quick-alo-ph-img-circle {
@@ -1547,7 +1547,7 @@ section {
   background: rgba(106, 194, 65, 0.86) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABrklEQVRYR82XjTEEQRCFX0dABlwEiAARkAEyIAJEoERACETARUAIJwIyeOqptfbm5qeP3lpTdVVXVzPd3/R0v+4zTLxsYv/4XwAkrwDsV6JyZmaLyKj1ESB5AOCpYfzazAQZttYFuDWz8zDvwE8OkNwF8NIwvjCz2SgAMkqSDuOzyDxYqgKSrwB2GhBKxHsHqGtLCiDDJ42Tj2Z27LLu2JQCnAK4a5x7M7Nth23XlhRgE8B74+SemempQtaKEpKsPUPo++sGOYCSIIU7zwJ05ficSLLkV6H/CIn7wEi2GRVkOVwFixEoREE/hz9DsR2TVKkp2zeSsI9bBUNnJNV4bhIA5cFhVCk2B5JCWVYhSEopjwAob6qa4QGQOKkqcj1iJSdIpmoqWEHIhr7Ph1BNgC4haxAPAC7UITPOc1UrCOXR12TlAnBAyKhAdHvPUg4pIn6AAYQc1ebG8QC+LXfD66XHU2HP7yKQlKhGODWu1gCTY/g7wCAaendNyltrRCQOIAERjCc/ejV1V4H3dp2ES4jU1vVJpXxpogoHSEE7oOEIp9G+/3c1OkArcpMDfAIqL6EhVS6JOAAAAABJRU5ErkJggg==") no-repeat center center;
   border-radius: 100%;
   border: 2px solid transparent;
-  opacity: .99;
+  opacity: 0.99;
   animation: quick-alo-circle-img-anim 1s infinite ease-in-out;
   transform-origin: 50% 50%; }
 
@@ -1558,21 +1558,21 @@ section {
 @-moz-keyframes quick-alo-circle-anim {
   0% {
     -moz-transform: rotate(0) scale(0.5) skew(1deg);
-    opacity: .1;
-    -moz-opacity: .1;
-    -webkit-opacity: .1;
+    opacity: 0.1;
+    -moz-opacity: 0.1;
+    -webkit-opacity: 0.1;
     -o-opacity: 0.1; }
   30% {
     -moz-transform: rotate(0) scale(0.7) skew(1deg);
-    opacity: .5;
-    -moz-opacity: .5;
-    -webkit-opacity: .5;
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    -webkit-opacity: 0.5;
     -o-opacity: 0.5; }
   100% {
     -moz-transform: rotate(0) scale(1) skew(1deg);
-    opacity: .6;
-    -moz-opacity: .6;
-    -webkit-opacity: .6;
+    opacity: 0.6;
+    -moz-opacity: 0.6;
+    -webkit-opacity: 0.6;
     -o-opacity: 0.1; } }
 @-webkit-keyframes quick-alo-circle-anim {
   0% {
@@ -1750,6 +1750,7 @@ section {
 /* The Close Button */
 .modalClose {
   background-image: linear-gradient(to right, #7ed56f, #28b485);
+  border-radius: 25px;
   color: transparent;
   color: white;
   padding: 10px;
@@ -1761,7 +1762,7 @@ section {
   font-weight: bold;
   position: absolute;
   right: 10px;
-  transition: all .3s; }
+  transition: all 0.3s; }
 
 .modalClose:hover,
 .modalClose:focus {
@@ -1835,6 +1836,6 @@ section {
 @media screen and (max-width: 992px) {
   .modal-phone-box {
     width: 100%;
-    height: 100%; } }
+    height: 350px; } }
 
 /*# sourceMappingURL=main.css.map */
