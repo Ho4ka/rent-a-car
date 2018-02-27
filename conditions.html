@@ -220,10 +220,73 @@
         <div class="footer-logo">
             <img class="logo" src="images/logo.png" width="150px">
         </div>
-
-
-
     </div>
+
+    <div class='phone'>
+            <a href="#" id="btn-modal" class="">
+                <div class="quick-alo-ph-circle"></div>
+                <div class="quick-alo-ph-circle-fill"></div>
+                <div class="quick-alo-ph-img-circle"></div>
+            </a>
+        </div>
+    
+    <!-- Trigger/Open The Modal -->
+    
+    
+    <!-- The Modal -->
+    <div id="modal-js" class="modal-js">
+    
+      <!-- Modal content -->
+      <div class="modal-phone-box">
+        <div class="modal-phone-header">
+          <span class="modalClose">&times;</span>
+          <!-- <h2 class="modal-heading">Бронюйте</h2> -->
+          <img src="images/logo.png" class="modal-header__logo" alt="Logo">
+        </div>
+        <div class="modal-phone-body">
+    
+               <div> <a class="modal-phone-body__numbers" href="tel:+38-095-003-8664">+38-095-003-8664</a></div>
+               <div><a class="modal-phone-body__numbers" href="tel:+38-096-003-8665">+38-096-003-8665</a></div> 
+               <div><a class="modal-phone-body__numbers" href="tel:+38-07-007-9300">+38-073-007-9300</a></div> 
+               
+        
+        </div>
+    
+        <div class="modal-phone-footer"></div>
+       
+      </div>
+    
+    </div>
+    <script>
+        // Get the modal
+    var modalWindow = document.getElementById('modal-js');
+    
+    // Get the button that opens the modal
+    var modalBtn = document.getElementById("btn-modal");
+    
+    // Get the <span> element that closes the modal
+    var modalSpan = document.getElementsByClassName("modalClose")[0];
+    
+    // When the user clicks on the button, open the modal 
+    modalBtn.onclick = function() {
+        modalWindow.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+            modalSpan.onclick = function() {
+        modalWindow.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modalWindow) {
+            modalWindow.style.display = "none";
+        }
+    }
+    </script>
+       
+    
+
 </body>
 
 </html>

@@ -2207,7 +2207,7 @@ animation-duration: 0.4s;
 }
 
 /* The Close Button */
-.close {
+.modalClose {
   background-image: linear-gradient(to right, #7ed56f, #28b485);
 
 color: transparent;
@@ -2224,8 +2224,8 @@ right: 10px;
  transition: all .3s;
 }
 
-.close:hover,
-.close:focus {
+.modalClose:hover,
+.modalClose:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
