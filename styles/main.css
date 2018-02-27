@@ -1786,17 +1786,16 @@ section {
   padding: 2px 16px;
   text-align: center; }
   .modal-body__numbers {
-    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85));
     font-size: 1.8rem;
     font-weight: 300;
     text-transform: uppercase;
-    color: #fff;
-    padding: 10px;
+    font-weight: 700;
     display: inline-block;
-    margin: 5px;
-    border-radius: 20px; }
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent; }
 
-.modal-footer__logo {
+.modal-header__logo {
   width: 200px;
   display: block;
   margin: 0 auto; }
