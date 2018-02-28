@@ -457,6 +457,105 @@ body {
   -webkit-border-radius: 7px;
   z-index: 11111;
 
+  &-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__input {
+      padding: 10px 20px;
+      position: relative;
+      bottom: 5px;
+      border-radius: 10px;
+    }
+
+    &__select {
+      position: relative;
+      bottom: 1px;
+      font-size: 22px;
+      line-height: 1.25;
+      color: #495057;
+      background-color: #fffef6;
+      font-weight: 300;
+      border: 3px solid rgba(0, 0, 0, 0.15);
+      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    }
+
+    &__button {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding:10px 20px;
+      margin-top: 20px;
+      display: inline-block;
+      border-radius: 10rem;
+      transition: all 0.2s;
+      position: relative;
+      font-size: 1.6rem;
+      border: none;
+      cursor: pointer;
+      background-color: #fff;
+      color: #777;
+      animation: moveInBottom .5s ease-out .75s;
+      animation-fill-mode: backwards;
+
+&::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px  rgba(0, 0 ,0,  20%);
+        &::after {
+          transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0;
+      }
+      }
+
+      &--white {
+        background-color: white;
+        color: grey;
+        &::after {
+            background-color: white;
+        }
+    }
+    & {
+      animation: moveInBottom .5s ease-out .75s;
+      animation-fill-mode: backwards;
+  }
+      
+    }
+
+
+   
+    
+
+
+    @keyframes moveInBottom {
+      0% {
+          opacity: 0;
+          transform: translateY(3rem)
+      }
+      100% {
+          opacity: 1;
+          transform: translate(0);
+      }
+  }
+  }
+
+  &-label {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+
   &-heading {
     text-align: center;
     margin-bottom: 20px;
@@ -465,7 +564,6 @@ body {
 
     font-weight: 200;
     letter-spacing: 1.5px;
-  
   }
 
   &-city {
@@ -534,26 +632,33 @@ body {
   }
 }
 
-.index-form {
-  display: flex ;
-flex-direction: column ;
-align-items: center ;
-}
-
-
 @media screen and (max-width: 992px) {
   .swiper-container {
     height: 450px;
   }
 
   .swiper-container img {
-  height: 450px;
+    height: 450px;
   }
 
-.book {
-  width: 90%;
-}
+  .book {
+    width: 90%;
 
+     &-form__input {
+       width: 80%;
+       
+     }
+
+     &-form__select {
+       width: 100%;
+       margin-top: 20px;
+     }
+
+     &-form__button {
+       padding: 10px 10px;
+       font-size: 22px;
+     }
+  }
 }
 
 // SYLES FOR PARTNERS PAGE

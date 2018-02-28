@@ -372,6 +372,76 @@ body {
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
   z-index: 11111; }
+  .book-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .book-form__input {
+      padding: 10px 20px;
+      position: relative;
+      bottom: 5px;
+      border-radius: 10px; }
+    .book-form__select {
+      position: relative;
+      bottom: 1px;
+      font-size: 22px;
+      line-height: 1.25;
+      color: #495057;
+      background-color: #fffef6;
+      font-weight: 300;
+      border: 3px solid rgba(0, 0, 0, 0.15);
+      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+    .book-form__button {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      display: inline-block;
+      border-radius: 10rem;
+      transition: all 0.2s;
+      position: relative;
+      font-size: 1.6rem;
+      border: none;
+      cursor: pointer;
+      background-color: #fff;
+      color: #777;
+      animation: moveInBottom .5s ease-out .75s;
+      animation-fill-mode: backwards; }
+      .book-form__button::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s; }
+      .book-form__button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px black; }
+        .book-form__button:hover::after {
+          transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0; }
+      .book-form__button--white {
+        background-color: white;
+        color: grey; }
+        .book-form__button--white::after {
+          background-color: white; }
+      .book-form__button {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards; }
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+  .book-label {
+    font-size: 20px;
+    margin: 20px 0; }
   .book-heading {
     text-align: center;
     margin-bottom: 20px;
@@ -431,11 +501,6 @@ body {
       .conditions-wrapper .conditions .payment ul {
         margin-top: 8px; }
 
-.index-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
 @media screen and (max-width: 992px) {
   .swiper-container {
     height: 450px; }
@@ -444,7 +509,15 @@ body {
     height: 450px; }
 
   .book {
-    width: 90%; } }
+    width: 90%; }
+    .book-form__input {
+      width: 80%; }
+    .book-form__select {
+      width: 100%;
+      margin-top: 20px; }
+    .book-form__button {
+      padding: 10px 10px;
+      font-size: 22px; } }
 .partners-img {
   background-image: url("../images/partner1.jpg");
   background-size: cover;
