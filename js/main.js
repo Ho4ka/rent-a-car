@@ -19,6 +19,9 @@ var swiper = new Swiper(".swiper-container", {
 
 $(document).ready(function() {
     
+
+    
+
     
   $(function() {
     var dateFormat = "mm/dd/yy",

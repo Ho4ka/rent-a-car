@@ -1778,8 +1778,8 @@ section {
   flex-direction: column;
   justify-content: space-between;
   background-color: #fefefe;
-  width: 70%;
-  left: 50%;
+  width: 30%;
+  left: 75%;
   top: 50%;
   transform: translate(-50%, -50%);
   -webkit-animation-name: slideIn;
