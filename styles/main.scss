@@ -447,7 +447,7 @@ body {
   padding-right: 35px;
   padding-top: 35px;
   padding-bottom: 50px;
-  width: 85%;
+  width: 450px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -532,6 +532,22 @@ body {
       }
     }
   }
+}
+
+
+@media screen and (max-width: 992px) {
+  .swiper-container {
+    height: 450px;
+  }
+
+  .swiper-container img {
+  height: 450px;
+  }
+
+.book {
+  width: 90%;
+}
+
 }
 
 // SYLES FOR PARTNERS PAGE
