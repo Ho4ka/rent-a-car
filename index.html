@@ -23,7 +23,7 @@
     <meta name="keywords" content="egcars, egcars, парк авто, прокат авто, ореда автомобілів у Львові, прокат автомобілів у західному регіоні. ">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.css">
-  
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 
     
     <style>
@@ -222,7 +222,7 @@
                 <h5 class="book-heading">Місто подачі авто</h5>
             <form action="" class="book-form">               
                
-                <label class="select-place" for=""> </label>
+                    <div class="styled-select">
                 <select required class="book-city option" name="" id="">
                     <option selected="selected " disabled="disabled" value="">Оберіть місто</option>
                     <option value="Львів">Львів</option>
@@ -236,13 +236,18 @@
                     <option value="Чернівці">Чернівці</option>
                 </select>
                
-               
+                    </div>
             
                 <label class="book-label" for="from">Дата та час отримання авто.</label>
-                <div class="receiving style80">
-                    <i class="fa  fa-2x fa-calendar" aria-hidden="true"></i>
+               <div class="book-date">
+                    <i class="icon-calendar fa  fa-2x fa-calendar" aria-hidden="true"></i>
                     <input type="text" class="book-form__input" required placeholder="Виберіть дату" id="from" name="from">
-
+                </div>
+                    <div class="book-time">
+                    <i class="icon-clock fa  fa-2x fa-clock" aria-hidden="true"></i>
+                  
+                    <div class="styled-select">
+                           
                     <select required class="book-form__select option" name="timeOfRecive" id="timeOfRecive">
                         <option selected="selected" disabled="disabled" value="">Оберіть час</option>
                         <option value="9:00">9:00</option>
@@ -273,7 +278,9 @@
                         <option value="21:30">21:30</option>
                     </select>
                 </div>
+            </div>
                 <a href="booking.html" class="book-form__button book-form__button--white"> Обрати автомобіль</a>
+              
             </form>
         </div>
 
