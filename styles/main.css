@@ -408,7 +408,7 @@ body {
       text-transform: uppercase;
       text-decoration: none;
       padding: 10px 20px;
-      margin-top: 20px;
+      margin-top: 30px;
       display: inline-block;
       transition: all 0.2s;
       position: relative;
@@ -436,7 +436,11 @@ body {
           transform: scaleX(1.4) scaleY(1.6);
           opacity: 0; }
       .book-form__button--white {
+        width: 100%;
         background-color: yellow;
+        height: 55px;
+        text-align: center;
+        line-height: 35px;
         color: #535859; }
         .book-form__button--white::after {
           background-color: yellow; }
@@ -551,7 +555,8 @@ body {
     height: 450px; }
 
   .book {
-    width: 100%; }
+    width: 90%;
+    height: 440px; }
     .book-form__input {
       width: 100%; }
     .book-form__select {
@@ -576,8 +581,8 @@ body {
 .styled-time select {
   position: relative;
   z-index: 2;
+  width: 100%;
   background: transparent;
-  width: 80%;
   height: 54px;
   padding: 5px 5px 5px 10px;
   font-size: 14px;
@@ -1499,6 +1504,13 @@ footer {
       font-size: 20px; }
     .booking-and-preview-wrapper .booking-car-preview #car {
       width: 100%; }
+
+.email:focus {
+  outline: none;
+  border-bottom: 3px solid green; }
+
+.email:focus:invalid {
+  border-bottom: 3px solid yellow; }
 
 @media screen and (max-width: 992px) {
   .h1 {
