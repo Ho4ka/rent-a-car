@@ -222,7 +222,7 @@
                 <h5 class="book-heading">Місто подачі авто</h5>
             <form action="" class="book-form">               
                
-                    <div class="styled-select">
+                    <div class="styled-select__city">
                 <select required class="book-city option" name="" id="">
                     <option selected="selected " disabled="disabled" value="">Оберіть місто</option>
                     <option value="Львів">Львів</option>
@@ -239,6 +239,8 @@
                     </div>
             
                 <label class="book-label" for="from">Дата та час отримання авто.</label>
+
+                <div class="book-dateAndTime-wrapper">
                <div class="book-date">
                     <i class="icon-calendar fa  fa-2x fa-calendar" aria-hidden="true"></i>
                     <input type="text" class="book-form__input" required placeholder="Виберіть дату" id="from" name="from">
@@ -246,7 +248,7 @@
                     <div class="book-time">
                     <i class="icon-clock fa  fa-2x fa-clock" aria-hidden="true"></i>
                   
-                    <div class="styled-select">
+                    <div class="styled-select styled-time">
                            
                     <select required class="book-form__select option" name="timeOfRecive" id="timeOfRecive">
                         <option selected="selected" disabled="disabled" value="">Оберіть час</option>
@@ -279,6 +281,7 @@
                     </select>
                 </div>
             </div>
+        </div>
                 <a href="booking.html" class="book-form__button book-form__button--white"> Обрати автомобіль</a>
               
             </form>

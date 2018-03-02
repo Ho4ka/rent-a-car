@@ -15,12 +15,7 @@ a {
 hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0)
-  );
+  background-image: linear-gradient( to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 //   HEADER AND MENU STYLES
@@ -77,7 +72,7 @@ header {
   display: flex;
 }
 
-.main-nav > ul {
+.main-nav>ul {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
@@ -97,9 +92,7 @@ header {
     /* display: flex; */
     display: flex;
     flex-wrap: wrap;
-
     list-style: none;
-
     margin: 0;
     padding: 0;
     background-color: #53585a;
@@ -107,7 +100,6 @@ header {
     position: relative;
     top: 35px;
   }
-
   .flag {
     width: 40px;
     margin-right: 5px;
@@ -118,7 +110,7 @@ header {
   align-self: center;
 }
 
-nav > ul > li {
+nav>ul>li {
   flex: 0 1 auto;
   margin: 0;
   padding: 0;
@@ -126,13 +118,13 @@ nav > ul > li {
   transition: all linear 0.1s;
 }
 
-nav > ul > li:hover {
+nav>ul>li:hover {
   background: #6e9c38;
   transition-duration: 1s;
   transition-timing-function: ease;
 }
 
-nav > ul > li a + div {
+nav>ul>li a+div {
   background: #7db442;
   border-radius: 0 0 2px 2px;
   box-shadow: 0 3px 1px rgba(0, 0, 0, 0.05);
@@ -143,20 +135,20 @@ nav > ul > li a + div {
   z-index: 2111;
 }
 
-nav > ul > li:hover a + div {
+nav>ul>li:hover a+div {
   display: block;
 }
 
-nav > ul > li a + div > ul {
+nav>ul>li a+div>ul {
   list-style-type: none;
 }
 
-nav > ul > li a + div > ul > li {
+nav>ul>li a+div>ul>li {
   margin: 0;
   padding: 0;
 }
 
-nav > ul > li a + div > ul > li > a {
+nav>ul>li a+div>ul>li>a {
   color: rgba(255, 255, 255, 0.9);
   display: block;
   font-size: 0.75rem;
@@ -166,11 +158,11 @@ nav > ul > li a + div > ul > li > a {
   text-transform: uppercase;
 }
 
-nav > ul > li a + div > ul > li:hover > a {
+nav>ul>li a+div>ul>li:hover>a {
   background-color: rgba(0, 0, 0, 0.15);
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   align-items: center;
   color: #fff;
   display: flex;
@@ -183,7 +175,7 @@ nav > ul > li > a {
   transition: all linear 0.1s;
 }
 
-nav > ul > li > a > div > span {
+nav>ul>li>a>div>span {
   color: rgba(255, 255, 255, 0.75);
   display: block;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -194,11 +186,11 @@ nav > ul > li > a > div > span {
 }
 
 @media (min-width: 990px) {
-  nav > ul > li > a {
+  nav>ul>li>a {
     max-width: 500px; // font-size: 1.7rem;
     //        line-height: 2rem;
   }
-  nav > ul > li > a > div > span {
+  nav>ul>li>a>div>span {
     margin: 4px 0 0;
   }
 }
@@ -294,8 +286,13 @@ body {
     display: flex;
     justify-content: center;
   }
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -315,22 +312,22 @@ body {
 
 /* checked styles (menu open state) */
 
-#drawer-toggle:checked ~ #drawer-toggle-label {
+#drawer-toggle:checked~#drawer-toggle-label {
   height: 100%;
   width: calc(100% - 300px);
   background: rgba(255, 255, 255, 0.8);
 }
 
-#drawer-toggle:checked ~ #drawer-toggle-label,
-#drawer-toggle:checked ~ header {
+#drawer-toggle:checked~#drawer-toggle-label,
+#drawer-toggle:checked~header {
   left: 300px;
 }
 
-#drawer-toggle:checked ~ #drawer {
+#drawer-toggle:checked~#drawer {
   left: 0px;
 }
 
-#drawer-toggle:checked ~ #page-content {
+#drawer-toggle:checked~#page-content {
   margin-left: 300px;
 }
 
@@ -359,19 +356,19 @@ body {
 /* Responsive MQ */
 
 @media all and (max-width: 350px) {
-  #drawer-toggle:checked ~ #drawer-toggle-label {
+  #drawer-toggle:checked~#drawer-toggle-label {
     height: 100%;
     width: 50px;
   }
-  #drawer-toggle:checked ~ #drawer-toggle-label,
-  #drawer-toggle:checked ~ header {
+  #drawer-toggle:checked~#drawer-toggle-label,
+  #drawer-toggle:checked~header {
     left: calc(100% - 50px);
   }
-  #drawer-toggle:checked ~ #drawer {
+  #drawer-toggle:checked~#drawer {
     width: calc(100% - 50px);
     padding: 20px;
   }
-  #drawer-toggle:checked ~ #page-content {
+  #drawer-toggle:checked~#page-content {
     margin-left: calc(100% - 50px);
   }
 }
@@ -447,7 +444,7 @@ body {
   padding-right: 35px;
   padding-top: 35px;
   padding-bottom: 50px;
-  width: 450px;
+  width: 550px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -456,36 +453,29 @@ body {
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
   z-index: 11111;
-
   &-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     &__input {
       position: relative;
-      bottom: 5px;
       width: 100%;
       box-sizing: border-box;
       height: 54px;
       position: relative;
-z-index: 2;
-
-width: calc(100% + 20px);
-height: 54px;
-padding: 5px 5px 5px 10px;
-font-size: 14px;
-line-height: 1;
-color: #777;
-
-border-radius: 0;
-cursor: pointer;
-outline: none;
-appearance: none;
--moz-appearance: none;
--webkit-appearance: none;
+      z-index: 2;
+      height: 54px;
+      padding: 5px 5px 5px 10px;
+      font-size: 14px;
+      line-height: 1;
+      color: #777;
+      border-radius: 0;
+      cursor: pointer;
+      outline: none;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
     }
-
     &__select {
       position: relative;
       bottom: 1px;
@@ -497,7 +487,6 @@ appearance: none;
       border: 3px solid rgba(0, 0, 0, 0.15);
       transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     }
-
     &__button {
       text-transform: uppercase;
       text-decoration: none;
@@ -513,20 +502,17 @@ appearance: none;
       color: #777;
       animation: moveInBottom 0.5s ease-out 0.75s;
       animation-fill-mode: backwards;
-
       &::after {
         content: "";
         display: inline-block;
         height: 100%;
         width: 100%;
-
         position: absolute;
         top: 0;
         left: 0;
         z-index: -1;
         transition: all 0.4s;
       }
-
       &:hover {
         transform: translateY(-3px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 20%);
@@ -535,8 +521,6 @@ appearance: none;
           opacity: 0;
         }
       }
-
-
       &--white {
         background-color: yellow;
         color: #535859;
@@ -549,7 +533,6 @@ appearance: none;
         animation-fill-mode: backwards;
       }
     }
-
     @keyframes moveInBottom {
       0% {
         opacity: 0;
@@ -561,30 +544,24 @@ appearance: none;
       }
     }
   }
-
-
-.icon-calendar,
-.icon-clock {
-  position: relative;
-right: 10px;
-top: 5px;
-}
-
+  .icon-calendar,
+  .icon-clock {
+    position: relative;
+    top: 5px;
+    padding: 4px;
+  }
   &-label {
     font-size: 20px;
     margin: 20px 0;
   }
-
   &-heading {
     text-align: center;
     margin-bottom: 20px;
     display: block;
     font-size: 25px;
-
     font-weight: 200;
     letter-spacing: 1.5px;
   }
-
   &-city {
     font-family: inherit;
     color: inherit;
@@ -598,24 +575,43 @@ top: 5px;
     /* border: none; */
     transition: all 0.3s;
   }
-
+  &-dateAndTime-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
   &-date {
     width: 100%;
     display: flex;
+    margin-bottom: 30px;
   }
-
   &-time {
     display: flex;
     width: 100%;
   }
+}
+.styled-select__city {
+  position: relative;
+  width: 100%;
+  height: 54px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.styled-time {
+  width: 100%;
+  position: relative;
+  margin-left: 3px;
+  height: 54px;
+  overflow: hidden;
+  background: #fff;
 }
 
 //     STYLES FOR CONDITIONS-WRAPPER BLOCK
 .conditions-wrapper {
   margin-top: 50px;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -665,23 +661,17 @@ top: 5px;
   .swiper-container {
     height: 450px;
   }
-
   .swiper-container img {
     height: 450px;
   }
-
   .book {
-    width: 90%;
-
+    width: 100%;
     &-form__input {
-      
+      width: 100%;
     }
-
     &-form__select {
       width: 100%;
-     
     }
-
     &-form__button {
       padding: 10px 10px;
       font-size: 22px;
@@ -690,16 +680,12 @@ top: 5px;
 }
 
 .styled-select {
-  position: relative;
-  width: 100%;
-  height: 54px;
-  overflow: hidden;
-  background: #fff;
-  
-  margin-left: 3px;
+ 
+ 
 }
 
-.styled-select::after {
+.styled-select__city::after,
+.styled-time::after {
   z-index: 1;
   content: "";
   position: absolute;
@@ -712,11 +698,12 @@ top: 5px;
   border-right: 7px solid transparent;
 }
 
-.styled-select select {
+.styled-select__city select,
+.styled-time select {
   position: relative;
   z-index: 2;
-  background: transparent;
-  width: calc(100% + 20px);
+  background: transparent; // width: calc(100% + 20px);
+  width: 80%;
   height: 54px;
   padding: 5px 5px 5px 10px;
   font-size: 14px;
@@ -745,8 +732,7 @@ top: 5px;
     color: white;
     text-align: center;
     font-size: 30px;
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-      0px 18px 23px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
     padding-top: 220px;
     position: absolute;
     margin: 0 auto;
@@ -757,8 +743,7 @@ top: 5px;
 .partners-wrapper {
   width: 90%;
   padding-left: 10%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -896,7 +881,6 @@ top: 5px;
 }
 
 // STYLES FOR FOOTER AND FOOTER BOTTOM BLOCK
-
 footer {
   width: 100%;
   margin-top: 50px;
@@ -905,8 +889,7 @@ footer {
   display: flex;
   .footer-copyright {
     width: 33.3%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      "Helvetica Neue", Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -926,8 +909,7 @@ footer {
     color: inherit;
   }
   .nav-list li {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      "Helvetica Neue", Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -1035,8 +1017,7 @@ footer {
     width: 33.3%;
     margin: 0 auto;
     text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      "Helvetica Neue", Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -1133,8 +1114,7 @@ footer {
     color: white;
     text-align: center;
     font-size: 50px;
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-      0px 18px 23px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
     padding-top: 220px;
     position: absolute;
     margin: 0 auto;
@@ -1146,8 +1126,7 @@ footer {
   width: 90%;
   margin-top: 150px;
   padding-left: 10%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1200,8 +1179,7 @@ footer {
   width: 90%;
   margin-top: 50px;
   padding-left: 10%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1229,7 +1207,6 @@ footer {
 }
 
 // STYLES FOR PRICE PAGE
-
 .price-section {
   .h1-box {
     margin: 40px 0px;
@@ -1237,6 +1214,7 @@ footer {
     display: inline-block;
   }
 }
+
 .price-wrapper-img {
   display: flex;
   justify-content: center;
@@ -1254,8 +1232,7 @@ footer {
     color: inherit;
   }
   .nav-list li {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      "Helvetica Neue", Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -1367,8 +1344,7 @@ footer {
     color: white;
     text-align: center;
     font-size: 50px;
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-      0px 18px 23px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
     padding-top: 220px;
     position: absolute;
     margin: 0 auto;
@@ -1380,8 +1356,7 @@ footer {
   display: flex;
   width: 80%;
   margin: 50px auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1395,7 +1370,6 @@ footer {
     padding: 10px;
     margin: 10px;
     transition: transform 0.3s;
-
     &:hover {
       transform: translateY(-1.5rem) scale(1.03);
     }
@@ -1438,8 +1412,7 @@ footer {
   padding: 10px;
   width: 300px;
   margin: 30px auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -1455,8 +1428,7 @@ footer {
 
 .callTo {
   width: 100%;
-  box-shadow: 0 5px 5px #e8cc47, 0 9px 0 #998d2e,
-    0px 9px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 5px #e8cc47, 0 9px 0 #998d2e, 0px 9px 10px rgba(0, 0, 0, 0.4);
   position: relative;
   margin-bottom: 4px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -1477,13 +1449,11 @@ footer {
   transition: letter-spacing 0.2s linear;
 }
 
-.callTo:hover {
-}
+.callTo:hover {}
 
 .callTo:active {
   top: 7px;
-  box-shadow: 0 2px 0 #e85543, 0px 4px 4px rgba(0, 0, 0, 0.4),
-    inset 0px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 0 #e85543, 0px 4px 4px rgba(0, 0, 0, 0.4), inset 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -1534,17 +1504,8 @@ footer {
   height: 20px;
   width: 90%;
   opacity: 0;
-  background: -webkit-radial-gradient(
-    center,
-    ellipse,
-    rgba(0, 0, 0, 0.35) 0%,
-    transparent 80%
-  );
-  background: radial-gradient(
-    ellipse at center,
-    rgba(0, 0, 0, 0.35) 0%,
-    rgba(0, 0, 0, 0) 80%
-  );
+  background: -webkit-radial-gradient( center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  background: radial-gradient( ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform, opacity;
@@ -1567,8 +1528,7 @@ footer {
   animation-direction: alternate;
 }
 
-.btn:hover {
-}
+.btn:hover {}
 
 @keyframes hover {
   50% {
@@ -1670,7 +1630,6 @@ footer {
       margin: 20px auto;
     }
   }
-
   .price-footer {
     margin-top: 0;
   }
@@ -1948,13 +1907,11 @@ footer {
     .adress {
       width: 400px;
       left: 100px;
-      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
-        0 15px 12px rgba(0, 0, 0, 0.22);
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
       height: 425px;
       top: 100px;
       position: relative;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.5;
@@ -1976,12 +1933,7 @@ footer {
       hr {
         border: 0;
         height: 1px;
-        background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 0.75),
-          rgba(0, 0, 0, 0)
-        );
+        background-image: linear-gradient( to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
         position: relative;
         top: 30px;
       }
@@ -2053,8 +2005,7 @@ section {
     color: #fff;
     text-transform: uppercase;
     font-weight: 900;
-    text-align: center;
-    // margin-bottom: 15px;
+    text-align: center; // margin-bottom: 15px;
   }
   table {
     width: 100%;
@@ -2117,7 +2068,6 @@ section {
 }
 
 //PHONE CALL
-
 .phone {
   position: fixed;
   /* z-index: 1112; */
@@ -2128,6 +2078,7 @@ section {
 .quick-alo-phone .quick-alo-show {
   visibility: visible;
 }
+
 .quick-alo-phone {
   position: fixed;
   visibility: hidden;
@@ -2143,10 +2094,12 @@ section {
   -webkit-transform: translateZ(0);
   transition: visibility 0.5s;
 }
+
 .quick-alo-phone .quick-alo-green .quick-alo-ph-circle {
   border-color: rgba(106, 194, 65, 0.86);
   opacity: 0.5;
 }
+
 .quick-alo-ph-circle {
   position: absolute;
   width: 160px;
@@ -2161,10 +2114,12 @@ section {
   transition: all 0.5s;
   transform-origin: 50% 50%;
 }
+
 .quick-alo-phone .quick-alo-green .quick-alo-ph-circle-fill {
   background-color: rgb(246, 202, 98);
   opacity: 0.75 !important;
 }
+
 .quick-alo-ph-circle-fill {
   position: absolute;
   width: 100px;
@@ -2179,24 +2134,25 @@ section {
   transition: all 0.5s;
   transform-origin: 50% 50%;
 }
+
 .quick-alo-phone.quick-alo-green .quick-alo-ph-img-circle {
   background-color: rgba(106, 194, 65, 0.86);
 }
+
 .quick-alo-ph-img-circle {
   position: absolute;
   width: 60px;
   height: 60px;
   top: 100px;
   left: 100px;
-  background: rgba(106, 194, 65, 0.86)
-    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABrklEQVRYR82XjTEEQRCFX0dABlwEiAARkAEyIAJEoERACETARUAIJwIyeOqptfbm5qeP3lpTdVVXVzPd3/R0v+4zTLxsYv/4XwAkrwDsV6JyZmaLyKj1ESB5AOCpYfzazAQZttYFuDWz8zDvwE8OkNwF8NIwvjCz2SgAMkqSDuOzyDxYqgKSrwB2GhBKxHsHqGtLCiDDJ42Tj2Z27LLu2JQCnAK4a5x7M7Nth23XlhRgE8B74+SemempQtaKEpKsPUPo++sGOYCSIIU7zwJ05ficSLLkV6H/CIn7wEi2GRVkOVwFixEoREE/hz9DsR2TVKkp2zeSsI9bBUNnJNV4bhIA5cFhVCk2B5JCWVYhSEopjwAob6qa4QGQOKkqcj1iJSdIpmoqWEHIhr7Ph1BNgC4haxAPAC7UITPOc1UrCOXR12TlAnBAyKhAdHvPUg4pIn6AAYQc1ebG8QC+LXfD66XHU2HP7yKQlKhGODWu1gCTY/g7wCAaendNyltrRCQOIAERjCc/ejV1V4H3dp2ES4jU1vVJpXxpogoHSEE7oOEIp9G+/3c1OkArcpMDfAIqL6EhVS6JOAAAAABJRU5ErkJggg==")
-    no-repeat center center;
+  background: rgba(106, 194, 65, 0.86) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABrklEQVRYR82XjTEEQRCFX0dABlwEiAARkAEyIAJEoERACETARUAIJwIyeOqptfbm5qeP3lpTdVVXVzPd3/R0v+4zTLxsYv/4XwAkrwDsV6JyZmaLyKj1ESB5AOCpYfzazAQZttYFuDWz8zDvwE8OkNwF8NIwvjCz2SgAMkqSDuOzyDxYqgKSrwB2GhBKxHsHqGtLCiDDJ42Tj2Z27LLu2JQCnAK4a5x7M7Nth23XlhRgE8B74+SemempQtaKEpKsPUPo++sGOYCSIIU7zwJ05ficSLLkV6H/CIn7wEi2GRVkOVwFixEoREE/hz9DsR2TVKkp2zeSsI9bBUNnJNV4bhIA5cFhVCk2B5JCWVYhSEopjwAob6qa4QGQOKkqcj1iJSdIpmoqWEHIhr7Ph1BNgC4haxAPAC7UITPOc1UrCOXR12TlAnBAyKhAdHvPUg4pIn6AAYQc1ebG8QC+LXfD66XHU2HP7yKQlKhGODWu1gCTY/g7wCAaendNyltrRCQOIAERjCc/ejV1V4H3dp2ES4jU1vVJpXxpogoHSEE7oOEIp9G+/3c1OkArcpMDfAIqL6EhVS6JOAAAAABJRU5ErkJggg==") no-repeat center center;
   border-radius: 100%;
   border: 2px solid transparent;
   opacity: 0.99;
   animation: quick-alo-circle-img-anim 1s infinite ease-in-out;
   transform-origin: 50% 50%;
 }
+
 .quick-alo-phone .quick-alo-green .quick-alo-hover .quick-alo-ph-img-circle,
 .quick-alo-phone.quick-alo-green:hover .quick-alo-ph-img-circle {
   background-color: rgba(106, 194, 65, 0.86);
@@ -2225,6 +2181,7 @@ section {
     -o-opacity: 0.1;
   }
 }
+
 @-webkit-keyframes quick-alo-circle-anim {
   0% {
     -webkit-transform: rotate(0) scale(0.5) skew(1deg);
@@ -2239,6 +2196,7 @@ section {
     -webkit-opacity: 0.1;
   }
 }
+
 @-o-keyframes quick-alo-circle-anim {
   0% {
     -o-transform: rotate(0) kscale(0.5) skew(1deg);
@@ -2253,6 +2211,7 @@ section {
     -o-opacity: 0.1;
   }
 }
+
 @-moz-keyframes quick-alo-circle-fill-anim {
   0% {
     -moz-transform: rotate(0) scale(0.7) skew(1deg);
@@ -2267,6 +2226,7 @@ section {
     opacity: 0.2;
   }
 }
+
 @-webkit-keyframes quick-alo-circle-fill-anim {
   0% {
     -webkit-transform: rotate(0) scale(0.7) skew(1deg);
@@ -2281,6 +2241,7 @@ section {
     opacity: 0.2;
   }
 }
+
 @-o-keyframes quick-alo-circle-fill-anim {
   0% {
     -o-transform: rotate(0) scale(0.7) skew(1deg);
@@ -2295,6 +2256,7 @@ section {
     opacity: 0.2;
   }
 }
+
 @-moz-keyframes quick-alo-circle-img-anim {
   0% {
     transform: rotate(0) scale(1) skew(1deg);
@@ -2318,6 +2280,7 @@ section {
     -moz-transform: rotate(0) scale(1) skew(1deg);
   }
 }
+
 @-webkit-keyframes quick-alo-circle-img-anim {
   0% {
     -webkit-transform: rotate(0) scale(1) skew(1deg);
@@ -2341,6 +2304,7 @@ section {
     -webkit-transform: rotate(0) scale(1) skew(1deg);
   }
 }
+
 @-o-keyframes quick-alo-circle-img-anim {
   0% {
     -o-transform: rotate(0) scale(1) skew(1deg);
@@ -2364,6 +2328,7 @@ section {
     -o-transform: rotate(0) scale(1) skew(1deg);
   }
 }
+
 @-moz-keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -2378,6 +2343,7 @@ section {
     transform: none;
   }
 }
+
 @-webkit-keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -2392,6 +2358,7 @@ section {
     transform: none;
   }
 }
+
 @-o-keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -2408,24 +2375,35 @@ section {
 }
 
 /* The Modal (background) */
+
 .modal-js {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-  -webkit-animation-name: fadeIn; /* Fade in the background */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
   -webkit-animation-duration: 0.4s;
   animation-name: fadeIn;
   animation-duration: 0.4s;
 }
 
 /* Modal Content */
+
 .modal-phone-box {
   position: fixed;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -2446,6 +2424,7 @@ section {
 }
 
 /* The Close Button */
+
 .modalClose {
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   border-radius: 25px;
@@ -2499,7 +2478,6 @@ section {
     display: inline-block;
     background-image: linear-gradient(to right, #7ed56f, #28b485);
     -webkit-background-clip: text;
-
     color: transparent;
   }
 }
@@ -2516,6 +2494,7 @@ section {
 }
 
 /* Add Animation */
+
 @-webkit-keyframes slideIn {
   from {
     bottom: -300px;
@@ -2557,7 +2536,6 @@ section {
 }
 
 //MODAL WINDOW ON MOBILE STYLES
-
 @media screen and (max-width: 992px) {
   .modal-phone-box {
     width: 80%;

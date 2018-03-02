@@ -363,7 +363,7 @@ body {
   padding-right: 35px;
   padding-top: 35px;
   padding-bottom: 50px;
-  width: 450px;
+  width: 550px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -378,13 +378,11 @@ body {
     align-items: center; }
     .book-form__input {
       position: relative;
-      bottom: 5px;
       width: 100%;
       box-sizing: border-box;
       height: 54px;
       position: relative;
       z-index: 2;
-      width: calc(100% + 20px);
       height: 54px;
       padding: 5px 5px 5px 10px;
       font-size: 14px;
@@ -455,8 +453,8 @@ body {
   .book .icon-calendar,
   .book .icon-clock {
     position: relative;
-    right: 10px;
-    top: 5px; }
+    top: 5px;
+    padding: 4px; }
   .book-label {
     font-size: 20px;
     margin: 20px 0; }
@@ -479,12 +477,32 @@ body {
     display: block;
     /* border: none; */
     transition: all 0.3s; }
+  .book-dateAndTime-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
   .book-date {
     width: 100%;
-    display: flex; }
+    display: flex;
+    margin-bottom: 30px; }
   .book-time {
     display: flex;
     width: 100%; }
+
+.styled-select__city {
+  position: relative;
+  width: 100%;
+  height: 54px;
+  overflow: hidden;
+  background: #fff; }
+
+.styled-time {
+  width: 100%;
+  position: relative;
+  margin-left: 3px;
+  height: 54px;
+  overflow: hidden;
+  background: #fff; }
 
 .conditions-wrapper {
   margin-top: 50px;
@@ -533,21 +551,16 @@ body {
     height: 450px; }
 
   .book {
-    width: 90%; }
+    width: 100%; }
+    .book-form__input {
+      width: 100%; }
     .book-form__select {
       width: 100%; }
     .book-form__button {
       padding: 10px 10px;
       font-size: 22px; } }
-.styled-select {
-  position: relative;
-  width: 100%;
-  height: 54px;
-  overflow: hidden;
-  background: #fff;
-  margin-left: 3px; }
-
-.styled-select::after {
+.styled-select__city::after,
+.styled-time::after {
   z-index: 1;
   content: "";
   position: absolute;
@@ -559,11 +572,12 @@ body {
   border-left: 7px solid transparent;
   border-right: 7px solid transparent; }
 
-.styled-select select {
+.styled-select__city select,
+.styled-time select {
   position: relative;
   z-index: 2;
   background: transparent;
-  width: calc(100% + 20px);
+  width: 80%;
   height: 54px;
   padding: 5px 5px 5px 10px;
   font-size: 14px;
