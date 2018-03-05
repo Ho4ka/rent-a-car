@@ -1,9 +1,5 @@
 <?php
-<<<<<<< HEAD
     print_r($to);
-=======
->>>>>>> 9019d0414a4c039a25388d827192ac2c56ae7764
-
         $to = 'm.domaretsky@gmail.com, egc.rental@gmail.com'; 
         $subject = 'Запит на машину'; 
         $message = '
@@ -27,11 +23,7 @@
                     </body>
                 </html>'; 
         $headers  = 'Content-type: text/html; charset=utf-8' . "\n"; 
-        $headers .= 'From: Отправитель <karina.nechyporenko@gmail.com>' . "\n";
+        $headers .= 'From: Отправитель <m.domaretsky@gmail.com>' . "\n";
         $res=mail($to, $subject, $message, $headers); 
-<<<<<<< HEAD
         print_r($res);
-=======
->>>>>>> 9019d0414a4c039a25388d827192ac2c56ae7764
-
 ?>

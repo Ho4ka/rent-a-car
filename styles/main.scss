@@ -444,8 +444,8 @@ body {
   padding-right: 35px;
   padding-top: 35px;
   padding-bottom: 50px;
-  width: 550px;
-  left: 50%;
+  width: 350px;
+  left: 30%;
   top: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -455,16 +455,19 @@ body {
   z-index: 11111;
   &-form {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+flex-direction: column;
+width: 100%;
+margin: 0 auto;
+
+
     &__input {
       position: relative;
       width: 100%;
       box-sizing: border-box;
-      height: 54px;
+      height: 34px;
       position: relative;
       z-index: 2;
-      height: 54px;
+    
       padding: 5px 5px 5px 10px;
       font-size: 14px;
       line-height: 1;
@@ -495,7 +498,6 @@ body {
       display: inline-block;
       transition: all 0.2s;
       position: relative;
-      font-size: 1.6rem;
       border: none;
       cursor: pointer;
       background-color: #fff;
@@ -524,9 +526,9 @@ body {
       &--white {
         width: 100%;
         background-color: yellow;
-        height: 55px;
+        height: 34px;
         text-align: center;
-line-height: 35px;
+        line-height: 14px;
         color: #535859;
         &::after {
           background-color: yellow;
@@ -551,12 +553,13 @@ line-height: 35px;
   .icon-calendar,
   .icon-clock {
     position: relative;
-    top: 5px;
+    bottom: 3px;
     padding: 4px;
   }
   &-label {
-    font-size: 20px;
+    font-size: 18px;
     margin: 20px 0;
+    text-align: center;
   }
   &-heading {
     text-align: center;
@@ -597,7 +600,7 @@ line-height: 35px;
 .styled-select__city {
   position: relative;
   width: 100%;
-  height: 54px;
+  height: 34px;
   overflow: hidden;
   background: #fff;
 }
@@ -606,7 +609,7 @@ line-height: 35px;
   width: 100%;
   position: relative;
   margin-left: 3px;
-  height: 54px;
+  height: 34px;
   overflow: hidden;
   background: #fff;
 }
@@ -663,14 +666,15 @@ line-height: 35px;
 
 @media screen and (max-width: 992px) {
   .swiper-container {
-    height: 450px;
+   height: 515px;
   }
   .swiper-container img {
-    height: 450px;
+    height: 515px;
   }
   .book {
     width: 90%;
-    height: 440px;
+    left: 50%;
+    
     &-form__input {
       width: 100%;
     }
@@ -679,7 +683,7 @@ line-height: 35px;
     }
     &-form__button {
       padding: 10px 10px;
-      font-size: 22px;
+     
     }
   }
 }
@@ -705,7 +709,7 @@ line-height: 35px;
   z-index: 2;
   width: 100%;
   background: transparent; // width: calc(100% + 20px);
-  height: 54px;
+  height: 34px;
   padding: 5px 5px 5px 10px;
   font-size: 14px;
   line-height: 1;

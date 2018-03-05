@@ -363,8 +363,8 @@ body {
   padding-right: 35px;
   padding-top: 35px;
   padding-bottom: 50px;
-  width: 550px;
-  left: 50%;
+  width: 350px;
+  left: 30%;
   top: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -375,15 +375,15 @@ body {
   .book-form {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    width: 100%;
+    margin: 0 auto; }
     .book-form__input {
       position: relative;
       width: 100%;
       box-sizing: border-box;
-      height: 54px;
+      height: 34px;
       position: relative;
       z-index: 2;
-      height: 54px;
       padding: 5px 5px 5px 10px;
       font-size: 14px;
       line-height: 1;
@@ -412,7 +412,6 @@ body {
       display: inline-block;
       transition: all 0.2s;
       position: relative;
-      font-size: 1.6rem;
       border: none;
       cursor: pointer;
       background-color: #fff;
@@ -438,9 +437,9 @@ body {
       .book-form__button--white {
         width: 100%;
         background-color: yellow;
-        height: 55px;
+        height: 34px;
         text-align: center;
-        line-height: 35px;
+        line-height: 14px;
         color: #535859; }
         .book-form__button--white::after {
           background-color: yellow; }
@@ -457,11 +456,12 @@ body {
   .book .icon-calendar,
   .book .icon-clock {
     position: relative;
-    top: 5px;
+    bottom: 3px;
     padding: 4px; }
   .book-label {
-    font-size: 20px;
-    margin: 20px 0; }
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: center; }
   .book-heading {
     text-align: center;
     margin-bottom: 20px;
@@ -496,7 +496,7 @@ body {
 .styled-select__city {
   position: relative;
   width: 100%;
-  height: 54px;
+  height: 34px;
   overflow: hidden;
   background: #fff; }
 
@@ -504,7 +504,7 @@ body {
   width: 100%;
   position: relative;
   margin-left: 3px;
-  height: 54px;
+  height: 34px;
   overflow: hidden;
   background: #fff; }
 
@@ -549,21 +549,20 @@ body {
 
 @media screen and (max-width: 992px) {
   .swiper-container {
-    height: 450px; }
+    height: 515px; }
 
   .swiper-container img {
-    height: 450px; }
+    height: 515px; }
 
   .book {
     width: 90%;
-    height: 440px; }
+    left: 50%; }
     .book-form__input {
       width: 100%; }
     .book-form__select {
       width: 100%; }
     .book-form__button {
-      padding: 10px 10px;
-      font-size: 22px; } }
+      padding: 10px 10px; } }
 .styled-select__city::after,
 .styled-time::after {
   z-index: 1;
@@ -583,7 +582,7 @@ body {
   z-index: 2;
   width: 100%;
   background: transparent;
-  height: 54px;
+  height: 34px;
   padding: 5px 5px 5px 10px;
   font-size: 14px;
   line-height: 1;

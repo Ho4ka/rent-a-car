@@ -1,60 +1,48 @@
-var swiper = new Swiper(".swiper-container", {
-  autoplay: {
-    delay: 7000
-  },
-  speed: 1800,
-  effect: "fade",
-  slidesPerView: 1,
 
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
-});
 
 $(document).ready(function() {
+ 
+  $('.callTo').on("click", function() {
+    var value = $(this).data("value");
+    localStorage.setItem('value', value);
     
-
-    
-
-    
-  $(function() {
-    var dateFormat = "mm/dd/yy",
-      from = $("#from")
-        .datepicker({
-          defaultDate: "+1w",
-          changeMonth: true,
-          numberOfMonths: 1
-        })
-        .on("change", function() {
-          to.datepicker("option", "minDate", getDate(this));
-        }),
-      to = $("#to")
-        .datepicker({
-          defaultDate: "+1w",
-          changeMonth: true,
-          numberOfMonths: 1
-        })
-        .on("change", function() {
-          from.datepicker("option", "maxDate", getDate(this));
-        });
-
-    function getDate(element) {
-      var date;
-      try {
-        date = $.datepicker.parseDate(dateFormat, element.value);
-      } catch (error) {
-        date = null;
-      }
-
-      return date;
-    }
   });
+
+    
+
+      
+    $(function() {
+      var dateFormat = "mm/dd/yy",
+        from = $("#from")
+          .datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 1
+          })
+          .on("change", function() {
+            to.datepicker("option", "minDate", getDate(this));
+          }),
+        to = $("#to")
+          .datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 1
+          })
+          .on("change", function() {
+            from.datepicker("option", "maxDate", getDate(this));
+          });
+
+      function getDate(element) {
+        var date;
+        try {
+          date = $.datepicker.parseDate(dateFormat, element.value);
+        } catch (error) {
+          date = null;
+        }
+
+        return date;
+      }
+    });
 
   var cars = [
     {
@@ -229,6 +217,15 @@ $(document).ready(function() {
     });
     return false;
   });
+
+  var localValue = localStorage.getItem("value");
+  if (localValue) {
+
+    $('#selectCar')
+          .find("option[data-value="+localValue+"]")
+          .prop('selected',true)
+          .trigger('change');
+  }
 });
 
 // '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
