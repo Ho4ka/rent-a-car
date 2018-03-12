@@ -8,9 +8,43 @@ $(document).ready(function() {
     
   });
 
+  $('.book-form__button').on("click", function() {
+    var dateFromQuickForm = $('.book-form__input').val();
+    var cityFromQuickForm = $('.book-city').val();
     
+    var timeFromQuickForm = $('.book-form__select').val();
+   
+    localStorage.setItem('value2', cityFromQuickForm);
+    localStorage.setItem('value1', dateFromQuickForm);
+    localStorage.setItem('value3', timeFromQuickForm);
+   
+    
+  });
 
-      
+  var cityValue = localStorage.getItem("value2");
+  var dateValue = localStorage.getItem("value1");
+  var timeValue = localStorage.getItem("value3");
+ 
+  if (cityValue) {
+
+    $('.city')
+    .find("option[value ="+cityValue+"]")
+          .prop('selected',true)
+          .trigger('change');
+  
+  }
+
+  if (dateValue) {
+
+    $('.timeOfpick').val(dateValue);
+  }
+
+  if (timeValue) {
+
+    $('#timeOfRecive').val(timeValue);
+  }
+  
+  
     $(function() {
       var dateFormat = "mm/dd/yy",
         from = $("#from")
